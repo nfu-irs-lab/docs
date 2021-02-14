@@ -28,6 +28,7 @@
 
 使用 Git 可以幫助你在編寫大型程式時更方便控制程式碼的修改及變化，即使不小心改錯東西了，也可以輕鬆地恢復，並在不同的版本間切換。
 
+### 基本知識
 Git 的基本概念是，它會自動偵測一個 Repository （程式庫，簡稱 Repo）內的檔案及內容變化。如果它發現有檔案或其內容改變了，它就會將此改變的檔案加到 Unstaged 區域。你可以在 Unstaged 區域中選擇數個檔案，再將其 Stage 到 Staged 區域。當有檔案在 Staged 區域時，你就可以爲它們加上一段訊息（Summary）並送出一個 Commit。一個 Commit 就如同一個版本節點，你可以在不同的 Commit 間切換。
 
 有使用 Git 的話，如果你修改程式後發現改錯東西了，你就可以不用一直 <kbd>Ctrl</kbd>+<kbd>Z</kbd> Undo，而可以透過 Git 來恢復到上一個功能正常的 Commit。而且 Git 會記錄所有的變化，你可以很清楚地看到每個 Commit 修改了哪些檔案的哪些內容。
@@ -51,6 +52,16 @@ void main(void)
 正常情況下，GitHub 上的 Repository 應該對「main」進行保護設定，禁止也無法直接將 Commit Push 到「main」上，只能先 Push 到「develop」後，提出 Pull Requests 來讓該 Repository 的管理員查看並審核，當管理員覺得沒問題後才會接受該 Pull Requests，並將其 Merge 進「main」，以確保「main」上只用可正常運作的程式碼存在。
 
 另外你可以爲一個特定的 Commit 加上 Tag（標籤），通常此功能只會用來當作管理發行版（Release）用。
+
+### 軟體工具
+原始的 Git 只能使用指令（CLI）來操作，但現在也有很多圖形介面的 Git 軟體可以使用。以下列出一些比較常見的。
+
+* [Sourcetree](https://www.sourcetreeapp.com/)
+* [GitKraken](https://www.gitkraken.com/)
+* [GitHub Desktop](https://desktop.github.com/)
+* [TortoiseGit](https://tortoisegit.org/)
+
+此外，現在多數的 IDE 也有內建 Git 功能。
 
 ## Visual Studio 擴充插件
 ## Vim 文字編輯器
