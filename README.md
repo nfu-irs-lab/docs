@@ -1,12 +1,12 @@
 # 上銀手臂相關文件及資源
 ## 目錄
 * [程式素養](#程式素養)
-  * [程式碼風格 Coding Style](#程式碼風格_Coding_Style)
-  * [統一塑模語言 UML](#統一塑模語言_UML)
-  * [SOLID 原則](#SOLID_原則)
-  * [單元測試 Unit Testing](#單元測試_Unit_Testing)
+  * [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
+  * [統一塑模語言 UML](#統一塑模語言-UML)
+  * [SOLID 原則](#SOLID-原則)
+  * [單元測試 Unit Testing](#單元測試-Unit-Testing)
 * [工具](#工具)
-  * [Visual Studio 擴充插件](#Visual_Studio_擴充插件)
+  * [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
 * [版本號](#版本號)
   * [命名規則](#命名規則)
 * [其它資源](#其它資源)
