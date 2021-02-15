@@ -103,6 +103,86 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 |I|介面隔離 ISP|多個特定客戶端介面要好過於一個廣泛用途的介面。|
 |D|依賴反轉 DIP|高層模組不應該依賴於低層模組，兩者皆應該依賴於抽象介面。|
 
+### 依賴反轉
+
+```cs
+// 一般的寫法。
+// 高層模組「Car」直接依賴於低層模組「Engine」。
+
+class Engine
+{
+    void Start()
+    {
+        // Some code here.
+    }
+}
+
+class Car
+{
+    Engine MyEngine = new Engine();
+    
+    // Some code here.
+}
+```
+
+```cs
+// 依賴反轉的基本寫法。
+// 高層模組「Car」不直接依賴於低層模組「Engine」，而是依賴於介面「IEngine」。
+// 低層模組「Engine」繼承並實作了介面「IEngine」。
+
+interface IEngine
+{
+    void Start();
+}
+
+class Engine : IEngine
+{
+    void Start()
+    {
+        // Some code here.
+    }
+}
+
+class Car
+{
+    IEngine MyEngine = new Engine();
+    
+    // Some code here.
+}
+```
+
+
+```cs
+// 依賴反轉的進階寫法。
+// 使用依賴注入（Dependency Injection，DI）。
+// 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
+
+interface IEngine
+{
+    void Start();
+}
+
+class Engine : IEngine
+{
+    void Start()
+    {
+        // Some code here.
+    }
+}
+
+class Car
+{
+    IEngine MyEngine = null;
+    
+    Car(IEngine engine)
+    {
+        MyEngine = engine;
+    }
+    
+    // Some code here.
+}
+```
+
 ## 單元測試 Unit Testing
 ## 設計模式 Design Pattern
 
