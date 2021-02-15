@@ -155,6 +155,8 @@ void main(void)
 * 次版本號：有部分功能或程式更新時遞增。例如新增或刪減部分功能。
 * 修訂版本號：修正小部分功能或程式時遞增。例如修正 Bug。
 
+主板本號爲 0 代表是測試時期版本。第一個測試時期版本號應該爲 `v0.1.0`，而第一個正式版本號應該爲 `v1.0.0`。
+
 # 其它資源
 * [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 * [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
