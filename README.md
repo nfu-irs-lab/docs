@@ -57,7 +57,7 @@ public class ArmController
         
         // Some code here.
         
-        if ( errorCode > 0)
+        if (errorCode > 0)
         {
             return "Error";
         }
