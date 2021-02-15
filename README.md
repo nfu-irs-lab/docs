@@ -18,6 +18,7 @@
 
 # 程式素養及軟體工程
 ## 程式碼風格 Coding Style
+### 介紹
 Coding Style 代表的是寫程式碼的格式風格，包含了縮排和命名規則等。同一個專案、團隊應該遵守同一套 Coding Style，讓各程式碼的風格統一。
 
 ```c
@@ -50,7 +51,9 @@ public class ArmController
     public string GoHome(double motorSpeed)
     {
         int errorCode;
+        
         // Some code here.
+        
         if ( errorCode > 0)
         {
             return "Error";
@@ -67,7 +70,12 @@ public class ArmController
 }
 ```
 
-參考資料:
+### 保持風格一致
+現在有許多 IDE 都有自動格式化（Auto format）的功能，例如 Visual Studio 可以使用快捷鍵 <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> 來自動格式化整個檔案。另外也有像 [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid) 這種擴充插件可以使用。
+
+而 Visual Studio 也可以使用快捷鍵 <kbd>F2</kbd> 來快速重新命名變數和方法。
+
+### 參考資料
 * [C# 編碼慣例 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
 * [命名方針](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/naming-guidelines)
 * [大小寫慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/capitalization-conventions)
