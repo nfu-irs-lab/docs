@@ -154,7 +154,6 @@ class Car
 
 ```cs
 // 依賴反轉的進階寫法。
-// 使用依賴注入（Dependency Injection，DI）。
 
 interface EngineInterface
 {
@@ -173,6 +172,7 @@ class Car
 {
     EngineInterface MyEngine = null;
     
+    // 使用依賴注入（Dependency Injection，DI）。
     // 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
     Car(EngineInterface engine)
     {
