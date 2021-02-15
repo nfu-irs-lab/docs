@@ -107,7 +107,6 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 
 ```cs
 // 一般的寫法。
-// 高層模組「Car」直接依賴於低層模組「Engine」。
 
 class Engine
 {
@@ -119,6 +118,7 @@ class Engine
 
 class Car
 {
+    // 高層模組「Car」直接依賴於低層模組「Engine」。
     Engine MyEngine = new Engine();
     
     // Some code here.
@@ -127,14 +127,13 @@ class Car
 
 ```cs
 // 依賴反轉的基本寫法。
-// 高層模組「Car」不直接依賴於低層模組「Engine」，而是依賴於介面「EngineInterface」。
-// 低層模組「Engine」繼承並實作了介面「EngineInterface」。
 
 interface EngineInterface
 {
     void Start();
 }
 
+// 低層模組「Engine」繼承並實作了介面「EngineInterface」。
 class Engine : EngineInterface
 {
     void Start()
@@ -145,6 +144,7 @@ class Engine : EngineInterface
 
 class Car
 {
+    // 高層模組「Car」不直接依賴於低層模組「Engine」，而是依賴於介面「EngineInterface」。
     EngineInterface MyEngine = new Engine();
     
     // Some code here.
@@ -155,7 +155,6 @@ class Car
 ```cs
 // 依賴反轉的進階寫法。
 // 使用依賴注入（Dependency Injection，DI）。
-// 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
 
 interface EngineInterface
 {
@@ -174,6 +173,7 @@ class Car
 {
     EngineInterface MyEngine = null;
     
+    // 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
     Car(EngineInterface engine)
     {
         MyEngine = engine;
