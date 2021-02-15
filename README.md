@@ -54,7 +54,7 @@ void main(void)
 另外你可以爲一個特定的 Commit 加上 Tag（標籤），但通常此功能只會用來當作管理發行版（Release）用。
 
 ### 軟體工具
-原始的 Git 只能使用指令（CLI）來操作，但現在也有很多圖形介面的 Git 軟體可以使用。以下列出一些比較常見的。
+原始的 Git 只能使用指令（CLI）來操作，但現在也有很多圖形介面的 Git 軟體可以使用。以下列出一些比較常見的軟體：
 
 * [Sourcetree](https://www.sourcetreeapp.com/)
 * [GitKraken](https://www.gitkraken.com/)
@@ -62,6 +62,12 @@ void main(void)
 * [TortoiseGit](https://tortoisegit.org/)
 
 此外，現在多數的 IDE 也有內建 Git 功能。例如 Visual Studio。
+
+### 移動檔案或重新命名
+當一個檔案或資料夾在 Git 的控制下時，如果你想要移動它或對它重新命名，不應該直接透過檔案總管來作這些動作，而是應該使用 [`git mv`](https://git-scm.com/docs/git-mv) 指令來完成，否則 Git 會將移動或重新命名的檔案及資料夾視爲不同的全新檔案，進而遺失以往的所有 Commit 記錄。使用時可以搭配 `ls` 指令來查看目前工作路徑內的檔案及資料夾，使用 `cd` 指令來移動工作路徑。
+
+* 例如你想將「Test.txt」移動到資料夾「Test」底下時，應該執行指令：`git mv Test.txt Test/`
+* 或是你想將「Test.txt」重新命名成「Doc.txt」時，應該執行指令：`git mv Test.txt Doc.txt`
 
 ## Visual Studio 擴充插件
 ## Vim 文字編輯器
