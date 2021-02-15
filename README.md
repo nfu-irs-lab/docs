@@ -127,15 +127,15 @@ class Car
 
 ```cs
 // 依賴反轉的基本寫法。
-// 高層模組「Car」不直接依賴於低層模組「Engine」，而是依賴於介面「IEngine」。
-// 低層模組「Engine」繼承並實作了介面「IEngine」。
+// 高層模組「Car」不直接依賴於低層模組「Engine」，而是依賴於介面「EngineInterface」。
+// 低層模組「Engine」繼承並實作了介面「EngineInterface」。
 
-interface IEngine
+interface EngineInterface
 {
     void Start();
 }
 
-class Engine : IEngine
+class Engine : EngineInterface
 {
     void Start()
     {
@@ -145,7 +145,7 @@ class Engine : IEngine
 
 class Car
 {
-    IEngine MyEngine = new Engine();
+    EngineInterface MyEngine = new Engine();
     
     // Some code here.
 }
@@ -157,12 +157,12 @@ class Car
 // 使用依賴注入（Dependency Injection，DI）。
 // 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
 
-interface IEngine
+interface EngineInterface
 {
     void Start();
 }
 
-class Engine : IEngine
+class Engine : EngineInterface
 {
     void Start()
     {
@@ -172,15 +172,19 @@ class Engine : IEngine
 
 class Car
 {
-    IEngine MyEngine = null;
+    EngineInterface MyEngine = null;
     
-    Car(IEngine engine)
+    Car(EngineInterface engine)
     {
         MyEngine = engine;
     }
     
     // Some code here.
 }
+
+// 實際呼叫「Car」時：
+EngineInterface V8Engine = new Engine();
+Car MySuperCar = new Car(V8Engine);
 ```
 
 ## 單元測試 Unit Testing
