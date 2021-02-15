@@ -5,6 +5,7 @@
   * [統一塑模語言 UML](#統一塑模語言-UML)
   * [SOLID 原則](#SOLID-原則)
   * [單元測試 Unit Testing](#單元測試-Unit-Testing)
+  * [設計模式 Design Pattern](#設計模式-Design-Pattern)
 * [工具](#工具)
   * [Git 版本控制](#Git-版本控制)
   * [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
@@ -72,7 +73,7 @@ public class ArmController
 }
 ```
 
-### 保持風格一致
+### 保持格式一致
 現在有許多 IDE 都有自動格式化（Auto format）的功能，例如 Visual Studio 可以使用快捷鍵 <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> 來自動格式化整個檔案。另外也有像 [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid) 這種擴充插件可以使用。
 
 而 Visual Studio 也可以使用快捷鍵 <kbd>F2</kbd> 來快速重新命名變數和方法。
@@ -87,6 +88,7 @@ public class ArmController
 ## 統一塑模語言 UML
 ## SOLID 原則
 ## 單元測試 Unit Testing
+## 設計模式 Design Pattern
 
 # 工具
 ## Git 版本控制
