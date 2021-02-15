@@ -80,6 +80,7 @@ public class ArmController
 * [命名方針](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/naming-guidelines)
 * [大小寫慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/capitalization-conventions)
 * [一般命名慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/general-naming-conventions)
+* [WiKi 駝峰式大小寫](https://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB)
 
 ## 統一塑模語言 UML
 ## SOLID 原則
