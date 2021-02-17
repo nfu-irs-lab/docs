@@ -4,6 +4,7 @@
   * [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
   * [統一塑模語言 UML](#統一塑模語言-UML)
   * [SOLID 原則](#SOLID-原則)
+  * [複合優於繼承](#複合優於繼承)
   * [單元測試 Unit Testing](#單元測試-Unit-Testing)
   * [設計模式 Design Pattern](#設計模式-Design-Pattern)
 * [工具](#工具)
