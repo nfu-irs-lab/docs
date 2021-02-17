@@ -182,7 +182,7 @@ class Car
 }
 
 // 實際呼叫「Car」時：
-EngineInterface V8Engine = new Engine();
+Engine V8Engine = new Engine();
 Car MySuperCar = new Car(V8Engine);
 ```
 
