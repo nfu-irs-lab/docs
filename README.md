@@ -202,6 +202,12 @@ class Car
 Engine V8Engine = new Engine();
 Car MySuperCar = new Car(V8Engine);
 ```
+### 參考資料
+* [我該學會SOLID嗎?](https://medium.com/@f40507777/%E6%88%91%E8%A9%B2%E5%AD%B8%E6%9C%83solid%E5%97%8E-4e73887c9156)
+* [物件導向設計原則—SOLID](https://ithelp.ithome.com.tw/articles/10191553)
+* [使人瘋狂的 SOLID 原則：目錄](https://medium.com/%E7%A8%8B%E5%BC%8F%E6%84%9B%E5%A5%BD%E8%80%85/%E4%BD%BF%E4%BA%BA%E7%98%8B%E7%8B%82%E7%9A%84-solid-%E5%8E%9F%E5%89%87-%E7%9B%AE%E9%8C%84-b33fdfc983ca)
+* [物件導向程式設計基本原則 - SOLID](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html)
+
 ## 複合優於繼承
 Favor composition over inheritance.
 
