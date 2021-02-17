@@ -226,12 +226,12 @@ class Math
 }
 ```
 
-對於這個程式，我們如果想要用程式來測試它的功能是否正常，我們可以編寫以下程式：
+對於上面這個程式，我們如果想要用程式來測試它的功能是否正常，我們可以編寫以下程式：
 ```cs
 // File name: MathTest.cs
 class MathTest
 {
-    void AddTest()
+    void Add_Input1And2_Return3()
     {
         // Arrange.
         Math math = new Math();
