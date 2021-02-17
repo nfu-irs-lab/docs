@@ -211,7 +211,7 @@ Favor composition over inheritance.
 * 繼承（Inheritance）：夾爪控制器「是一個」Serial Port 裝置。
 * 複合（Composition）：夾爪控制器「有一個」Serial Port 裝置。
 
-這樣看起來好像沒什麼差別，但實際上「繼承」的做法會降低其彈性。例如今天有一個裝置，它需要同時使用 2 個 Serial Port，這時如果使用「繼承」的話就會變成非常麻煩、難以達成；但如果是用「複合」的話，就只要再多宣告一個 Serial Port 就可以來。
+這樣看起來好像沒什麼差別，但實際上「繼承」的做法會降低其彈性。例如今天有一個裝置，它需要同時使用 2 個 Serial Port，這時如果使用「繼承」的話就會變成非常麻煩、難以達成；但如果是用「複合」的話，就只要再多宣告一個 Serial Port 就可以了。
 
 ```cs
 // 使用繼承的方式。難以達成 2 個 Serial Port 的需求。
