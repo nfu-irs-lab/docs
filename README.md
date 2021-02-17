@@ -349,6 +349,10 @@ void main(void)
 * 例如你想將「Test.txt」移動到資料夾「Test」底下時，應該執行指令：`git mv Test.txt Test/`
 * 或是你想將「Test.txt」重新命名成「Doc.txt」時，應該執行指令：`git mv Test.txt Doc.txt`
 
+### 參考資料
+* [為你自己學 Git！](https://gitbook.tw/chapters/introduction/about-this-book.html)
+* [什麼是 Git？為什麼要學習它？](https://gitbook.tw/chapters/introduction/what-is-git.html)
+
 ## Visual Studio 擴充插件
 ## Vim 文字編輯器
 
