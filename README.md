@@ -233,7 +233,7 @@ class MathTest
 {
     void AddTest()
     {
-        // Arrange
+        // Arrange.
         Math math = new Math();
         
         int firstNumber = 1;
@@ -251,7 +251,7 @@ class MathTest
 }
 ```
 
-上面這個「MathTest.cs」就可以視爲一個簡單的單元測試程式。可以注意它使用了「3A（Arrange-Act-Assert，安排-動作-斷言）」的結構，這樣做的好處是很方便瞭解該單元測試程式的運作方式。
+上面這個「MathTest.cs」就可以視爲一個簡單的單元測試程式。可以注意它使用了「3A（Arrange-Act-Assert，安排-行爲-斷言）」的結構，這樣做的好處是很方便瞭解該單元測試程式的運作方式。
 
 ### 參考資料
 * [Unit Testing 簡介](https://ithelp.ithome.com.tw/articles/10102264)
