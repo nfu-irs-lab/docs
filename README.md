@@ -1,4 +1,4 @@
-# 實驗室相關文件及資源
+# 文件
 ## 目錄
 * [程式素養及軟體工程](#程式素養及軟體工程)
   * [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
@@ -13,7 +13,6 @@
 * [版本號](#版本號)
   * [命名規則](#命名規則)
 * [其它資源](#其它資源)
-* [參考資料](#參考資料)
 
 ---
 
@@ -172,7 +171,7 @@ class Car
 {
     EngineInterface MyEngine = null;
     
-    // 使用依賴注入（Dependency Injection，DI）。
+    // 使用依賴注入（Dependency Injection，DI）的方式實現控制反轉（Inversion of Control，IoC）。
     // 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
     Car(EngineInterface engine)
     {
@@ -264,6 +263,3 @@ void main(void)
 # 其它資源
 * [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 * [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
-
-# 參考資料
-1. 
