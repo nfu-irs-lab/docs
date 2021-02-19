@@ -12,10 +12,10 @@
   - [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)
   - [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
   - [Vim 文字編輯器](#Vim-文字編輯器)
-- [C#](/others/csharp.md#目錄)
-- [HIWIN](/others/hiwin.md#目錄)
 - [發行](#發行)
   - [版本號命名規則](#版本號命名規則)
+- [HIWIN](/others/hiwin.md#目錄)
+- [C#](/others/csharp.md#目錄)
 - [其它資源](#其它資源)
 
 > 各章節後的參考資料基本上都是以有幫助的程度、從高至低排序。
