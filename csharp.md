@@ -1,7 +1,7 @@
 # C#
 ## 目錄
 
-- [委派（delegate）與 Lambda 運算子](#委派（delegate）與-Lambda-運算子)
+- [委派（delegate）與 Lambda 運算子](#委派delegate與-Lambda-運算子)
 
 ---
 
