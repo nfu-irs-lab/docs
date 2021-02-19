@@ -9,6 +9,7 @@
   * [設計模式 Design Pattern](#設計模式-Design-Pattern)
 * [工具](#工具)
   * [Git 版本控制](#Git-版本控制)
+  * [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)
   * [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
   * [Vim 文字編輯器](#Vim-文字編輯器)
 * [C#](/others/csharp.md#目錄)
@@ -360,6 +361,10 @@ void main(void)
 ### 參考資料
 * [為你自己學 Git！](https://gitbook.tw/chapters/introduction/about-this-book.html)
 * [什麼是 Git？為什麼要學習它？](https://gitbook.tw/chapters/introduction/what-is-git.html)
+
+## Git-Flow、GitHub-Flow
+### 參考資料
+- [三種版控流程. git flow vs github flow vs gitlab flow | by 沈一二 | Medium](https://medium.com/@lf2lf2111/%E4%B8%89%E7%A8%AE%E7%89%88%E6%8E%A7%E6%B5%81%E7%A8%8B-29c82f5d4469)
 
 ## Visual Studio 擴充插件
 ## Vim 文字編輯器
