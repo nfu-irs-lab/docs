@@ -19,7 +19,7 @@
   - 智慧拼圖：[hiwinrobot-13-puzzle](https://github.com/nfu-irs-lab/hiwinrobot-13-puzzle)
   - 智慧分類：none
 - 12屆 `2019`
-  - 智慧撞球：none
+  - 智慧撞球：[hiwinrobot-12-billiards](https://github.com/nfu-irs-lab/hiwinrobot-12-billiards)
   - 智慧搖飲：[hiwinrobot-12-shake-drink](https://github.com/nfu-irs-lab/hiwinrobot-12-shake-drink)
   - 智慧分類：[hiwinrobot-12-classification](https://github.com/nfu-irs-lab/hiwinrobot-12-classification)
 - 11屆 `2018`
