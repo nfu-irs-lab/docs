@@ -1,21 +1,21 @@
 # 文件
 ## 目錄
-* [程式素養及軟體工程](#程式素養及軟體工程)
-  * [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
-  * [統一塑模語言 UML](#統一塑模語言-UML)
-  * [SOLID 原則](#SOLID-原則)
-  * [複合優於繼承](#複合優於繼承)
-  * [單元測試 Unit Testing](#單元測試-Unit-Testing)
-  * [設計模式 Design Pattern](#設計模式-Design-Pattern)
-* [工具](#工具)
-  * [Git 版本控制](#Git-版本控制)
-  * [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)
-  * [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
-  * [Vim 文字編輯器](#Vim-文字編輯器)
-* [C#](/others/csharp.md#目錄)
-* [發行](#發行)
-  * [版本號命名規則](#版本號命名規則)
-* [其它資源](#其它資源)
+- [程式素養及軟體工程](#程式素養及軟體工程)
+  - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
+  - [統一塑模語言 UML](#統一塑模語言-UML)
+  - [SOLID 原則](#SOLID-原則)
+  - [複合優於繼承](#複合優於繼承)
+  - [單元測試 Unit Testing](#單元測試-Unit-Testing)
+  - [設計模式 Design Pattern](#設計模式-Design-Pattern)
+- [工具](#工具)
+  - [Git 版本控制](#Git-版本控制)
+  - [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)
+  - [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
+  - [Vim 文字編輯器](#Vim-文字編輯器)
+- [C#](/others/csharp.md#目錄)
+- [發行](#發行)
+  - [版本號命名規則](#版本號命名規則)
+- [其它資源](#其它資源)
 
 > 各章節後的參考資料基本上都是以有幫助的程度、從高至低排序。
 
@@ -83,11 +83,11 @@ public class ArmController
 而 Visual Studio 也可以使用快捷鍵 <kbd>F2</kbd> 來快速重新命名變數和方法。
 
 ### 參考資料
-* [C# 編碼慣例 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
-* [命名方針](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/naming-guidelines)
-* [大小寫慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/capitalization-conventions)
-* [一般命名慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/general-naming-conventions)
-* [WiKi 駝峰式大小寫](https://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB)
+- [C# 編碼慣例 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+- [命名方針](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/naming-guidelines)
+- [大小寫慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/capitalization-conventions)
+- [一般命名慣例](https://docs.microsoft.com/zh-tw/dotnet/standard/design-guidelines/general-naming-conventions)
+- [WiKi 駝峰式大小寫](https://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB)
 
 ## 統一塑模語言 UML
 UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的方式來協助軟體工程相關事務。
@@ -96,7 +96,7 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 對於物件導向程式（OOP），UML 最常被使用的是類別圖（Class Diagram）。類別圖是用來表示一段 OOP 中各個類別（Class）的成員（Member），以及它和其它類別的關係。使用類別圖可以很清楚地看出這段程式碼的架構，進而對程式做更進一步的分析。
 
 ### 參考資料
-* [軟體設計及架構---UML 入門](https://ithelp.ithome.com.tw/articles/10223499)
+- [軟體設計及架構---UML 入門](https://ithelp.ithome.com.tw/articles/10223499)
 
 ## SOLID 原則
 SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些原則的程式碼會更容易維護、擴充與修正。
@@ -111,14 +111,14 @@ SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些�
 |D|依賴反轉 DIP|高層模組不應該依賴於低層模組，兩者皆應該依賴於抽象介面。|
 
 個人認爲這 5 項原則的重要程度爲：
-* 非常重要
-  * S-單一職責
-  * D-依賴反轉
-* 重要
-  * O-開放封閉
-  * I-介面隔離
-* 一般
-  * L-里氏替換
+- 非常重要
+  - S-單一職責
+  - D-依賴反轉
+- 重要
+  - O-開放封閉
+  - I-介面隔離
+- 一般
+  - L-里氏替換
 
 如果程式不遵守「單一職責」原則的話，會很容易出現無法對此程式進行修改、擴充的情況，會缺乏很多的靈活度。而且這樣的程式往往也會非常的冗長、不易閱讀；不遵守「依賴反轉」原則的程式會在程式進行功能增減、API、SDK或硬體變更時容易出現問題，而且常常會是一連串的問題，因爲這樣的程式耦合性太高了，也會造成難以甚至是無法進行單元測試的情況。
 
@@ -210,11 +210,11 @@ Engine V8Engine = new Engine();
 Car MySuperCar = new Car(V8Engine);
 ```
 ### 參考資料
-* 無瑕的程式碼（Robert C. Martin, Clean Code）
-* [我該學會SOLID嗎?](https://medium.com/@f40507777/%E6%88%91%E8%A9%B2%E5%AD%B8%E6%9C%83solid%E5%97%8E-4e73887c9156)
-* [物件導向設計原則—SOLID](https://ithelp.ithome.com.tw/articles/10191553)
-* [使人瘋狂的 SOLID 原則：目錄](https://medium.com/%E7%A8%8B%E5%BC%8F%E6%84%9B%E5%A5%BD%E8%80%85/%E4%BD%BF%E4%BA%BA%E7%98%8B%E7%8B%82%E7%9A%84-solid-%E5%8E%9F%E5%89%87-%E7%9B%AE%E9%8C%84-b33fdfc983ca)
-* [物件導向程式設計基本原則 - SOLID](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html)
+- 無瑕的程式碼（Robert C. Martin, Clean Code）
+- [我該學會SOLID嗎?](https://medium.com/@f40507777/%E6%88%91%E8%A9%B2%E5%AD%B8%E6%9C%83solid%E5%97%8E-4e73887c9156)
+- [物件導向設計原則—SOLID](https://ithelp.ithome.com.tw/articles/10191553)
+- [使人瘋狂的 SOLID 原則：目錄](https://medium.com/%E7%A8%8B%E5%BC%8F%E6%84%9B%E5%A5%BD%E8%80%85/%E4%BD%BF%E4%BA%BA%E7%98%8B%E7%8B%82%E7%9A%84-solid-%E5%8E%9F%E5%89%87-%E7%9B%AE%E9%8C%84-b33fdfc983ca)
+- [物件導向程式設計基本原則 - SOLID](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html)
 
 ## 複合優於繼承
 Favor composition over inheritance.
@@ -222,8 +222,8 @@ Favor composition over inheritance.
 ### 概念與理由
 
 假設今天有個夾爪控制器，它需要透過 Serial Port 來進行通訊。這時我們有 2 種選擇：
-* 繼承（Inheritance）：夾爪控制器「是一個」Serial Port 裝置。
-* 複合（Composition）：夾爪控制器「有一個」Serial Port 裝置。
+- 繼承（Inheritance）：夾爪控制器「是一個」Serial Port 裝置。
+- 複合（Composition）：夾爪控制器「有一個」Serial Port 裝置。
 
 這樣看起來好像沒什麼差別，但實際上「繼承」的做法會降低其彈性。例如今天有一個裝置，它需要同時使用 2 個 Serial Port，這時如果使用「繼承」的話就會變成非常麻煩、難以達成；但如果是用「複合」的話，就只要再多宣告一個 Serial Port 就可以了。
 
@@ -242,8 +242,8 @@ class Device
 ```
 
 ### 參考資料
-* [物件導向程式設計：為何說composition優於inheritance？](https://tw.twincl.com/programming/*662v)
-* [Why composition is often better than inheritance](http://joostdevblog.blogspot.com/2014/07/why-composition-is-often-better-than.html)
+- [物件導向程式設計：為何說composition優於inheritance？](https://tw.twincl.com/programming/-662v)
+- [Why composition is often better than inheritance](http://joostdevblog.blogspot.com/2014/07/why-composition-is-often-better-than.html)
 
 ## 單元測試 Unit Testing
 單元測試指的是一種自動化的程式，專門用來對另一個目標程式進行測試，以驗證目標程式的運作與邏輯是否正常。
@@ -290,15 +290,15 @@ class MathTest
 上面這個「MathTest.cs」就可以視爲一個簡單的單元測試程式。可以注意它使用了「3A（Arrange-Act-Assert，安排-行爲-斷言）」的結構，這樣做的好處是很方便瞭解該單元測試程式的運作方式。而該測試方法的命名使用了「目標被測方法_假設條件_預期行爲」的結構。
 
 ### 參考資料
-* [Unit Testing 簡介](https://ithelp.ithome.com.tw/articles/10102264)
-* 單元測試的藝術 第二版（Roy Osherove, The Art of Unit Testing: with wxamples in C#, 2nd Edition）
-* [單元測試的藝術-讀後整理](https://sunxiaoshan.medium.com/%E5%96%AE%E5%85%83%E6%B8%AC%E8%A9%A6%E7%9A%84%E8%97%9D%E8%A1%93-%E8%AE%80%E5%BE%8C%E6%95%B4%E7%90%86-ba2a4d3491c5)
-* [《單元測試的藝術》學習筆記](https://zh-tw.coderbridge.com/series/89e2405766bc423b965adcdd4af244a0)
+- [Unit Testing 簡介](https://ithelp.ithome.com.tw/articles/10102264)
+- 單元測試的藝術 第二版（Roy Osherove, The Art of Unit Testing: with wxamples in C#, 2nd Edition）
+- [單元測試的藝術-讀後整理](https://sunxiaoshan.medium.com/%E5%96%AE%E5%85%83%E6%B8%AC%E8%A9%A6%E7%9A%84%E8%97%9D%E8%A1%93-%E8%AE%80%E5%BE%8C%E6%95%B4%E7%90%86-ba2a4d3491c5)
+- [《單元測試的藝術》學習筆記](https://zh-tw.coderbridge.com/series/89e2405766bc423b965adcdd4af244a0)
 
 
 ## 設計模式 Design Pattern
 ### 參考資料
-* [我為什麼想學設計模式 ( Design Pattern )](https://ithelp.ithome.com.tw/articles/10201706)
+- [我為什麼想學設計模式 ( Design Pattern )](https://ithelp.ithome.com.tw/articles/10201706)
 
 # 工具
 ## Git 版本控制
@@ -334,10 +334,10 @@ void main(void)
 ### 軟體工具
 原始的 Git 只能使用指令（CLI）來操作，但現在也有很多圖形介面的 Git 軟體可以使用。以下列出一些比較常見的軟體：
 
-* [Sourcetree](https://www.sourcetreeapp.com/)
-* [GitKraken](https://www.gitkraken.com/)
-* [GitHub Desktop](https://desktop.github.com/)
-* [TortoiseGit](https://tortoisegit.org/)
+- [Sourcetree](https://www.sourcetreeapp.com/)
+- [GitKraken](https://www.gitkraken.com/)
+- [GitHub Desktop](https://desktop.github.com/)
+- [TortoiseGit](https://tortoisegit.org/)
 
 此外，現在多數的 IDE 也有內建 Git 功能。例如 Visual Studio。
 
@@ -355,12 +355,12 @@ void main(void)
 ### 移動檔案或重新命名
 當一個檔案或資料夾在 Git 的控制下時，如果你想要移動它或對它重新命名，不應該直接透過檔案總管來做這些動作，而是應該使用 [`git mv`](https://git-scm.com/docs/git-mv) 指令來完成，否則 Git 會將移動或重新命名的檔案及資料夾視爲不同的全新檔案，進而遺失以往的所有 Commit 記錄。使用時可以搭配 `ls` 指令來查看目前工作路徑內的檔案及資料夾、使用 `cd` 指令來移動工作路徑。
 
-* 例如你想將「Test.txt」移動到資料夾「Test」底下時，應該執行指令：`git mv Test.txt Test/`
-* 或是你想將「Test.txt」重新命名成「Doc.txt」時，應該執行指令：`git mv Test.txt Doc.txt`
+- 例如你想將「Test.txt」移動到資料夾「Test」底下時，應該執行指令：`git mv Test.txt Test/`
+- 或是你想將「Test.txt」重新命名成「Doc.txt」時，應該執行指令：`git mv Test.txt Doc.txt`
 
 ### 參考資料
-* [為你自己學 Git！](https://gitbook.tw/chapters/introduction/about-this-book.html)
-* [什麼是 Git？為什麼要學習它？](https://gitbook.tw/chapters/introduction/what-is-git.html)
+- [為你自己學 Git！](https://gitbook.tw/chapters/introduction/about-this-book.html)
+- [什麼是 Git？為什麼要學習它？](https://gitbook.tw/chapters/introduction/what-is-git.html)
 
 ## Git-Flow、GitHub-Flow
 ### 參考資料
@@ -373,12 +373,12 @@ void main(void)
 ## 版本號命名規則
 以 `v主版本號.次版本號.修訂版本號` 來進行版本命名，例如:`v1.0.0`。
 
-* 主版本號：有重大更新時遞增。例如介面大幅變更、相關 SDK 版本更新、會有大幅度兼容性問題的更新等。
-* 次版本號：有部分功能或程式更新時遞增。例如新增或刪減部分功能。
-* 修訂版本號：修正小部分功能或程式時遞增。例如修正 Bug。
+- 主版本號：有重大更新時遞增。例如介面大幅變更、相關 SDK 版本更新、會有大幅度兼容性問題的更新等。
+- 次版本號：有部分功能或程式更新時遞增。例如新增或刪減部分功能。
+- 修訂版本號：修正小部分功能或程式時遞增。例如修正 Bug。
 
 主板本號爲 0 代表是測試時期版本。第一個測試時期版本號應該爲 `v0.1.0`，而第一個正式版本號應該爲 `v1.0.0`。
 
 # 其它資源
-* [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
-* [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
+- [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
+- [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
