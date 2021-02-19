@@ -1,6 +1,6 @@
 # C#
 ## 目錄
-
+> [回到主頁](../README.md#文件)
 - [委派（delegate）與 Lambda 運算子](#委派delegate與-Lambda-運算子)
 
 ---
