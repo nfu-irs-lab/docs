@@ -8,7 +8,7 @@
 
 # 相關 Repository 列表
 - 其它
-  - 基本共用程式：[nfu-irs-lab/hiwinrobot](https://github.com/nfu-irs-lab/hiwinrobot)
+  - 基本共用程式：[nfu-irs-lab/hiwinrobot](https://github.com/nfu-irs-lab/hiwinrobot) [![GitHub release](https://img.shields.io/github/release/nfu-irs-lab/hiwinrobot.svg)](https://github.com/nfu-irs-lab/hiwinrobot/releases)
   - 手機控制程式：[nfu-irs-lab/hiwinrobot-controller-app](https://github.com/nfu-irs-lab/hiwinrobot-controller-app)
 - 13屆
   - 智慧拼圖：[nfu-irs-lab/hiwinrobot-13-puzzle](https://github.com/nfu-irs-lab/hiwinrobot-13-puzzle)
