@@ -346,9 +346,9 @@ void main(void)
 
 而且好的 Commit 的 Summary 應該要可以清楚地表達此 Commit 究竟改了些什麼，而不是只有些籠統又不夠明確的訊息。不能清楚表達的 Summary 沒有意義。
 
-| 好的 Summary                                                              | 不好的 Summary |
-|---------------------------------------------------------------------------|----------------|
-| 增加自動記錄 Log 的功能                                                   | 更新程式       |
+| 好的 Summary                                                         | 不好的 Summary |
+|---------------------------------------------------------------------|----------------|
+| 增加自動記錄 Log 的功能                                               | 更新程式       |
 | 增加處理 Log 檔案路徑時的例外處理，來修正目標路徑不存在時會中斷程式的 bug | 修 bug         |
 
 
@@ -364,7 +364,10 @@ void main(void)
 
 ## Git-Flow、GitHub-Flow
 ### 參考資料
+- [Git 版本控制系統 - GitHub Flow 工作流程與實際演練 | Roya's Blog](https://awdr74100.github.io/2020-05-11-git-githubflow/)
 - [三種版控流程. git flow vs github flow vs gitlab flow | by 沈一二 | Medium](https://medium.com/@lf2lf2111/%E4%B8%89%E7%A8%AE%E7%89%88%E6%8E%A7%E6%B5%81%E7%A8%8B-29c82f5d4469)
+- [讓我們來了解 GitHub Flow 吧！. 除了會 Git 你還需要 Work Flow。 | by MrGG（CHANG, TZU-YEN - 張子晏） | Medium](https://medium.com/@trylovetom/%E8%AE%93%E6%88%91%E5%80%91%E4%BE%86%E4%BA%86%E8%A7%A3-github-flow-%E5%90%A7-4144caf1f1bf)
+- [GitHub Flow 及 Git Flow 流程使用時機 | 小惡魔 - 電腦技術 - 工作筆記 - AppleBOY](https://blog.wu-boy.com/2017/12/github-flow-vs-git-flow/)
 
 ## Visual Studio 擴充插件
 ## Vim 文字編輯器
