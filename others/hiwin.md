@@ -28,3 +28,7 @@
   - 機械揮毫：[hiwinrobot-11-brush](https://github.com/nfu-irs-lab/hiwinrobot-11-brush)
   - 智慧澆注：[hiwinrobot-11-pouring](https://github.com/nfu-irs-lab/hiwinrobot-11-pouring)
 - 10屆 `2017`
+  - 智慧堆疊：[hiwinrobot-10-stacked](https://github.com/nfu-irs-lab/hiwinrobot-10-stacked)
+  - 機械揮毫：[hiwinrobot-10-brush](https://github.com/nfu-irs-lab/hiwinrobot-10-brush)
+  - 眼明手快：[hiwinrobot-10-sharp-eyes](https://github.com/nfu-irs-lab/hiwinrobot-10-sharp-eyes)
+  - 智慧裝配：[hiwinrobot-10-assembly](https://github.com/nfu-irs-lab/hiwinrobot-10-assembly)
