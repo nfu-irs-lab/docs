@@ -10,6 +10,7 @@
 - 其它
   - 基本共用程式：[hiwinrobot](https://github.com/nfu-irs-lab/hiwinrobot)
   - 手機控制程式：[hiwinrobot-controller-app](https://github.com/nfu-irs-lab/hiwinrobot-controller-app)
+  - 舊範例程式（不建議）：[hiwinrobot-old-example](https://github.com/nfu-irs-lab/hiwinrobot-old-example/tree/master)
 - 14屆 `2021`
   - 智慧撞球：none
   - 智慧拼圖：none
