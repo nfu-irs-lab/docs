@@ -23,4 +23,8 @@
   - 智慧搖飲：[hiwinrobot-12-shake-drink](https://github.com/nfu-irs-lab/hiwinrobot-12-shake-drink)
   - 智慧分類：[hiwinrobot-12-classification](https://github.com/nfu-irs-lab/hiwinrobot-12-classification)
 - 11屆 `2018`
+  - 智慧堆疊：[hiwinrobot-11-stacked](https://github.com/nfu-irs-lab/hiwinrobot-11-stacked)
+  - 智慧分類：[hiwinrobot-11-classification](https://github.com/nfu-irs-lab/hiwinrobot-11-classification)
+  - 機械揮毫：[hiwinrobot-11-brush](https://github.com/nfu-irs-lab/hiwinrobot-11-brush)
+  - 智慧澆注：[hiwinrobot-11-pouring](https://github.com/nfu-irs-lab/hiwinrobot-11-pouring)
 - 10屆 `2017`
