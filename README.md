@@ -11,7 +11,7 @@
   - [Git 版本控制](#Git-版本控制)
   - [GitHub](#GitHub)
   - [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)
-  - [Visual Studio 擴充插件](#Visual-Studio-擴充插件)
+  - [Visual Studio](#Visual-Studio)
   - [Vim 文字編輯器](#Vim-文字編輯器)
 - [發行](#發行)
   - [版本號命名規則](#版本號命名規則)
@@ -384,7 +384,10 @@ GitHub 上 Repository 的空間容量是有上限的，而且它本來就是針�
 - [讓我們來了解 GitHub Flow 吧！. 除了會 Git 你還需要 Work Flow。 | by MrGG（CHANG, TZU-YEN - 張子晏） | Medium](https://medium.com/@trylovetom/%E8%AE%93%E6%88%91%E5%80%91%E4%BE%86%E4%BA%86%E8%A7%A3-github-flow-%E5%90%A7-4144caf1f1bf)
 - [GitHub Flow 及 Git Flow 流程使用時機 | 小惡魔 - 電腦技術 - 工作筆記 - AppleBOY](https://blog.wu-boy.com/2017/12/github-flow-vs-git-flow/)
 
-## Visual Studio 擴充插件
+## Visual Studio
+### 快捷功能
+- [重構 | Microsoft Docs](https://docs.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/719exd8s(v=vs.90))
+
 ## Vim 文字編輯器
 
 # 發行
