@@ -327,11 +327,9 @@ void main(void)
 
 當你的工作告一段落，例如完成了一個功能或一天結束了，可能已經累積了好幾個 Commit，這時你可以將這些 Commit Push 到 Remote Repository（遠端程式庫，例如 GitHub），這樣你做的這些變更就會隨著你送出的 Commit 一起儲存在 Remote Repository。當 Remote Repository 上有變化時，例如其他人 Push 了一些 Commit，你可以從 Remote Repository 上 Pull 這些變化到你電腦上的 Local Repository。
 
-爲了方便管理，通常在 GitHub 上每個 Repository 會設定 2 個基本的 Branch（分支），分別爲「main (或 master)」及「develop」。「main」代表的是此 Branch 上的所有 Commit 都是功能正常的，只有功能正常的 Commit 能夠 Merge 進「main」；而「develop」代表的是開發用的 Branch，要進行程式碼的修改、更新等，請在「develop」上進行。
-
-正常情況下，GitHub 上的 Repository 應該對「main」進行保護設定，禁止也無法直接將 Commit Push 到「main」上，只能先 Push 到「develop」後，提出 Pull Requests 來讓該 Repository 的管理員查看並審核，當管理員覺得沒問題後才會接受該 Pull Requests，並將其 Merge 進「main」，以確保「main」上只有可正常運作的程式碼存在。
-
 另外你可以爲一個特定的 Commit 加上 Tag（標籤），但通常此功能只會用來當作管理發行版（Release）用。
+
+而 Branch（分支）的用法請見 [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)。
 
 ### 軟體工具
 原始的 Git 只能使用指令（CLI）來操作，但現在也有很多圖形介面的 Git 軟體可以使用。以下列出一些比較常見的軟體：
