@@ -19,7 +19,7 @@
 - [C#](/others/csharp.md#目錄)
 - [其它資源](#其它資源)
 
-> 各章節後的參考資料基本上都是以有幫助的程度、從高至低排序。
+> 各章節後的參考資料基本上都是以筆者認為有幫助的程度、從高至低排序。
 
 ---
 
@@ -376,6 +376,8 @@ GitHub 上 Repository 的空間容量是有上限的，而且它本來就是針�
 對於 Visual Studio 的相關程式，可以透過 Visual Studio 內建的 Git 功能來自動產生設定好的「.gitignore」。
 
 ## Git-Flow、GitHub-Flow
+Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗室來說，筆者個人比較推薦使用 GitHub-Flow。
+
 ### 參考資料
 - [Git 版本控制系統 - GitHub Flow 工作流程與實際演練 | Roya's Blog](https://awdr74100.github.io/2020-05-11-git-githubflow/)
 - [三種版控流程. git flow vs github flow vs gitlab flow | by 沈一二 | Medium](https://medium.com/@lf2lf2111/%E4%B8%89%E7%A8%AE%E7%89%88%E6%8E%A7%E6%B5%81%E7%A8%8B-29c82f5d4469)
