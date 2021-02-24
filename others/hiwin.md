@@ -2,9 +2,40 @@
 ## 目錄
 > [回到主頁](../README.md#目錄)
 
+- [工作流程 Workflow](#工作流程Workflow)
 - [相關 Repository 列表](#相關-Repository-列表)
 
 ---
+# 工作流程 Workflow
+工作流程大致上與 GitHub-Flow 一樣，請先去瞭解其運作，並善用 [nfu-irs-lab/test](https://github.com/nfu-irs-lab/test) 進行練習。
+
+## 一般人
+### 首次使用
+1. 登入網頁版 GitHub。
+2. 進入目標的「組織 Remote repo」，點選「fork」按鈕，將其 fork 進自己的 GitHub 帳號，它會變成「個人 Remote repo」。
+3. 將「個人 Remote repo」Clone 到個人電腦上。此時電腦上的就是「個人 Local repo」。
+4. 將「組織 Remote repo」添加到「個人 Local repo」作為新的 Remote repo。
+5. 確認此時的「個人 Local repo」應該有 2 個 Remote repo，分別為：「個人 Remote repo (origin)」和「組織 Remote repo」。
+6. 完成。
+
+### 一般作業
+1. 確定好本次的作業目標。
+2. 在「個人 Local repo」上從 `develop` Branch 中開啟一個新 Branch，並命名為：`feature/TARGET_NAME`，其中 `TARGET_NAME` 是本次目標要做的事情。
+3. 確認已經 Checkout 到剛剛新開的 `feature/TARGET_NAME` Branch 上。
+4. 在 `feature/TARGET_NAME` Branch 上進行作業、送 Commit。
+5. 當本次目標要做的事都已經完成、Commit 都送好了後，Checkout 到「個人 Local repo」上的 `develop` Branch。
+6. Pull「組織 Remote repo」上的 `develop` Branch 到「個人 Local repo」上的 `develop` Branch。此步驟是為了避免你在 `feature/TARGET_NAME` Branch 上進行作業時，有其它人 Push 到「組織 Remote repo」上，因不同步而造成的衝突。
+7. 將「個人 Local repo」上的 `feature/TARGET_NAME` Branch Merge 進「個人 Local repo」上的 `develop` Branch。
+8. 若上一步驟有衝突而無法進行 Merge，與團隊進行溝通並解決衝突，直到完成 Merge。
+9. 將「個人 Local repo」上的 `develop` Branch Push 到「個人 Remote repo」上的 `develop` Branch。
+10. 發起 Pull request。方向為「*base:* 組織 Remote repo/develop 」←「*compare:* 個人 Remote repo/develop」。
+11. 與團隊進行溝通，等待發起的 Pull request 被管理員接受並 Merge。若有需要，請更新該 Pull request 以符合管理員和團隊的要求。
+12. 若該 Pull request 已經被接受並 Merge，將「組織 Remote repo」上的 `develop` Branch Pull 到「個人 Local repo」上從 `develop` Branch。
+13. 為了保持整潔，可以刪除「個人 Local repo」上的 `feature/TARGET_NAME` Branch，因為它的工作已經結束了。
+14. 本次作業完成。
+
+## 管理員
+
 
 # 相關 Repository 列表
 - 其它
