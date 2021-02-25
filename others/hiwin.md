@@ -11,6 +11,10 @@
 
 在此每個 repo 會有兩個 Branch：`main` 和 `develop`。其中 `develop` Branch 的功能就是 GitHub-Flow 中的 `main` 或 `master` Branch，而我們真正的 `main` Branch 只作為發行用，只由管理員負責管理，一般人不需要也不允許操作組織上的 `main` Branch（除了 Pull）。
 
+
+[![圖解實驗室Git工作流程](../figs/實驗室Git工作流程_1.svg)](../figs/實驗室Git工作流程_1.svg)
+> ▲ 實驗室Git工作流程
+
 ## 一般人
 ### 首次使用
 1. 登入網頁版 GitHub。
@@ -35,8 +39,6 @@
 12. 若該 Pull request 已經被接受並 Merge，將「組織 Remote repo」上的 `develop` Branch Pull 到「個人 Local repo」上從 `develop` Branch。
 13. 為了保持整潔，可以刪除「個人 Local repo」上的 `feature/TARGET_NAME` Branch，因為它的工作已經結束了。
 14. 本次作業完成。
-
-[![圖解一般作業流程](../figs/實驗室Git工作流程_1.svg)](../figs/實驗室Git工作流程_1.svg)
 
 ## 管理員
 
