@@ -36,6 +36,8 @@
 13. 為了保持整潔，可以刪除「個人 Local repo」上的 `feature/TARGET_NAME` Branch，因為它的工作已經結束了。
 14. 本次作業完成。
 
+[![圖解一般作業流程](../figs/實驗室Git工作流程_1.svg)](../figs/實驗室Git工作流程_1.svg)
+
 ## 管理員
 
 
