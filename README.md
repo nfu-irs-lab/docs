@@ -100,6 +100,7 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 ### 參考資料
 - [[Design Pattern] UML基礎 - 類別圖 ~ Code Paradise](http://glj8989332.blogspot.com/2018/02/design-pattern-uml.html?m=1)
 - [Dependency Inversion Implies Interfaces Are Owned by High-level Modules | Mikhail Shilkov](https://mikhail.io/2016/05/dependency-inversion-implies-interfaces-are-owned-by-high-level-modules/)
+- [Inversion of Control Containers and the Dependency Injection pattern](https://www.martinfowler.com/articles/injection.html)
 - [【UML】Class Diagram 類別圖 (下)：Relationships 關係 - SpicyBoyd 部落格](https://spicyboyd.blogspot.com/2018/07/umlclass-diagram-relationships.html)
 - [UML類別圖：Aggregation vs. Composition | 自學程式誌](https://chenglearning.blogspot.com/2015/02/classrelationship.html#more)
 - [軟體設計及架構---UML 入門](https://ithelp.ithome.com.tw/articles/10223499)
