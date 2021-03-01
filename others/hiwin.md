@@ -42,7 +42,6 @@
 
 ## 管理員
 
-
 # 相關 Repository 列表
 - 其它
   - 基本共用程式：[hiwinrobot](https://github.com/nfu-irs-lab/hiwinrobot)
@@ -57,6 +56,10 @@
   - 智慧撞球：[hiwinrobot-13-billiards](https://github.com/nfu-irs-lab/hiwinrobot-13-billiards)
   - 智慧拼圖：[hiwinrobot-13-puzzle](https://github.com/nfu-irs-lab/hiwinrobot-13-puzzle)
   - 智慧分類：[hiwinrobot-13-classification](https://github.com/nfu-irs-lab/hiwinrobot-13-classification)
+
+<details>
+  <summary>更早之前的 Repository</summary>
+
 - 12屆 `2019`
   - 智慧撞球：[hiwinrobot-12-billiards](https://github.com/nfu-irs-lab/hiwinrobot-12-billiards)
   - 智慧搖飲：[hiwinrobot-12-shake-drink](https://github.com/nfu-irs-lab/hiwinrobot-12-shake-drink)
@@ -71,3 +74,5 @@
   - 機械揮毫：[hiwinrobot-10-brush](https://github.com/nfu-irs-lab/hiwinrobot-10-brush)
   - 眼明手快：[hiwinrobot-10-sharp-eyes](https://github.com/nfu-irs-lab/hiwinrobot-10-sharp-eyes)
   - 智慧裝配：[hiwinrobot-10-assembly](https://github.com/nfu-irs-lab/hiwinrobot-10-assembly)
+
+</details>
