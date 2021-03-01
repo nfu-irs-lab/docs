@@ -47,7 +47,7 @@
 - 其它
   - 基本共用程式：[hiwinrobot](https://github.com/nfu-irs-lab/hiwinrobot)
   - 手機控制程式：[hiwinrobot-controller-app](https://github.com/nfu-irs-lab/hiwinrobot-controller-app)
-  - 舊範例程式（不建議）：[hiwinrobot-old-example](https://github.com/nfu-irs-lab/hiwinrobot-old-example/tree/master)
+  - 舊範例程式（不推薦）：[hiwinrobot-old-example](https://github.com/nfu-irs-lab/hiwinrobot-old-example/tree/master)
   - XEG 夾爪範例程式：[hiwin-xeg-gripper-example](https://github.com/nfu-irs-lab/hiwin-xeg-gripper-example)
 - 14屆 `2021`
   - 智慧撞球：none
