@@ -379,7 +379,7 @@ GitHub 上 Repository 的空間容量是有上限的，而且它本來就是針�
 - 非於程式緊緊相關的圖片、影片或 PDF 等類似的大型檔案。
 - 含有個資或敏感資料的內容。
 
-對於 Visual Studio 的相關程式，可以透過 Visual Studio 內建的 Git 功能來自動產生設定好的「.gitignore」，詳細請參考[ github/gitignore ](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore)。
+對於 Visual Studio 的相關程式，可以透過 Visual Studio 內建的 Git 功能來自動產生設定好的「.gitignore」，或是使用 GitHub 官方提供的樣板[ github/gitignore ](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore)。
 
 ## Git-Flow、GitHub-Flow
 Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗室來說，筆者個人比較推薦使用 GitHub-Flow。
