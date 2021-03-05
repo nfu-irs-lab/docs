@@ -20,7 +20,7 @@
 |步驟|說明|圖片|
 |:-:|:-|:-:|
 |1|使用 RJ-45 網路線連接電腦主機與控制箱。控制箱有兩個 RJ-45 網路孔，應先嘗試 LAN 2（上面的），並確認燈號。|![](https://1.bp.blogspot.com/-elOivsHWe7U/YEIEqj3pG5I/AAAAAAAAAGA/XYY_fmE9pxceQQGnPPXTdHQSAKTGh4EQwCPcBGAsYHg/s300/%25E6%258E%25A7%25E5%2588%25B6%25E7%25AE%25B1-RJ45%25E7%25B6%25B2%25E8%25B7%25AF%25E5%25AD%2594_result.jpg)|
-|2|在教導器上依序點擊 `主選單（左上角手臂圖樣） > 顯示資訊 > 用戶組`。|![](https://1.bp.blogspot.com/-gsKab2T_R_0/YEIEqmRnNJI/AAAAAAAAAGA/1VewMuujYLkJUrjUdyBD3oPSCK78h2ZXwCPcBGAsYHg/s799/HRSS-%25E5%2588%2587%25E6%258F%259B%25E7%2594%25A8%25E6%2588%25B61_result.jpg)|
+|2|在教導器上依序點擊 `主選單（左上角手臂圖樣 > 顯示資訊 > 用戶組`。|![](https://1.bp.blogspot.com/-gsKab2T_R_0/YEIEqmRnNJI/AAAAAAAAAGA/1VewMuujYLkJUrjUdyBD3oPSCK78h2ZXwCPcBGAsYHg/s799/HRSS-%25E5%2588%2587%25E6%258F%259B%25E7%2594%25A8%25E6%2588%25B61_result.jpg)|
 |3|選擇「Expert」按下「登入」並輸入密碼 `hiwin`。完成後會顯示用戶組爲「Expert」。|![](https://1.bp.blogspot.com/-zY3syaWgO4c/YEIEqrn8mvI/AAAAAAAAAGA/iHqbfsOJXSEe_NtiE96ECHaO91BKg4S6wCPcBGAsYHg/s800/HRSS-%25E5%2588%2587%25E6%258F%259B%25E7%2594%25A8%25E6%2588%25B62_result.jpg)|
 |4|在教導器上依序點擊 `主選單 > 啓動設定 > 網路連接設定`。|![](https://1.bp.blogspot.com/-YBuEk6RLods/YEIEqmJC1vI/AAAAAAAAAGA/Zk-0wLnfp98keZJLGmvICVXUOGl2MLR7wCPcBGAsYHg/s799/HRSS-%25E7%25B6%25B2%25E8%25B7%25AF%25E9%2580%25A3%25E6%258E%25A5%25E8%25A8%25AD%25E5%25AE%259A1_result.jpg)|
 |5|下方會顯示此手臂 IP 位置，通常設爲 `192.168.0.3`。|![](https://1.bp.blogspot.com/-3BiMKlNZjEY/YEIEqtC7fVI/AAAAAAAAAGA/nuCvz2ESQBk0PjcVpKtWBb9roK2ZpbW0ACPcBGAsYHg/s800/HRSS-%25E7%25B6%25B2%25E8%25B7%25AF%25E9%2580%25A3%25E6%258E%25A5%25E8%25A8%25AD%25E5%25AE%259A2_result.jpg)|
