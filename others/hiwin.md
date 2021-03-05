@@ -3,7 +3,7 @@
 > [回到主頁](../README.md#目錄)
 
 - [上銀機械手臂使用指南](#上銀機械手臂使用指南)
-  - [各部件名稱](#各部件名稱)
+  - [各裝置名稱](#各裝置名稱)
   - [連線](#連線)
   - [以教導器控制](#以教導器控制)
 - [工作流程 Workflow](#工作流程-workflow)
@@ -12,7 +12,7 @@
 ---
 
 # 上銀機械手臂使用指南
-## 各部件名稱
+## 各裝置名稱
 |名稱|型號|圖片|
 |-|-|-|
 |關節式機器手臂（以下稱「手臂」）|RT605-710-GB|![](https://1.bp.blogspot.com/-1vYJ_BSNFzQ/YEIEqnIb9aI/AAAAAAAAAGA/-NLk58wh78cxh2eY7B2UNUohCVvJ6sTcACPcBGAsYHg/s150/rt605_710_gb_b.jpg)|
