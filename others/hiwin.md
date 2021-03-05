@@ -1,8 +1,11 @@
 # HIWIN
 ## 目錄
 > [回到主頁](../README.md#目錄)
-> 
+
 - [上銀機械手臂使用指南](#上銀機械手臂使用指南)
+  - [各部件名稱](#各部件名稱)
+  - [連線](#連線)
+  - [以教導器控制](#以教導器控制)
 - [工作流程 Workflow](#工作流程-workflow)
 - [相關 Repository 列表](#相關-Repository-列表)
 
@@ -38,6 +41,8 @@
 - HRSDK 都應有隨附上銀所提供的 SampleCode 範例程式，可作爲手臂測試用。
 
 > 編輯此章節時的 HRSS 版本 `3.3.11.7492`，HRSDK 版本 `2.2.9_7492`。
+
+## 以教導器控制
 
 # 工作流程 Workflow
 工作流程大致上與 GitHub-Flow 一樣，請先去瞭解其運作，並善用 [nfu-irs-lab/test](https://github.com/nfu-irs-lab/test) 進行練習。
