@@ -19,17 +19,17 @@
 ## 連線
 |步驟|說明|圖片|
 |:-:|:-|:-:|
-|1|使用 RJ-45 網路線連接電腦主機與控制箱。控制箱有兩個 RJ-45 網路孔，應先嘗試 LAN 2（上面的），並確認燈號。|![]()|
-|2|在教導器上依序點擊 `主選單（左上角手臂圖樣） > 顯示資訊 > 用戶組`。|![]()|
-|3|選擇「Expert」按下「登入」並輸入密碼 `hiwin`。完成後會顯示用戶組爲「Expert」。|![]()|
-|4|在教導器上依序點擊 `主選單 > 啓動設定 > 網路連接設定`。|![]()|
-|5|下方會顯示此手臂 IP 位置，通常設爲 `192.168.0.3`。|![]()|
-|6|將教導器右上角的鑰匙轉至「Auto.」模式。|![]()|
-|7|在教導器上點選「EXT」。|![]()|
-|8|確認教導器螢幕右上角顯示爲「EXT」模式。|![]()|
-|9|在 Windows 中打開 `控制台 > 網路和網際網路 > 網路連線`。右鍵點擊 `目標網路介面卡 > 內容 > 網際網路通訊協定第4版(TCP/IPv4) > 內容`。<br/>手動設定電腦 IP 位址爲 `192.168.0.100`、子網路遮罩爲 `255.255.255.0`，其餘可空白不填。<br/>若有問題，可以嘗試將除手臂用的網路介面卡外的其他所有網路介面卡（如 Wi-Fi）都禁用。|![]()|
-|10|在 Windows 打開命令提示字元，使用 `ping` 指令檢測。使用方式爲 `ping 手臂IP`，例如 `ping 192.168.0.3`。<br/>若成功（可以接受到手臂端回傳之封包）則表示網路相關設定應沒問題，可以使用程式與手臂進行連線。|![]()|
-|11|若網路相關設定有誤或手臂 IP 不對，會顯示「目的地主機無法連線」。|![]()|
+|1|使用 RJ-45 網路線連接電腦主機與控制箱。控制箱有兩個 RJ-45 網路孔，應先嘗試 LAN 2（上面的），並確認燈號。|![](https://1.bp.blogspot.com/-elOivsHWe7U/YEIEqj3pG5I/AAAAAAAAAGA/XYY_fmE9pxceQQGnPPXTdHQSAKTGh4EQwCPcBGAsYHg/s300/%25E6%258E%25A7%25E5%2588%25B6%25E7%25AE%25B1-RJ45%25E7%25B6%25B2%25E8%25B7%25AF%25E5%25AD%2594_result.jpg)|
+|2|在教導器上依序點擊 `主選單（左上角手臂圖樣） > 顯示資訊 > 用戶組`。|![](https://1.bp.blogspot.com/-gsKab2T_R_0/YEIEqmRnNJI/AAAAAAAAAGA/1VewMuujYLkJUrjUdyBD3oPSCK78h2ZXwCPcBGAsYHg/s799/HRSS-%25E5%2588%2587%25E6%258F%259B%25E7%2594%25A8%25E6%2588%25B61_result.jpg)|
+|3|選擇「Expert」按下「登入」並輸入密碼 `hiwin`。完成後會顯示用戶組爲「Expert」。|![](https://1.bp.blogspot.com/-zY3syaWgO4c/YEIEqrn8mvI/AAAAAAAAAGA/iHqbfsOJXSEe_NtiE96ECHaO91BKg4S6wCPcBGAsYHg/s800/HRSS-%25E5%2588%2587%25E6%258F%259B%25E7%2594%25A8%25E6%2588%25B62_result.jpg)|
+|4|在教導器上依序點擊 `主選單 > 啓動設定 > 網路連接設定`。|![](https://1.bp.blogspot.com/-YBuEk6RLods/YEIEqmJC1vI/AAAAAAAAAGA/Zk-0wLnfp98keZJLGmvICVXUOGl2MLR7wCPcBGAsYHg/s799/HRSS-%25E7%25B6%25B2%25E8%25B7%25AF%25E9%2580%25A3%25E6%258E%25A5%25E8%25A8%25AD%25E5%25AE%259A1_result.jpg)|
+|5|下方會顯示此手臂 IP 位置，通常設爲 `192.168.0.3`。|![](https://1.bp.blogspot.com/-3BiMKlNZjEY/YEIEqtC7fVI/AAAAAAAAAGA/nuCvz2ESQBk0PjcVpKtWBb9roK2ZpbW0ACPcBGAsYHg/s800/HRSS-%25E7%25B6%25B2%25E8%25B7%25AF%25E9%2580%25A3%25E6%258E%25A5%25E8%25A8%25AD%25E5%25AE%259A2_result.jpg)|
+|6|將教導器右上角的鑰匙轉至「Auto.」模式。|![](https://1.bp.blogspot.com/-bH0bdIBfxRs/YEIEqgmJB2I/AAAAAAAAAGA/iLpl7L6T55kyhcH6PTuuRJR-cmfpzG9mgCPcBGAsYHg/s800/HRSS-Auto%25E6%25A8%25A1%25E5%25BC%258F_result.jpg)|
+|7|在教導器上點選「EXT」。|![](https://1.bp.blogspot.com/-vBwwi7KOB4A/YEIEqpUtigI/AAAAAAAAAGA/Ik0yLbkIyig0hu907Qaxbs3RF8u8ex87gCPcBGAsYHg/s380/HRSS-%25E9%2581%25B8%25E6%2593%2587EXT.JPG)|
+|8|確認教導器螢幕右上角顯示爲「EXT」模式。|![](https://1.bp.blogspot.com/-k6krFqtpVxg/YEIEqtaV-qI/AAAAAAAAAGA/C55h8eWygh48eDco6HQx0_G6wrStI887gCPcBGAsYHg/s800/HRSS-%25E7%25A2%25BA%25E8%25AA%258D%25E7%2588%25B2EXT_result.jpg)|
+|9|在 Windows 中打開 `控制台 > 網路和網際網路 > 網路連線`。右鍵點擊 `目標網路介面卡 > 內容 > 網際網路通訊協定第4版(TCP/IPv4) > 內容`。<br/>手動設定電腦 IP 位址爲 `192.168.0.100`、子網路遮罩爲 `255.255.255.0`，其餘可空白不填。<br/>若有問題，可以嘗試將除手臂用的網路介面卡外的其他所有網路介面卡（如 Wi-Fi）都禁用。|![](https://1.bp.blogspot.com/--S6kK2kQPOc/YEIEqgy3kCI/AAAAAAAAAGA/Aw-Jaeq9I6wA8qOs3_1aUijDZ2JrdzKowCPcBGAsYHg/s826/Win-%25E7%25B6%25B2%25E8%25B7%25AF%25E5%258D%25A1%25E8%25A8%25AD%25E5%25AE%259A_result.jpg)|
+|10|在 Windows 打開命令提示字元，使用 `ping` 指令檢測。使用方式爲 `ping 手臂IP`，例如 `ping 192.168.0.3`。<br/>若成功（可以接受到手臂端回傳之封包）則表示網路相關設定應沒問題，可以使用程式與手臂進行連線。|![](https://1.bp.blogspot.com/-I6ogoTnAIDE/YEIEqqFA5_I/AAAAAAAAAGA/eJVm5y73h-Y_r8IBPpYNXKAq5uVHbb7XwCPcBGAsYHg/s677/CMD-ping_s.JPG)|
+|11|若網路相關設定有誤或手臂 IP 不對，會顯示「目的地主機無法連線」。|![](https://1.bp.blogspot.com/-4I4G3bfN4aA/YEIEqmxIlnI/AAAAAAAAAGA/Uu54psC0xKI_DpxE7AoIBy6nmnzfmhHTwCPcBGAsYHg/s677/CMD-ping_f.JPG)|
 
 > 編輯此章節時的 HRSS 版本 `3.3.11.7492`，HRSDK 版本 `2.2.9_7492`。
 
