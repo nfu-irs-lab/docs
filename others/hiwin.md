@@ -28,16 +28,16 @@
 |7|在教導器上點選「EXT」。|![](https://1.bp.blogspot.com/-vBwwi7KOB4A/YEIEqpUtigI/AAAAAAAAAGA/Ik0yLbkIyig0hu907Qaxbs3RF8u8ex87gCPcBGAsYHg/s180/HRSS-%25E9%2581%25B8%25E6%2593%2587EXT.JPG)|
 |8|確認教導器螢幕右上角顯示爲「EXT」模式。|![](https://1.bp.blogspot.com/-k6krFqtpVxg/YEIEqtaV-qI/AAAAAAAAAGA/C55h8eWygh48eDco6HQx0_G6wrStI887gCPcBGAsYHg/s800/HRSS-%25E7%25A2%25BA%25E8%25AA%258D%25E7%2588%25B2EXT_result.jpg)|
 |9|在 Windows 中打開 `控制台 > 網路和網際網路 > 網路連線`。右鍵點擊 `目標網路介面卡 > 內容 > 網際網路通訊協定第4版(TCP/IPv4) > 內容`。<br/>手動設定電腦 IP 位址爲 `192.168.0.100`、子網路遮罩爲 `255.255.255.0`，其餘可空白不填。<br/>若有問題，可以嘗試將除手臂用的網路介面卡外的其他所有網路介面卡（如 Wi-Fi）都禁用。|![](https://1.bp.blogspot.com/--S6kK2kQPOc/YEIEqgy3kCI/AAAAAAAAAGA/Aw-Jaeq9I6wA8qOs3_1aUijDZ2JrdzKowCPcBGAsYHg/s826/Win-%25E7%25B6%25B2%25E8%25B7%25AF%25E5%258D%25A1%25E8%25A8%25AD%25E5%25AE%259A_result.jpg)|
-|10|在 Windows 打開命令提示字元，使用 `ping` 指令檢測。使用方式爲 `ping 手臂IP`，例如 `ping 192.168.0.3`。<br/>若成功（可以接受到手臂端回傳之封包）則表示網路相關設定應沒問題，可以使用程式與手臂進行連線。|![](https://1.bp.blogspot.com/-I6ogoTnAIDE/YEIEqqFA5_I/AAAAAAAAAGA/eJVm5y73h-Y_r8IBPpYNXKAq5uVHbb7XwCPcBGAsYHg/s677/CMD-ping_s.JPG)|
+|10|在 Windows 打開命令提示字元，使用 `ping` 指令檢測。使用方式爲 `ping 手臂IP`，例如 `ping 192.168.0.3`。<br/>若成功（可以接收到手臂端回傳之封包）則表示網路相關設定應沒問題，可以使用程式與手臂進行連線。|![](https://1.bp.blogspot.com/-I6ogoTnAIDE/YEIEqqFA5_I/AAAAAAAAAGA/eJVm5y73h-Y_r8IBPpYNXKAq5uVHbb7XwCPcBGAsYHg/s677/CMD-ping_s.JPG)|
 |11|若網路相關設定有誤或手臂 IP 不對，會顯示「目的地主機無法連線」。|![](https://1.bp.blogspot.com/-4I4G3bfN4aA/YEIEqmxIlnI/AAAAAAAAAGA/Uu54psC0xKI_DpxE7AoIBy6nmnzfmhHTwCPcBGAsYHg/s677/CMD-ping_f.JPG)|
 
-> 編輯此章節時的 HRSS 版本 `3.3.11.7492`，HRSDK 版本 `2.2.9_7492`。
-
-## 常見問題
+常見問題：
 - HRSS 版本與 HRSDK 版本有對應關係，如有更新任一方，應向上銀確定，否則可能會造成手臂無法連線。
 - 除非有需求，不然保險起見，應將除了手臂連線用的網路介面卡外的所有網路介面卡都禁用。
 - IP 位置 `127.0.0.1` 代表的是該主機自己本身，是測試的時候才會用到的，實際使用上不應出現或使用此 IP。
 - HRSDK 都應有隨附上銀所提供的 SampleCode 範例程式，可作爲手臂測試用。
+
+> 編輯此章節時的 HRSS 版本 `3.3.11.7492`，HRSDK 版本 `2.2.9_7492`。
 
 # 工作流程 Workflow
 工作流程大致上與 GitHub-Flow 一樣，請先去瞭解其運作，並善用 [nfu-irs-lab/test](https://github.com/nfu-irs-lab/test) 進行練習。
