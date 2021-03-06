@@ -97,6 +97,34 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 ### 類別圖
 對於物件導向程式（OOP），UML 最常被使用的是類別圖（Class Diagram）。類別圖是用來表示一段 OOP 中各個類別（Class）的成員（Member），以及它和其它類別的關係。使用類別圖可以很清楚地看出這段程式碼的架構，進而對程式做更進一步的分析。
 
+#### 關係
+- 依賴（Dependency, uses a）
+  - 開口箭頭虛線。<----
+- 關聯（Association, has a）
+  - 開口箭頭實線。<——
+- 聚合（Aggregation, owns a）
+  - 空心菱形實線，菱形在母體（較大的）端。◇——
+  - 弱擁有。
+  - 生命週期無關。
+  - 互無部署關係的多個事物組成的***集合***。
+  - 舉例：
+    - 機場中的飛機。
+    - 飛機可以飛離機場，機場也可以都沒飛機。機場被拆除的話飛機不用也跟著拆除，反之依然。
+    - `機場` ◇—— `飛機`。
+- 組合（Composition, is a part of）
+  - 實心菱形實線，菱形在母體（較大的）端。◆——
+  - 強擁有。
+  - 生命週期有關。
+  - 某個事物是另一事物的***一部分***。
+  - 舉例：
+    - 機場中的跑道。
+    - 要拆除機場的話跑道也會一起拆除。
+    - `機場` ◆—— `跑道`。
+- 繼承（Inheritance, is a）
+  - 空心三角形箭頭實線。◁——
+- 實作（Implementation/Realization, is like a）
+  - 空心三角形箭頭虛線。◁----
+
 ### 參考資料
 - [[Design Pattern] UML基礎 - 類別圖 ~ Code Paradise](http://glj8989332.blogspot.com/2018/02/design-pattern-uml.html?m=1)
 - [Dependency Inversion Implies Interfaces Are Owned by High-level Modules | Mikhail Shilkov](https://mikhail.io/2016/05/dependency-inversion-implies-interfaces-are-owned-by-high-level-modules/)
