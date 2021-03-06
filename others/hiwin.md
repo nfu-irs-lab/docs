@@ -4,6 +4,7 @@
 
 - [上銀機械手臂使用指南](#上銀機械手臂使用指南)
   - [各裝置名稱](#各裝置名稱)
+  - [開機與關機](#開機與關機)
   - [連線](#連線)
   - [以教導器控制](#以教導器控制)
 - [工作流程 Workflow](#工作流程-workflow)
@@ -18,6 +19,8 @@
 |關節式機器手臂（以下稱「手臂」）|RT605-710-GB|![](https://1.bp.blogspot.com/-1vYJ_BSNFzQ/YEIEqnIb9aI/AAAAAAAAAGA/-NLk58wh78cxh2eY7B2UNUohCVvJ6sTcACPcBGAsYHg/s150/rt605_710_gb_b.jpg)|
 |機器手臂控制器（以下稱「控制箱」）|RTC605-710-GB|![](https://1.bp.blogspot.com/-HIKC_lc6gnI/YEIEqmm7bDI/AAAAAAAAAGA/PapbPf9fExUv0VzsgyaqdmYYGZbJH_1-wCPcBGAsYHg/s150/RCT605-710-GB.jpg)|
 |教導器|TP02|![](https://1.bp.blogspot.com/-z7rLn2X9myo/YEIEqiwpunI/AAAAAAAAAGA/9u8uI128UqY6lS7uWiopcmPQdKu9NojkgCPcBGAsYHg/s150/HIWIN-TP02.png)|
+
+## 開機與關機
 
 ## 連線
 |步驟|說明|圖片|
