@@ -121,9 +121,9 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
     - 要拆除機場的話跑道也會一起拆除。
     - `機場` ◆—— `跑道`。
 - 繼承（Inheritance, is a）
-  - 空心三角形箭頭實線。◁——
+  - 空心三角形實線。◁——
 - 實作（Implementation/Realization, is like a）
-  - 空心三角形箭頭虛線。◁----
+  - 空心三角形虛線。◁----
 
 ### 參考資料
 - [[Design Pattern] UML基礎 - 類別圖 ~ Code Paradise](http://glj8989332.blogspot.com/2018/02/design-pattern-uml.html?m=1)
