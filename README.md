@@ -98,11 +98,14 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 對於物件導向程式（OOP），UML 最常被使用的是類別圖（Class Diagram）。類別圖是用來表示一段 OOP 中各個類別（Class）的成員（Member），以及它和其它類別的關係。使用類別圖可以很清楚地看出這段程式碼的架構，進而對程式做更進一步的分析。
 
 #### 關係
-- 依賴（Dependency, uses a）
+- 依賴（Dependency）
+  - 關鍵字：uses a
   - 開口箭頭虛線。<----
-- 關聯（Association, has a）
+- 關聯（Association）
+  - 關鍵字：has a
   - 開口箭頭實線。<——
-- 聚合（Aggregation, owns a）
+- 聚合（Aggregation）
+  - 關鍵字：owns a
   - 空心菱形實線，菱形在母體（較大的）端。◇——
   - 概念：
     - 弱擁有。
@@ -112,7 +115,8 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
     - 機場中的飛機。
     - 飛機可以飛離機場，機場也可以都沒飛機。機場被拆除的話飛機不用也跟著拆除，反之依然。
     - `機場` ◇—— `飛機`。
-- 組合（Composition, is a part of）
+- 組合（Composition）
+  - 關鍵字：is a part of
   - 實心菱形實線，菱形在母體（較大的）端。◆——
   - 概念：
     - 強擁有。
@@ -122,9 +126,11 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
     - 機場中的跑道。
     - 要拆除機場的話跑道也會一起拆除。
     - `機場` ◆—— `跑道`。
-- 繼承（Inheritance, is a）
+- 繼承（Inheritance）
+  - 關鍵字：is a
   - 空心三角形實線。◁——
-- 實作（Implementation/Realization, is like a）
+- 實作（Implementation / Realization）
+  - 關鍵字：is like a
   - 空心三角形虛線。◁----
 
 ### 參考資料
