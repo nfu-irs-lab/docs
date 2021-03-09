@@ -442,6 +442,9 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 
 主板本號爲 0 代表是測試時期版本。第一個測試時期版本號應該爲 `v0.1.0`，而第一個正式版本號應該爲 `v1.0.0`。
 
+## 參考資料
+- [語意化版本 2.0.0 | Semantic Versioning](https://semver.org/lang/zh-TW/)
+
 # 其它資源
 - [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
