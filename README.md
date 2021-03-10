@@ -13,6 +13,7 @@
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
   - [設計模式 Design Pattern](#設計模式-Design-Pattern)
+  - [無暇的程式碼 Clean Code](#無暇的程式碼-Clean-Code)
 - [工具](#工具)
   - [Git 版本控制](#Git-版本控制)
   - [GitHub](#GitHub)
@@ -348,6 +349,16 @@ class MathTest
 ## 設計模式 Design Pattern
 ### 參考資料
 - [我為什麼想學設計模式 ( Design Pattern )](https://ithelp.ithome.com.tw/articles/10201706)
+
+## 無暇的程式碼 Clean Code
+> 你因為兩個原因來讀這本書：  
+> 首先，你是位程式設計師。再者，你想成為一位更好的程式設計師。  
+> 非常好，我們需要更好的程式設計師。  
+> 
+> —— Robert C. Martin《無暇的程式碼》
+
+### 參考資料
+- [Clean Code 無瑕的程式碼 | 閱讀筆記. Uncle… | by Airwaves | 手寫筆記 | Medium](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/clean-code-index-51e209cc47db)
 
 # 工具
 ## Git 版本控制
