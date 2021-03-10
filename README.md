@@ -19,7 +19,6 @@
   - [GitHub](#GitHub)
   - [Git-Flow、GitHub-Flow](#Git-FlowGitHub-Flow)
   - [Visual Studio](#Visual-Studio)
-  - [Vim 文字編輯器](#Vim-文字編輯器)
 - [發行](#發行)
   - [版本號命名規則](#版本號命名規則)
 - [HIWIN](/others/hiwin.md#目錄)
@@ -446,8 +445,6 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 ## Visual Studio
 ### 快捷功能
 - [重構 | Microsoft Docs](https://docs.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/719exd8s(v=vs.90))
-
-## Vim 文字編輯器
 
 # 發行
 ## 版本號命名規則
