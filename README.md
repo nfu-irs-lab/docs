@@ -163,7 +163,7 @@ Xp 簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這�
 ### 內容
 1. 通過所有的測試。Passes all the tests.
 2. 表達本意。Expresses every idea that we need to express.
-3. 不重複。Says everything OnceAndOnlyOnce.
+3. 不重複。Says everything *Once And Only Once*.
 4. 不多餘，最小化類別和方法的數量。Has no superfluous parts. 
 
 ### 參考資料
