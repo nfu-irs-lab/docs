@@ -11,7 +11,7 @@
   - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
   - [統一塑模語言 UML](#統一塑模語言-UML)
   - [設計模式 Design Pattern](#設計模式-Design-Pattern)
-  - [SOLID 原則](/others/solid_principles.md#目錄)
+  - [SOLID 原則](/others/solid_principles.md#solid-原則)
   - [Xp 簡單守則](#Xp-簡單守則)
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
@@ -23,8 +23,8 @@
   - [Visual Studio](#Visual-Studio)
 - [發行](#發行)
   - [版本號命名規則](#版本號命名規則)
-- [HIWIN](/others/hiwin.md#目錄)
-- [C#](/others/csharp.md#目錄)
+- [HIWIN](/others/hiwin.md#HIWIN)
+- [C#](/others/csharp.md#C)
 - [其它資源](#其它資源)
 
 > 各章節後的參考資料基本上都是以筆者認為有幫助的程度、從高至低排序。
@@ -158,7 +158,7 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 
 
 ## SOLID 原則
-詳細請見頁面：[SOLID 原則](/others/solid_principles.md#目錄)
+詳細請見頁面：[SOLID 原則](/others/solid_principles.md#solid-原則)
 
 ## Xp 簡單守則
 Xp 簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
@@ -367,10 +367,10 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 - [語意化版本 2.0.0 | Semantic Versioning](https://semver.org/lang/zh-TW/)
 
 # HIWIN
-詳細請見頁面：[HIWIN](/others/hiwin.md#目錄)
+詳細請見頁面：[HIWIN](/others/hiwin.md#HIWIN)
 
 # C#
-詳細請見頁面：[C#](/others/csharp.md#目錄)
+詳細請見頁面：[C#](/others/csharp.md#C)
 
 # 其它資源
 - [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
