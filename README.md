@@ -6,6 +6,7 @@
 —— Robert C. Martin《無瑕的程式碼》*p.223*
 
 ## 目錄
+- [成員守則](/others/membership_rules.md#成員守則)
 - [程式素養及軟體工程](#程式素養及軟體工程)
   - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
   - [統一塑模語言 UML](#統一塑模語言-UML)
@@ -29,6 +30,8 @@
 > 各章節後的參考資料基本上都是以筆者認為有幫助的程度、從高至低排序。
 
 ---
+# 成員守則
+詳細請見頁面：[成員守則](/others/membership_rules.md#成員守則)
 
 # 程式素養及軟體工程
 ## 程式碼風格 Coding Style
