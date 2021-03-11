@@ -345,6 +345,12 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 ## 參考資料
 - [語意化版本 2.0.0 | Semantic Versioning](https://semver.org/lang/zh-TW/)
 
+# HIWIN
+詳細請見頁面：[HIWIN](/others/hiwin.md#目錄)
+
+# C#
+詳細請見頁面：[C#](/others/csharp.md#目錄)
+
 # 其它資源
 - [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
