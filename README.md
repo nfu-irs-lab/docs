@@ -10,7 +10,7 @@
   - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
   - [統一塑模語言 UML](#統一塑模語言-UML)
   - [設計模式 Design Pattern](#設計模式-Design-Pattern)
-  - [SOLID 原則](#SOLID-原則)
+  - [SOLID 原則](https://github.com/nfu-irs-lab/docs/blob/main/others/solid_principles.md)
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
   - [無瑕的程式碼 Clean Code](#無瑕的程式碼-Clean-Code)
@@ -154,7 +154,7 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 
 
 ## SOLID 原則
-
+詳細請見頁面：[SOLID 原則](https://github.com/nfu-irs-lab/docs/blob/main/others/solid_principles.md)
 
 ## 複合優於繼承
 Favor composition over inheritance.
