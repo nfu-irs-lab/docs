@@ -11,6 +11,7 @@
   - [統一塑模語言 UML](#統一塑模語言-UML)
   - [設計模式 Design Pattern](#設計模式-Design-Pattern)
   - [SOLID 原則](/others/solid_principles.md#目錄)
+  - [Xp 簡單守則](#Xp-簡單守則)
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
   - [無瑕的程式碼 Clean Code](#無瑕的程式碼-Clean-Code)
@@ -155,6 +156,20 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 
 ## SOLID 原則
 詳細請見頁面：[SOLID 原則](/others/solid_principles.md#目錄)
+
+## Xp 簡單守則
+Xp 簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
+
+### 內容
+1. 通過所有的測試。Passes all the tests.
+2. 表達本意。Expresses every idea that we need to express.
+3. 不重複。Says everything OnceAndOnlyOnce.
+4. 不多餘，最小化類別和方法的數量。Has no superfluous parts. 
+
+### 參考資料
+- [Xp Simplicity Rules](http://wiki.c2.com/?XpSimplicityRules)
+- [Agile in a Flash: Simple Design](http://agileinaflash.blogspot.com/2009/02/simple-design.html)
+- 無瑕的程式碼（Robert C. Martin, Clean Code）
 
 ## 複合優於繼承
 Favor composition over inheritance.
