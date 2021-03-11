@@ -166,6 +166,8 @@ Xp 簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這�
 3. 不重複。Says everything *Once And Only Once*.
 4. 不多餘，最小化類別和方法的數量。Has no superfluous parts. 
 
+> 以重要性排序。有些版本中守則 2 與 3 順序互換。
+
 ### 參考資料
 - [Kent Beck 的四個簡單程式設計原則](https://ihower.tw/blog/archives/7181)
 - [Xp Simplicity Rules](http://wiki.c2.com/?XpSimplicityRules)
