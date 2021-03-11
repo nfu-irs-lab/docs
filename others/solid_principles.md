@@ -1,7 +1,16 @@
 # SOLID 原則
 SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些原則的程式碼會更容易維護、擴充與修正。
 
-## 簡介
+## 目錄
+> [回到主頁](../README.md#目錄)
+ 
+- [簡介](#簡介)
+- [依賴反轉 DIP](#依賴反轉-DIP)
+- [參考資料](#參考資料)
+
+---
+
+# 簡介
 |字母|代表|概念|
 |:-:|:-:|-|
 |S|單一職責 SRP|物件、函式和方法應該僅具有一種單一功能。|
@@ -20,7 +29,7 @@ SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些�
 - 一般
   - L-里氏替換
 
-## 依賴反轉 DIP
+# 依賴反轉 DIP
 
 ```cs
 // 一般的寫法。
@@ -103,7 +112,7 @@ class Car
 Engine V8Engine = new Engine();
 Car MySuperCar = new Car(V8Engine);
 ```
-## 參考資料
+# 參考資料
 - 無瑕的程式碼（Robert C. Martin, Clean Code）
 - [我該學會SOLID嗎?](https://medium.com/@f40507777/%E6%88%91%E8%A9%B2%E5%AD%B8%E6%9C%83solid%E5%97%8E-4e73887c9156)
 - [物件導向設計原則—SOLID](https://ithelp.ithome.com.tw/articles/10191553)
