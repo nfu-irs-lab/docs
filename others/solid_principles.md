@@ -3,7 +3,7 @@ SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些�
 
 ## 目錄
 - [簡介](#簡介)
-- [依賴反轉 DIP](#依賴反轉-Dependency-inversion-principle)
+- [依賴反轉 Dependency inversion principle](#依賴反轉-Dependency-inversion-principle)
 - [參考資料](#參考資料)
 
 > [回到主頁面](../README.md#文件)
