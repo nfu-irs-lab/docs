@@ -9,10 +9,10 @@
 - [程式素養及軟體工程](#程式素養及軟體工程)
   - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
   - [統一塑模語言 UML](#統一塑模語言-UML)
+  - [設計模式 Design Pattern](#設計模式-Design-Pattern)
   - [SOLID 原則](#SOLID-原則)
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
-  - [設計模式 Design Pattern](#設計模式-Design-Pattern)
   - [無瑕的程式碼 Clean Code](#無瑕的程式碼-Clean-Code)
 - [工具](#工具)
   - [Git 版本控制](#Git-版本控制)
@@ -146,6 +146,12 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 - [【UML】Class Diagram 類別圖 (下)：Relationships 關係 - SpicyBoyd 部落格](https://spicyboyd.blogspot.com/2018/07/umlclass-diagram-relationships.html)
 - [UML類別圖：Aggregation vs. Composition | 自學程式誌](https://chenglearning.blogspot.com/2015/02/classrelationship.html#more)
 - [軟體設計及架構---UML 入門](https://ithelp.ithome.com.tw/articles/10223499)
+
+
+## 設計模式 Design Pattern
+### 參考資料
+- [我為什麼想學設計模式 ( Design Pattern )](https://ithelp.ithome.com.tw/articles/10201706)
+
 
 ## SOLID 原則
 SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些原則的程式碼會更容易維護、擴充與修正。
@@ -343,11 +349,6 @@ class MathTest
 - 單元測試的藝術 第二版（Roy Osherove, The Art of Unit Testing: with wxamples in C#, 2nd Edition）
 - [單元測試的藝術-讀後整理](https://sunxiaoshan.medium.com/%E5%96%AE%E5%85%83%E6%B8%AC%E8%A9%A6%E7%9A%84%E8%97%9D%E8%A1%93-%E8%AE%80%E5%BE%8C%E6%95%B4%E7%90%86-ba2a4d3491c5)
 - [《單元測試的藝術》學習筆記](https://zh-tw.coderbridge.com/series/89e2405766bc423b965adcdd4af244a0)
-
-
-## 設計模式 Design Pattern
-### 參考資料
-- [我為什麼想學設計模式 ( Design Pattern )](https://ithelp.ithome.com.tw/articles/10201706)
 
 ## 無瑕的程式碼 Clean Code
 > 你因為兩個原因來讀這本書：  
