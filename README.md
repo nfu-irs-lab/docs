@@ -111,19 +111,60 @@ UML 是一種規範語言，它定義了數種不同的圖示，以圖形化的�
 - 類別（Class）
   - 一個矩形。
   - 基本可以分成 3 格，其中只有第 1 格是必要的：
-    - 第 1 格：該 Class 的名稱，需為**粗體字**。例如：Car
-    - 第 2 格：該 Class 的屬性。例如：CC
-    - 第 3 格：該 Class 的方法。例如：Run()
+    - 第 1 格：該 Class 的名稱，需為**粗體字**。
+    - 第 2 格：該 Class 的屬性（Attribute）。
+    - 第 3 格：該 Class 的方法（Operation）。
+  - 屬性及方法的名稱前面加上符號以代表其封裝：
+    - `+`：Public
+    - `-`：Private
+    - `#`：Protected
+    - `~`：Package
+  - 使用斜體樣式來代表抽象（Abstract）。
+  - 使用底線樣式來代表靜態（Static）。
 - 介面（Interface）
-  - 基本規則與 Class 相同，但在第 1 格的名稱之上需加上一行「\<\<Interface\>\>」，作為區分。
+  - 基本規則與 Class 相同，但在第 1 格的名稱之上需加上一行 `<<Interface>>`，作為區分。
   - 另外還有所謂的「棒棒糖」表示法。
-- 抽象（Abstract）
-  - 基本規則與 Class 相同，但在第 1 格的名稱需為*斜體字*，作為區分 
 
-|**Car**|
-|-|
-|+ CC: int|
-|+ Run(): void|
+<details>
+  <summary>範例</summary>
+
+```cs
+// C#
+class Airplane
+{
+  public string Name;
+  public float Payload;
+  private int CountOfEngines;
+  
+  public void TakeOff() { /* Do something... */ }
+  public void Landing() { /* Do something... */ }
+  private double CalculateSpeed(float power) { /* Do something... */ }
+}
+```
+
+<table>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Airplane</strong></td>
+</tr>
+<tr>
+<td>
+<p>+ Name: string</p>
+<p>+ Payload: float</p>
+<p>- CountOfEngines: int</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>+ TakeOff(): void</p>
+<p>+ Landing(): void</p>
+<p>- CaculateSpeed(power: float): double</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 #### 關係
 - 依賴（Dependency）
