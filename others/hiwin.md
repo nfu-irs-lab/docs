@@ -94,7 +94,7 @@
 - 其它
   - 基本共用程式：[hiwinrobot](https://github.com/nfu-irs-lab/hiwinrobot)
   - 手機控制程式：[hiwinrobot-controller-app](https://github.com/nfu-irs-lab/hiwinrobot-controller-app)
-  - NuGet Package：[hiwinrobot-irs-hrtk](https://github.com/nfu-irs-lab/hiwinrobot-irs-hrtk)
+  - IRS-HRTK（NuGet Package）：[hiwinrobot-irs-hrtk](https://github.com/nfu-irs-lab/hiwinrobot-irs-hrtk)
   - 舊範例程式（不推薦）：[hiwinrobot-old-example](https://github.com/nfu-irs-lab/hiwinrobot-old-example/tree/master)
   - XEG 夾爪範例程式：[hiwin-xeg-gripper-example](https://github.com/nfu-irs-lab/hiwin-xeg-gripper-example)
 - 14屆 `2021`
