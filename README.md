@@ -169,10 +169,10 @@ class Airplane
 #### 關係
 - 依賴（Dependency）
   - 關鍵字：uses a
-  - 開口箭頭虛線。<⋯⋯
+  - 開口箭頭虛線。〈⋯⋯
 - 關聯（Association）
   - 關鍵字：has a
-  - 開口箭頭實線。<㇐
+  - 開口箭頭實線。〈㇐
 - 聚合（Aggregation）
   - 關鍵字：owns a
   - 空心菱形實線，菱形在母體（較大的）端。◇㇐
