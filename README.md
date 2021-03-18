@@ -59,7 +59,7 @@ else
 }
 ```
 
-以 C# 來說，應該儘量遵守 Microsoft 官方所建議的 Coding Style。簡單歸納的話，縮排格式使用「Allman」，而變數和方法等的命名規則爲除了參數（Parameter）及區域變數（Local variable）使用小駝峰（Lower camel case）外，其它統統使用大駝峰（Upper camel case，又稱帕斯卡 Pascal case），在命名時儘量避免使用縮寫，且 `private` 的屬性（Field）加上字首底線 `_`。而註解文字與註解符號間加入一個空白，並且以句號結尾，例如：`// 註解。`
+以 C# 來說，應該儘量遵守 Microsoft 官方所建議的 Coding Style。簡單歸納的話，縮排格式使用「Allman」，而變數和方法等的命名規則爲除了參數（Parameter）、區域變數（Local variable）及私有屬性（Private field）使用小駝峰（Lower camel case）外，其它統統使用大駝峰（Upper camel case，又稱帕斯卡 Pascal case），且私有屬性（Private field）加上字首底線 `_`。在命名時儘量避免使用縮寫。而註解文字與註解符號間加入一個空白，並且以句號結尾，例如：`// 註解。`
 
 ```cs
 // C# Coding Style 簡易範例。
