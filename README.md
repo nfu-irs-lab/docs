@@ -1,6 +1,6 @@
 # 文件
 ## 目錄
-- [新進人員訓練](/others/orientation_training.md#%新進人員訓練)
+- [新進人員訓練](/others/orientation_training.md#新進人員訓練)
 - [成員守則](/others/membership_rules.md#成員守則)
 - [程式素養及軟體工程](#程式素養及軟體工程)
   - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
@@ -26,7 +26,7 @@
 
 ---
 # 新進人員訓練
-詳細請見頁面：[新進人員訓練](/others/orientation_training.md#%新進人員訓練)
+詳細請見頁面：[新進人員訓練](/others/orientation_training.md#新進人員訓練)
 
 # 成員守則
 詳細請見頁面：[成員守則](/others/membership_rules.md#成員守則)
