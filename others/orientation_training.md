@@ -150,7 +150,7 @@
 
 ### 圓角與倒角
 
-點選「圓角」.「要圓角的圖元」選擇前視的兩個長邊與兩個圓周。並完成圓角。
+點選「圓角」。「要圓角的圖元」選擇前視的兩個長邊與兩個圓周。並完成圓角。
 
 ![](https://1.bp.blogspot.com/-xAeF-cuAacw/YFSBTuqa6dI/AAAAAAAAASg/ZNIWIiUvGBg3VDyywr31pMDTxznb2B_CQCPcBGAsYHg/s1835/onshape-%25E4%25BD%25BF%25E7%2594%25A812.png)
 > ▲ 圓角
