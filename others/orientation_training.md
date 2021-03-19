@@ -1,6 +1,6 @@
 # 新進人員訓練
 
-在 [HackMD](https://hackmd.io/@nfu-robot-lab/ryixZmG4u) 上觀看。
+在 [HackMD](https://hackmd.io/@ziteh/B1vjmQGEO) 上觀看。
 
 ## 目錄
 - [實驗室環境介紹](#實驗室環境介紹)
