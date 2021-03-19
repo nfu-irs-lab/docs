@@ -131,7 +131,7 @@ class Car
     EngineInterface MyEngine = null;
     
     // 使用依賴注入（Dependency Injection，DI）的方式實現控制反轉（Inversion of Control，IoC）。
-    // 將低層模組「Engine」在高層模組「Car」之外實例化後，才透過建構子傳入「Car」。
+    // 將低層模組「Engine」在高層模組「Car」之外實體化後，才透過建構子傳入「Car」。
     Car(EngineInterface engine)
     {
         MyEngine = engine;
