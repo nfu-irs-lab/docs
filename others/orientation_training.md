@@ -66,6 +66,7 @@
 1. 選擇一個目標平面作為起始平面。
 2. 在起始平面上繪製 2D 草圖。
 3. 選擇一個 2D 草圖來生成 3D 特徵。
+4. 重複以上過程來增加更多的樣式。
 
 ![](https://1.bp.blogspot.com/-oELCi4ArEu8/YFRr7q4ihqI/AAAAAAAAAKg/kVHadamjFMEDKtzcZZZv-5xfSnR_SmsvACPcBGAsYHg/s1835/onshape-%25E4%25BD%25BF%25E7%2594%25A82.png)
 > ▲ 建模操作介面
