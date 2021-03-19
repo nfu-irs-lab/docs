@@ -64,13 +64,9 @@ SOLID 原則是物件導向程式（OOP）的 5 個基本原則，遵守這些�
 ### 沒有依賴反轉的一般寫法：
 ```cs
 // 沒有依賴反轉的一般寫法。
-
 class Engine
 {
-    void Start()
-    {
-        // Some code here.
-    }
+    void Start() { /* Some code here. */ }
 }
 
 class Car
@@ -85,7 +81,6 @@ class Car
 ### 依賴反轉的基本寫法：
 ```cs
 // 依賴反轉的基本寫法。
-
 interface EngineInterface
 {
     void Start();
@@ -94,10 +89,7 @@ interface EngineInterface
 // 低層模組「Engine」繼承並實作了介面「EngineInterface」。
 class Engine : EngineInterface
 {
-    void Start()
-    {
-        // Some code here.
-    }
+    void Start() { /* Some code here. */ }
 }
 
 class Car
@@ -112,7 +104,6 @@ class Car
 ### 依賴反轉的進階寫法：
 ```cs
 // 依賴反轉的進階寫法。
-
 interface EngineInterface
 {
     void Start();
@@ -120,10 +111,7 @@ interface EngineInterface
 
 class Engine : EngineInterface
 {
-    void Start()
-    {
-        // Some code here.
-    }
+    void Start() { /* Some code here. */ }
 }
 
 class Car
@@ -131,7 +119,7 @@ class Car
     EngineInterface MyEngine = null;
     
     // 使用依賴注入（Dependency Injection，DI）的方式實現控制反轉（Inversion of Control，IoC）。
-    // 將低層模組「Engine」在高層模組「Car」之外實體化後，才透過建構子傳入「Car」。
+    // 將低層模組「Engine」在高層模組「Car」之外實體化後，才透過建構子的參數傳入「Car」。
     Car(EngineInterface engine)
     {
         MyEngine = engine;
@@ -139,8 +127,9 @@ class Car
     
     // Some code here.
 }
-
-// 實際呼叫「Car」時：
+```
+```cs
+// 實際呼叫「Car」時。
 Engine V8Engine = new Engine();
 Car MySuperCar = new Car(V8Engine);
 ```
