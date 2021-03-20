@@ -1,4 +1,7 @@
 # HIWIN
+
+推薦在 [HackMD](https://hackmd.io/@nfu-robot-lab/Bk7xFUX4u)上觀看。
+
 ## 目錄
 - [上銀機械手臂使用指南](#上銀機械手臂使用指南)
   - [各裝置名稱](#各裝置名稱)
@@ -8,7 +11,7 @@
 - [工作流程 Workflow](#工作流程-workflow)
 - [相關 Repository 列表](#相關-Repository-列表)
 
-> [回到主頁面](../README.md#文件)
+> [回到主頁面](https://github.com/nfu-irs-lab/docs#實驗室文件)
 
 ---
 
