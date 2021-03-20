@@ -29,7 +29,7 @@
   - [[驗收-4] 以 C# 控制機械手臂](#驗收-4-以-c-控制機械手臂)
 - [整理與收拾](#整理與收拾)
 
-> [回到主頁面](https://github.com/nfu-irs-lab/docs#文件)
+> [回到主頁面](https://github.com/nfu-irs-lab/docs#實驗室文件)
 
 ---
 # 實驗室環境介紹
