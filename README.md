@@ -1,4 +1,4 @@
-# 文件
+# 實驗室文件
 ## 目錄
 - [新進人員訓練](/others/orientation_training.md#新進人員訓練)
 - [成員守則](/others/membership_rules.md#成員守則)
