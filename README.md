@@ -1,4 +1,7 @@
 # 實驗室文件
+
+推薦在 [HackMD](https://hackmd.io/@nfu-robot-lab/HJ6ZrU7Vd) 上觀看。
+
 ## 目錄
 - [新進人員訓練](https://github.com/nfu-irs-lab/docs/blob/main/others/orientation_training.md#新進人員訓練)
 - [成員守則](#成員守則)
