@@ -1,12 +1,14 @@
 # 實驗室文件
 ## 目錄
-- [新進人員訓練](/others/orientation_training.md#新進人員訓練)
-- [成員守則](/others/membership_rules.md#成員守則)
+- [新進人員訓練](https://github.com/nfu-irs-lab/docs/blob/main/others/orientation_training.md#新進人員訓練)
+- [成員守則](#成員守則)
+  - [成員](#成員)
+  - [管理員與擁有者](#管理員與擁有者)
 - [程式素養及軟體工程](#程式素養及軟體工程)
   - [程式碼風格 Coding Style](#程式碼風格-Coding-Style)
   - [統一塑模語言 UML](#統一塑模語言-UML)
   - [設計模式 Design Pattern](#設計模式-Design-Pattern)
-  - [SOLID 原則](/others/solid_principles.md#solid-原則)
+  - [SOLID 原則](#solid-原則) 
   - [Xp 簡單守則](#Xp-簡單守則)
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
@@ -18,18 +20,53 @@
   - [Visual Studio](#Visual-Studio)
 - [發行](#發行)
   - [版本號命名規則](#版本號命名規則)
-- [HIWIN](/others/hiwin.md#HIWIN)
-- [C#](/others/csharp.md#C)
+- [HIWIN](https://github.com/nfu-irs-lab/docs/blob/main/others/hiwin.md#HIWIN)
+- [C#](#c)
+  - [委派（delegate）與 Lambda 運算子](#委派delegate與-Lambda-運算子)
 - [其它資源](#其它資源)
 
 > 各章節後的參考資料基本上都是以筆者認為有幫助的程度、從高至低排序。
 
 ---
 # 新進人員訓練
-詳細請見頁面：[新進人員訓練](/others/orientation_training.md#新進人員訓練)
+詳細請見頁面：[新進人員訓練](https://github.com/nfu-irs-lab/docs/blob/main/others/orientation_training.md#新進人員訓練)
 
 # 成員守則
-詳細請見頁面：[成員守則](/others/membership_rules.md#成員守則)
+
+## 成員
+### 適用身份範圍
+- 所有成員
+
+### 內容
+- 不要輕易使用具危險性的操作。例如 Force Push。
+
+## 管理員與擁有者
+### 適用身份範圍
+- Repository 管理員 (Repository Admin)
+- 組織擁有者（Organization Owner）
+
+### 內容
+- 確保自己帳號的安全性，避免被盜用或停權。
+  - 開啟 2 段式驗證（[2FA](https://docs.github.com/en/github/authenticating-to-github/about-two-factor-authentication)）。
+  - 確保密碼強度。例如沒有與其它服務或網站共用密碼。
+- 小心且謹慎地操作危險區（Danger Zone）。
+  - 三思而後行。
+  - 在操作危險區之前，先確保自己***完全瞭解***執行該操作，會造成哪些可挽回和不可挽回的後果與風險。
+  - 即使已經瞭解會造成的後果與風險，仍然不要輕易進行危險區的操作。
+  - 與團隊進行討論，並告知其後果與風險，再一同決定是否真的需要進行危險區操作。
+  - 若真的要執行危險區操作，在操作前為自己留後路。例如進行備份。
+- 不要輕易地賦予或剝奪他人的權限。
+- 保障資訊安全。移除任何有資安疑慮的內容，例如未經許可的人名、聯絡電話。
+- 保障智慧財產權。確保不侵犯智慧財產權。
+- 執行、維護、管理與審核。
+  - Pull request（PR）。
+  - Issues。
+  - Releases。
+  - Wiki。
+  - Project。
+- 確保至少擁有 2 位管理員或擁有者。
+- 擁有權限者們需互相接受與進行監督。
+- 定期與不定期為各種資料與檔案進行備份。
 
 # 程式素養及軟體工程
 
@@ -224,7 +261,135 @@ class Airplane
 
 
 ## SOLID 原則
-詳細請見頁面：[SOLID 原則](/others/solid_principles.md#solid-原則)
+
+### 簡介
+|字母|代表|基本概念|
+|:-:|:-:|-|
+|S|[單一職責 SRP](#單一職責)|物件、函式和方法應該僅具有一種單一功能。|
+|O|[開放封閉 OCP](#開放封閉)|模組、方法和類別應對於擴充是開放的，對於修改是封閉的。|
+|L|[里氏替換 LSP](#里氏替換)|程式中的物件應該可以在不改變程式正確性的前提下，被它的子類所替換。|
+|I|[介面隔離 ISP](#介面隔離)|多個特定客戶端介面要好過於一個廣泛用途的介面。|
+|D|[依賴反轉 DIP](#依賴反轉)|高層模組不應該依賴於低層模組，兩者皆應該依賴於抽象介面。|
+
+筆者個人認爲這 5 項原則的重要程度爲：
+- 非常重要
+  - S-單一職責
+  - D-依賴反轉
+- 重要
+  - O-開放封閉
+  - I-介面隔離
+- 一般
+  - L-里氏替換
+
+### 單一職責
+> Single responsibility principle (SRP)
+
+- 物件、函式和方法應該僅具有一種單一功能。
+
+### 開放封閉
+> Open–closed principle (OCP)
+
+- 模組、方法和類別應對於擴充是開放的，對於修改是封閉的。
+  - 意指：應該將軟體設計成不對其修改就能擴展功能。
+
+### 里氏替換
+> Liskov substitution principle (LSP)
+
+- 程式中的物件應該可以在不改變程式正確性的前提下，被它的子類所替換。
+
+### 介面隔離
+> Interface segregation principle (ISP)
+
+- 多個特定客戶端介面要好過於一個廣泛用途的介面。
+
+### 依賴反轉
+> Dependency inversion principle (DIP)
+
+- 高層模組不應該依賴於低層模組，兩者皆應該依賴於抽象介面。
+- 抽象介面不應該依賴於具體實作，具體實作應該依賴於抽象介面。
+
+**範例**
+
+沒有依賴反轉的一般寫法：
+```cs
+// 沒有依賴反轉的一般寫法。
+class Engine
+{
+    void Start() { /* Some code here. */ }
+}
+
+class Car
+{
+    // 高層模組「Car」直接依賴於低層模組「Engine」。
+    Engine MyEngine = new Engine();
+    
+    // Some code here.
+}
+```
+
+依賴反轉的基本寫法：
+```cs
+// 依賴反轉的基本寫法。
+interface EngineInterface
+{
+    void Start();
+}
+
+// 低層模組「Engine」繼承並實作了介面「EngineInterface」。
+class Engine : EngineInterface
+{
+    void Start() { /* Some code here. */ }
+}
+
+class Car
+{
+    // 高層模組「Car」不直接依賴於低層模組「Engine」，而是依賴於介面「EngineInterface」。
+    EngineInterface MyEngine = new Engine();
+    
+    // Some code here.
+}
+```
+
+依賴反轉的進階寫法：
+```cs
+// 依賴反轉的進階寫法。
+interface EngineInterface
+{
+    void Start();
+}
+
+class Engine : EngineInterface
+{
+    void Start() { /* Some code here. */ }
+}
+
+class Car
+{
+    EngineInterface MyEngine = null;
+    
+    // 使用依賴注入（Dependency Injection，DI）的方式實現控制反轉（Inversion of Control，IoC）。
+    // 將低層模組「Engine」在高層模組「Car」之外實體化後，才透過建構子的參數傳入「Car」。
+    Car(EngineInterface engine)
+    {
+        MyEngine = engine;
+    }
+    
+    // Some code here.
+}
+```
+```cs
+// 實際呼叫「Car」時。
+Engine V8Engine = new Engine();
+Car MySuperCar = new Car(V8Engine);
+```
+
+### 參考資料
+- 無瑕的程式碼（Robert C. Martin, Clean Code）
+- [我該學會SOLID嗎?](https://medium.com/@f40507777/%E6%88%91%E8%A9%B2%E5%AD%B8%E6%9C%83solid%E5%97%8E-4e73887c9156)
+- [物件導向設計原則—SOLID](https://ithelp.ithome.com.tw/articles/10191553)
+- [使人瘋狂的 SOLID 原則：目錄](https://medium.com/%E7%A8%8B%E5%BC%8F%E6%84%9B%E5%A5%BD%E8%80%85/%E4%BD%BF%E4%BA%BA%E7%98%8B%E7%8B%82%E7%9A%84-solid-%E5%8E%9F%E5%89%87-%E7%9B%AE%E9%8C%84-b33fdfc983ca)
+- [物件導向程式設計基本原則 - SOLID](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html)
+
 
 ## Xp 簡單守則
 Xp 簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
@@ -433,10 +598,61 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 - [語意化版本 2.0.0 | Semantic Versioning](https://semver.org/lang/zh-TW/)
 
 # HIWIN
-詳細請見頁面：[HIWIN](/others/hiwin.md#HIWIN)
+詳細請見頁面：[HIWIN](https://github.com/nfu-irs-lab/docs/blob/main/others/hiwin.md#HIWIN)
 
 # C#
-詳細請見頁面：[C#](/others/csharp.md#C)
+## 委派（delegate）與 Lambda 運算子
+
+```cs
+class Demo
+{
+  // 委派。
+  delegate void MyAction();
+  
+  void Main()
+  {
+    MyAction act = null;
+    
+    // 正統的完整寫法。
+    act = new MyAction(A);
+    act();
+    
+    // 簡化的寫法，語法糖。
+    act = B;
+    act();
+    
+    // 使用 Lambda 運算子達成匿名方法。
+    act = () => MessageBox.Show("C");
+    act();
+    
+    // 多行的匿名方法。
+    act = () => 
+    {
+      MessageBox.Show("D1");
+      MessageBox.Show("D2");
+      MessageBox.Show("D3");
+    };
+    act();
+  }
+      
+  void A()
+  {
+    Message.Show("A");
+  }
+  
+  void B()
+  {
+    Message.Show("B");
+  }
+}
+```
+
+## 參考資料
+- [委派 - C# 程式設計手冊 | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/delegates/)
+- [delegate 運算子 - C# 參考 | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/delegate-operator)
+- [=> 運算子 - C# 參考 | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/lambda-operator)
+- [C#雜記 — 委派(Delegate)、FUNC<>、ACTION<> | by 莊創偉 | Medium](https://ad57475747.medium.com/c-%E9%9B%9C%E8%A8%98-%E5%A7%94%E6%B4%BE-delegate-func-action-4b3191c7a131)
+- [茅塞頓開的一晚-Func 委派+匿名方法+lambda | 我的Coding之路 - 點部落](https://dotblogs.com.tw/lastsecret/2010/06/26/16201)
 
 # 其它資源
 - [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
