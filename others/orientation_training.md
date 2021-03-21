@@ -1,6 +1,10 @@
 # 新進人員訓練
 
 推薦在 [HackMD](https://hackmd.io/@nfu-robot-lab/B1Sc0H7Ed) 上觀看。
+<details>
+  <summary>QR Code</summary>
+  <a href="https://1.bp.blogspot.com/-plBvVKkiokc/YFazM6wl8zI/AAAAAAAAAVw/_cnYyq1dUb0eIqVaayKUot3pl-l3rplBQCPcBGAsYHg/s333/%25E5%25AF%25A6%25E9%25A9%2597%25E5%25AE%25A4-%25E6%2596%25B0%25E9%2580%25B2%25E4%25BA%25BA%25E5%2593%25A1%25E8%25A8%2593%25E7%25B7%25B4%2528HackMD%2529.png"><img src="https://1.bp.blogspot.com/-plBvVKkiokc/YFazM6wl8zI/AAAAAAAAAVw/_cnYyq1dUb0eIqVaayKUot3pl-l3rplBQCPcBGAsYHg/s333/%25E5%25AF%25A6%25E9%25A9%2597%25E5%25AE%25A4-%25E6%2596%25B0%25E9%2580%25B2%25E4%25BA%25BA%25E5%2593%25A1%25E8%25A8%2593%25E7%25B7%25B4%2528HackMD%2529.png"></a>
+</details>
 
 ## 目錄
 - [實驗室環境介紹](#實驗室環境介紹)
