@@ -25,7 +25,7 @@
   - [版本號命名規則](#版本號命名規則)
 - [HIWIN](https://github.com/nfu-irs-lab/docs/blob/main/others/hiwin.md#HIWIN)
 - [C#](#c)
-  - [委派（delegate）與 Lambda 運算子](#委派delegate與-Lambda-運算子)
+  - [Lambda 運算子](#Lambda-運算子)
 - [其它資源](#其它資源)
 
 > 各章節後的參考資料基本上都是以筆者認為有幫助的程度、從高至低排序。
