@@ -781,7 +781,7 @@ void Init2()
 }
 ```
 
-## 參考資料
+### 參考資料
 - [委派 - C# 程式設計手冊 | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/delegates/)
 - [delegate 運算子 - C# 參考 | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/delegate-operator)
 - [=> 運算子 - C# 參考 | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/lambda-operator)
