@@ -606,29 +606,90 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 詳細請見頁面：[HIWIN](https://github.com/nfu-irs-lab/docs/blob/main/others/hiwin.md#HIWIN)
 
 # C#
-## 委派（delegate）與 Lambda 運算子
-
+## Lambda 運算子
+### 簡化方法
 ```cs
-class Demo
+// 在方法(Method)中取代 return。
+// Add1、Add2 與 Add3 的功能完全相同。
+
+int Add1(int a, int b)
 {
-  // 委派。
-  delegate void MyAction();
+    return a + b;
+}
+
+int Add2(int a, int b)
+    => a + b;
+
+int Add3(int a, int b) => a + b;
+```
+
+### 簡化屬性
+```cs
+// 簡化屬性(Property)的 getter 與 setter。
+// Speed1 與 Speed2 的功能完全相同。
+
+private int _speed;
+
+public int Speed1
+{
+    get
+    {
+        return _speed;
+    }
+
+    set
+    {
+        // 3 元運算子。若 value < 0 的話給 0，否則給 value。
+        _speed = (value < 0) ? 0 : value;
+    }
+}
+
+public int Speed2
+{
+    get =>  _speed;
+    set =>  _speed = (value < 0) ? 0 : value;
+}
+```
+
+### 簡化唯讀屬性
+```cs
+// 簡化 read-only 的屬性(Property)。
+// Message1 與 Message2 的功能完全相同。
+
+public string Message1
+{
+    get
+    {
+        return "Hello World!";
+    }
+}
+
+public string Message2 => "Hello World!";
+```
+
+### 無參數無回傳的委派
+```cs
+// 無參數及回傳值委派（delegate），達成匿名方法。
+
+// 宣告一個委派 MyAction。
+delegate void MyAction();
   
-  void Main()
-  {
+void Main()
+{
+    // 實體化一個 MyAction：act。
     MyAction act = null;
     
     // 正統的完整寫法。
-    act = new MyAction(A);
-    act();
+    act = new MyAction(ShowA);
+    act(); // 顯示「A」。
     
-    // 簡化的寫法，語法糖。
-    act = B;
-    act();
+    // 簡化的寫法。
+    act = ShowB;
+    act(); // 顯示「B」。
     
     // 使用 Lambda 運算子達成匿名方法。
     act = () => MessageBox.Show("C");
-    act();
+    act(); // 顯示「C」。
     
     // 多行的匿名方法。
     act = () => 
@@ -637,18 +698,60 @@ class Demo
       MessageBox.Show("D2");
       MessageBox.Show("D3");
     };
-    act();
-  }
+    act(); // 顯示「D1」、「D2」與「D3」。
+}
       
-  void A()
-  {
-    Message.Show("A");
-  }
-  
-  void B()
-  {
-    Message.Show("B");
-  }
+void ShowA() { MessageBox.Show("A"); }
+void ShowB() { MessageBox.Show("B"); }
+```
+
+### 有參數有回傳的委派
+```cs
+// 具有參數及回傳值的委派（delegate），達成匿名方法。
+// Main1() 與 Main2() 的功能完全相同。
+
+// 使用 C# 內建的泛型 Func<> 宣告委派 MyFunc。
+Func<int, string> MyFunc;
+
+void Main1()
+{
+    MyFunc = Convert;
+    string text = MyFunc(2);
+}
+
+string Convert(int number)
+{
+    return Convert.ToString(number * 10);
+}
+
+void Main2()
+{
+    MyFunc = (a) => Convert.ToString(a * 10);
+    string text = MyFunc(2);
+}
+```
+
+### 事件委派
+```cs
+// 對於事件的委派（delegate），達成匿名方法。
+// Init1() 與 Init2() 的功能完全相同。
+
+int Count = 0;
+Timer MyTimer = new Timer();
+
+void Init1()
+{
+    MyTimer.Tick += MyTimerEvent;
+}
+
+void MyTimerEvent(object sender, EventArgs e)
+{
+    ++Count;
+}
+
+void Init2()
+{
+    MyTimer.Tick += (s, e) => ++Count;
 }
 ```
 
