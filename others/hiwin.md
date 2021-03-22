@@ -63,7 +63,7 @@
 在此每個 repo 會有兩個 Branch：`main` 和 `develop`。其中 `develop` Branch 的功能就是 GitHub-Flow 中的 `main` 或 `master` Branch，而我們真正的 `main` Branch 只作為發行用，只由管理員負責管理，一般人不需要也不允許操作組織上的 `main` Branch（除了 Pull）。
 
 
-[![圖解實驗室Git工作流程](../figs/實驗室Git工作流程_1.svg)](../figs/實驗室Git工作流程_1.svg)
+[![圖解實驗室Git工作流程](https://github.com/nfu-irs-lab/docs/blob/main/figs/實驗室Git工作流程_1.svg)](https://github.com/nfu-irs-lab/docs/blob/main/figs/實驗室Git工作流程_1.svg)
 ###### ▲ 實驗室 Git 工作流程
 
 ## 一般人
