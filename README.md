@@ -24,7 +24,8 @@
 - [發行](#發行)
   - [版本號命名規則](#版本號命名規則)
 - [HIWIN](https://github.com/nfu-irs-lab/docs/blob/main/others/hiwin.md#HIWIN)
-- [C#](#c)
+- [C#](#C)
+  - [類別 Class](#類別-Class) 
   - [Lambda 運算子](#Lambda-運算子)
 - [其它資源](#其它資源)
 
@@ -606,6 +607,31 @@ Git-Flow 與 GitHub-Flow 都是一種 Workflow（工作流程）。對於實驗�
 詳細請見頁面：[HIWIN](https://github.com/nfu-irs-lab/docs/blob/main/others/hiwin.md#HIWIN)
 
 # C#
+## 類別 Class
+### 類別的組成
+```cs
+public class MyClass
+{
+    // 欄位 Field。
+    public int MyField;
+
+    // 屬性 Property。
+    public float MyProperty { get; set; }
+
+    // 方法 Method。
+    public void MyMethod(double myParameter1, string myParameter2)
+    { /* Some code here... */ }
+
+    // 建構子 Constructor，或稱建構函式。
+    public MyClass()
+    { /* Some code here... */ }
+
+    // 解構子 Destructor，或稱解構函式、完成項。
+    ~MyClass()
+    { /* Some code here... */ }
+}
+```
+
 ## Lambda 運算子
 ### 方法
 ```cs
