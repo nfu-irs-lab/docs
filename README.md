@@ -12,7 +12,7 @@
   - [統一塑模語言 UML](#統一塑模語言-UML)
   - [設計模式 Design Pattern](#設計模式-Design-Pattern)
   - [SOLID 原則](#solid-原則) 
-  - [Xp 簡單守則](#Xp-簡單守則)
+  - [極限程式設計簡單守則](#極限程式設計簡單守則)
   - [複合優於繼承](#複合優於繼承)
   - [單元測試 Unit Testing](#單元測試-Unit-Testing)
   - [無瑕的程式碼 Clean Code](#無瑕的程式碼-Clean-Code)
@@ -394,8 +394,10 @@ Car MySuperCar = new Car(V8Engine);
 - [物件導向程式設計基本原則 - SOLID](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/oodPrinciple.html)
 
 
-## Xp 簡單守則
-Xp 簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
+## 極限程式設計簡單守則
+極限程式設計簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
+
+> Xp 代表的是極限程式設計（eXtreme Programming）。
 
 ### 內容
 1. 通過所有的測試。Passes all the tests.
