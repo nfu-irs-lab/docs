@@ -395,7 +395,7 @@ Car MySuperCar = new Car(V8Engine);
 
 
 ## 極限程式設計簡單守則
-極限程式設計簡單守則（Xp Simplicity Rules）是 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
+極限程式設計簡單守則（Xp Simplicity Rules）是由極限程式設計創始者之一的 Kent Beck 所提出的。遵守這些守則可以幫助你產生擁有良好設計的程式。
 
 > Xp 代表的是極限程式設計（eXtreme Programming）。
 
