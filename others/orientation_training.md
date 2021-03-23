@@ -216,8 +216,34 @@
 
 # 階段二
 ## 雷射切割機
+
+⚠ **`雷射切割機若操作不當會導致火災，操作時請小心並多加確認`** ⚠
+
+> 以下將雷射切割機簡稱為雷切機。
+
+### 取得 DXF 檔
+
+雷切機需要使用 DXF 檔（或其它類似的 2D 圖檔）。若檔案是使用 onshape 繪製，只要將目標平面匯出即可。
+
+在 onshape 中打開目標模型，選擇目標平面並按下滑鼠右鍵，在右鍵選單中點選「匯出為 DXF/DWG」。調整匯出參數如下：
+
+- 檔案名稱：*自行決定*
+- 格式：DXF
+- 版本：Release 14
+- 選項：*自行決定*
+- `[ ]` 將不規則曲線匯出為聚合線
+- `[√]` 將 z-高度設定為零，法線設定為正的
+
+按下「匯出」後就會下載該 DXF 檔。然後將該 DXF 檔放到實驗室 NAS 或使用隨身碟複製到雷切機電腦上，就可以後續的步驟。
+
+> 若使用 SolidWorks 的話，請調整視角以正對目標平面，再另存新檔（Save As）並在檔案格式選擇「DXF」後，確認就可以了。
+
+### 雷切機程式
+
+### 雷切機操作
+
 ## 3D 列印機
-目前實驗室共有 3 臺 3D 列印機，分別為：
+目前實驗室共有 3 台 3D 列印機，分別為：
 - ATOM 2.5 EX（Delta 型）
 - ATOM 2.5 FX（Delta 型）
 - UP BOX（笛卡爾型）
@@ -227,7 +253,7 @@
 ### 取得 STL 檔
 要列印 3D 模型，首先要取得該模型的 STL 檔。若想要列印在 onshape 上繪製的模型，只要將該模型匯出即可。
 
-在 onshape 中打開欲列印的檔案，在下方的元件列中以對目標元件點擊滑鼠右鍵，並選擇「匯出」。並調整匯出的設定如下：
+在 onshape 中打開欲列印的檔案，在下方的元件列中以對目標元件點擊滑鼠右鍵，並選擇「匯出」。調整匯出的設定如下：
 
 - 檔案名稱：*自行決定*
 - 格式：STL
@@ -238,13 +264,13 @@
 
 按下「確定」後就會下載該模型的 STL 檔。
 
-> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save as），並在檔案格式中選擇「STL」即可。
+> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），並在檔案格式中選擇「STL」即可。
 
 [![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
 
 > ▲ 在 onshape 匯出
 
-![[](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)
+[![](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)
 > ▲ onshape 匯出 STL 設定
 
 ### 設定切片軟體
@@ -257,7 +283,7 @@
 
 首次安裝完 Cura 時，應會請你選擇 3D 列印機的型號（如：2.5 EX 或 2.5 FX），請依照自己實際要使用的機台作選擇（未來還可以改）。
 
-![[](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
+[![](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
 > ▲ Cura 介面
 
 開啟 Cura 後，在右側是列印的參數設定，請將「列印設定」由「推薦」改成「自訂選項」，並修改其中的設定值如下：
@@ -317,7 +343,7 @@
 
 點擊右下角的「準備」就會開始進行切片。切片完成後可以在上方的下拉時選單中將「實體檢視」改成「分層檢視」，來觀察切片完成後的模型。
 
-![[](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
+[![](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
 > ▲ Cura 的分層檢視
 
 確定沒問題後就可以點擊右下角的「儲存檔案」，來輸出成 G-Code 檔（.gcode）。
