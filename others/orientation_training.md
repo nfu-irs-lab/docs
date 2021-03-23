@@ -54,7 +54,7 @@
 
 完成註冊後就可以開始使用。
 
-> - 註冊時可能會問你習慣的單位，請使用 MMGS 制：長度單位為 `Millimeter`、角度單位為 `Degree`、質量單位為 `Gram`。
+> - 若有詢問習慣的單位，請使用 MMGS 制：長度單位為 `Millimeter`、角度單位為 `Degree`、質量單位為 `Gram`。
 > - 若有詢問習慣的滑鼠操作方式，請選擇「SolidWorks」。
 
 ### 建立檔案
@@ -83,7 +83,7 @@
 [![](https://1.bp.blogspot.com/-hvylk6miWRY/YFRtgfpBkvI/AAAAAAAAALM/FcRROM5JACM_yU-GsExaMSYCRurty9hlwCPcBGAsYHg/s1837/onshape-%25E4%25BD%25BF%25E7%2594%25A83.png)](https://1.bp.blogspot.com/-hvylk6miWRY/YFRtgfpBkvI/AAAAAAAAALM/FcRROM5JACM_yU-GsExaMSYCRurty9hlwCPcBGAsYHg/s1837/onshape-%25E4%25BD%25BF%25E7%2594%25A83.png)
 > ▲ 繪製草圖
 
-點需上方工具列的「尺寸」來點擊矩形的邊線，並指定該矩形的實際尺寸為長 100 mm、寬 50 mm。注意使用的是 MMGS 制，長度單位為毫米 mm。
+點需上方工具列的「尺寸」來點擊矩形的邊線，並指定該矩形的實際尺寸為長 `100 mm`、寬 `50 mm`。注意使用的是 MMGS 制，長度單位為毫米 mm。
 
 在使用「尺寸」工具輸入數字時，可以直接使用基本的加減乘除運算。例如在輸入尺寸時可以直接輸入 `(100.5/2)+3.15`。
 
@@ -94,14 +94,14 @@
 
 ### 生成 3D 特徵
 
-選擇「草圖1」，並點選上方工具列的「擠出」。在擠出視窗中將「深度」設為 15 mm，點擊綠色勾勾來完成。
+選擇「草圖1」，並點選上方工具列的「擠出」。在擠出視窗中將「深度」設為 `15 mm`，點擊綠色勾勾來完成。
 
 此時模型已經是 3D 的了。
 
 [![](https://1.bp.blogspot.com/-3Yjb1kbQQrk/YFRxvJre-lI/AAAAAAAAANA/GLnkraNhv5YdoSxtyzNpoGcZi83JM6AIACPcBGAsYHg/s1835/onshape-%25E4%25BD%25BF%25E7%2594%25A85.png)](https://1.bp.blogspot.com/-3Yjb1kbQQrk/YFRxvJre-lI/AAAAAAAAANA/GLnkraNhv5YdoSxtyzNpoGcZi83JM6AIACPcBGAsYHg/s1835/onshape-%25E4%25BD%25BF%25E7%2594%25A85.png)
 > ▲ 擠出
 
-繼續點選「擠出1」長方體的頂面，再次新增草圖，並使用「中心點畫圓」與「尺寸」工具在此草圖的中心點畫一個直徑為 35 mm 的圓形。符號「Ø」代表該尺寸為直徑。
+繼續點選「擠出1」長方體的頂面，再次新增草圖，並使用「中心點畫圓」與「尺寸」工具在此草圖的中心點畫一個直徑為 `35 mm` 的圓形。符號「Ø」代表該尺寸為直徑。
 
 點選綠色勾勾來完成此草圖（草圖2）。
 
@@ -118,9 +118,9 @@
 ### 複製-鏡射
 有些特徵會重複出現，這時可以使用各種複製功能，就不用每個相同的特徵都要畫。
 
-選擇長方體的側面（Z-X 面、前視），並新增一草圖。在此平面的短邊（Z 方向的邊線）的中心點位置旁邊新增一個「中心點畫圓」，並將圓的直徑設為 5 mm。
+選擇長方體的側面（Z-X 面、前視），並新增一草圖。在此平面的短邊（Z 方向的邊線）的中心點位置旁邊新增一個「中心點畫圓」，並將圓的直徑設為 `5 mm`。
 
-再使用「尺寸」工具依序點選圓心與短邊。將圓心到短邊的距離設為 8 mm。一般在設定圓的位置時會以圓心為基準，而不是使用圓周為基準，以圓心為基準的好處是改變圓的大小（直徑）時不會影響其位置。
+再使用「尺寸」工具依序點選圓心與短邊。將圓心到短邊的距離設為 `8 mm`。一般在設定圓的位置時會以圓心為基準，而不是使用圓周為基準，以圓心為基準的好處是改變圓的大小（直徑）時不會影響其位置。
 
 完成此草圖（草圖3）。
 
@@ -129,7 +129,10 @@
 
 將草圖3使用「擠出-移除-完成貫穿」來挖空（擠出3）。
 
-點選「鏡射」工具。在鏡射視窗上選擇「鏡射特徵」，「要鏡射的特徵」選擇「擠出3」、「鏡射平面」選擇「Right」（透過點擊左方的清單來選擇）。
+點選「鏡射」工具。
+- 在鏡射視窗上選擇「鏡射特徵」。
+- 「要鏡射的特徵」選擇「擠出3」
+- 「鏡射平面」選擇「Right」（透過點擊左方的清單來選擇）。
 
 點擊綠色勾勾來完成鏡射。
 
@@ -137,14 +140,21 @@
 > ▲ 鏡射
 
 ### 複製-環狀複製排列
-點擊長方體的頂面（Y-X 面、上視），新增草圖並在距離中心大圓孔（擠出2）20 mm（圓心中心距）的上面畫一個直徑為 3 mm 的圓。並完成此草圖（草圖4）。
+點擊長方體的頂面（Y-X 面、上視），新增草圖並在距離中心大圓孔（擠出2）`20 mm`（圓心中心距）的上面畫一個直徑為 `3 mm` 的圓。並完成此草圖（草圖4）。
 
 [![](https://1.bp.blogspot.com/-AuiSrFPCcVo/YFR9iTdhSqI/AAAAAAAAARA/xyTgwYsOkmsg757nEn-ctx7uBqHwFeofgCPcBGAsYHg/s1837/onshape-%25E4%25BD%25BF%25E7%2594%25A810.png)](https://1.bp.blogspot.com/-AuiSrFPCcVo/YFR9iTdhSqI/AAAAAAAAARA/xyTgwYsOkmsg757nEn-ctx7uBqHwFeofgCPcBGAsYHg/s1837/onshape-%25E4%25BD%25BF%25E7%2594%25A810.png)
 > ▲ 畫圓
 
-選擇「草圖4」並「擠出」，選擇「新增」並將深度設為 5 mm。完成此擠出（擠出4）。
+選擇「草圖4」並「擠出」，選擇「新增」並將深度設為 `5 mm`。完成此擠出（擠出4）。
 
-點選「環狀複製排列」，並選擇「特徵複製排列」，「要複製排列的特徵」選擇「擠出4」、「複製排列軸」點選中心圓心（擠出2）的圓周、「實例數量」設為 3、勾選「同等間距」。完成此環狀複製排列。
+點選「環狀複製排列」工具。
+- 在視窗上選擇「特徵複製排列」。
+- 「要複製排列的特徵」選擇「擠出4」
+- 「複製排列軸」點選中心圓心（擠出2）的圓周
+- 「實例數量」設為 3
+- 勾選「同等間距」。
+
+完成此環狀複製排列。
 
 [![](https://1.bp.blogspot.com/-CuVV61MGwgA/YFR_C_LJTFI/AAAAAAAAARs/rkrAE-3bkj0ybgHINTbNmi4cSkMrG3OFwCPcBGAsYHg/s1836/onshape-%25E4%25BD%25BF%25E7%2594%25A811.png)](https://1.bp.blogspot.com/-CuVV61MGwgA/YFR_C_LJTFI/AAAAAAAAARs/rkrAE-3bkj0ybgHINTbNmi4cSkMrG3OFwCPcBGAsYHg/s1836/onshape-%25E4%25BD%25BF%25E7%2594%25A811.png)
 > ▲ 進行「環狀複製排列」
@@ -164,7 +174,7 @@
 > ▲ 倒角
 
 ### 組合
-點擊左下角的「+」來「插入新元素」，並選擇「Part Studio」。在剛剛新增的「Part Studio」（Part Studio 2）中繪製一個直徑為 35 mm、高度為 25 mm 的圓柱體。
+點擊左下角的「+」來「插入新元素」，並選擇「Part Studio」。在剛剛新增的「Part Studio」（Part Studio 2）中繪製一個直徑為 `35 mm`、高度為 `25 mm` 的圓柱體。
 
 在下方的元素列中點選「Assembly 1」（若沒有請自行新增）。點擊左上角的「插入」並選擇「Part Studio 1」，將其放置到畫面上。再選擇「Part Studio 2」放置到畫面上。點擊綠色勾勾完成插入。
 
@@ -173,7 +183,7 @@
 [![](https://1.bp.blogspot.com/-LRd2WO5H2dg/YFSEeWcGxWI/AAAAAAAAAT4/jlcHg8qI90UCX_EdB2Fw8XlMqcBcTZrSQCPcBGAsYHg/s1837/onshape-%25E4%25BD%25BF%25E7%2594%25A814.png)](https://1.bp.blogspot.com/-LRd2WO5H2dg/YFSEeWcGxWI/AAAAAAAAAT4/jlcHg8qI90UCX_EdB2Fw8XlMqcBcTZrSQCPcBGAsYHg/s1837/onshape-%25E4%25BD%25BF%25E7%2594%25A814.png)
 > ▲ 插入零件
 
-點選「滑動結合」。在「結合連接器」中選擇 2 元件的圓柱面。點擊綠色勾勾完成。
+點選「滑動結合」。在「結合連接器」中選擇兩元件的圓柱面。點擊綠色勾勾完成。
 
 此時圓柱體可以在圓孔中滑動（Z 方向）。
 
