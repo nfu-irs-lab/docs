@@ -212,13 +212,15 @@
 ## [驗收-1] 繪製馬達之 3D 模型
 請拿一個實驗室的 AX-12 馬達，並繪製其 3D 模型。馬達的尺寸請使用遊標卡尺自行測量。
 
+> 該馬達模型在後續也會用到，所以尺寸不能差太多。
+
 # 階段二
 ## 雷射切割機
 ## 3D 列印機
 目前實驗室共有 3 臺 3D 列印機，分別為：
 - ATOM 2.5 EX（Delta 型）
 - ATOM 2.5 FX（Delta 型）
-- UPBOX（笛卡爾型）
+- UP BOX（笛卡爾型）
 
 一般都是使用「ATOM 2.5 EX 」與「ATOM 2.5 FX」。以下僅示範它們的使用操作。
 
@@ -238,6 +240,13 @@
 
 > 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save as），並在檔案格式中選擇「STL」即可。
 
+[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
+
+> ▲ 在 onshape 匯出
+
+![[](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)
+> ▲ onshape 匯出 STL 設定
+
 ### 設定切片軟體
 3D 列印機無法直接列印 STL 檔，必須要使用切片軟體設定好列印參數後，再將 STL 檔轉換成 G-Code 檔（.gcode）才可以進行列印。
 
@@ -248,7 +257,10 @@
 
 首次安裝完 Cura 時，應會請你選擇 3D 列印機的型號（如：2.5 EX 或 2.5 FX），請依照自己實際要使用的機台作選擇（未來還可以改）。
 
-開啟 Cura 後，在右側是列印的參數設定，請將「列印設定」由「推薦」改成「自訂選項」。並修改其中的設定值如下：
+![[](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
+> ▲ Cura 介面
+
+開啟 Cura 後，在右側是列印的參數設定，請將「列印設定」由「推薦」改成「自訂選項」，並修改其中的設定值如下：
 
 - 品質
   - 層高：`0.3 mm`
@@ -290,7 +302,7 @@
 > - 有些列印參數會互相影響、限制。
 > - 如果有些參數沒有顯示出來，請依照以下的方法：
 >   - 方法 1：點選上方的「偏好設定」，在打開的視窗中選擇「設定」頁面，在顯示的「參數顯示設定」視窗，將沒有顯示的參數設定在此清單勾選起。
->   - 方法 2：將滑鼠移動到該參數群組（如速度、冷卻）的箭頭（`⋁`）左邊，會顯示一個齒輪的圖案，點擊就會顯示「參數顯示設定」視窗，將沒有顯示的參數設定在此清單勾選起。
+>   - 方法 2：將滑鼠移動到該參數群組（如速度、冷卻）的箭頭左邊，會顯示一個齒輪的圖案，點擊就會顯示「參數顯示設定」視窗，將沒有顯示的參數設定在此清單勾選起。
 > - 若要列印的模型底面積太小，請將「列印平台附著」改成以下的設定：
 >   - 列印平台附著類型：`邊緣`
 >   - 列印平台附著擠出機：`Ext 0`
@@ -304,6 +316,9 @@
 將目標 STL 檔加到 Cura 中（開啟檔案或直接拖拉）。當模型進入到 Cura 中時，可以選擇它，並利用左側的列表來旋轉、移動或複製該模型。
 
 點擊右下角的「準備」就會開始進行切片。切片完成後可以在上方的下拉時選單中將「實體檢視」改成「分層檢視」，來觀察切片完成後的模型。
+
+![[](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
+> ▲ Cura 的分層檢視
 
 確定沒問題後就可以點擊右下角的「儲存檔案」，來輸出成 G-Code 檔（.gcode）。
 
@@ -331,18 +346,22 @@
 - 3D 列印件的强度有限，如果需要較高强度的零件，請選擇其它加工成型方式，而不是一味地增加填充密度（填充密度建議不要超過 `25%`，再高的意義不大、强度增加有限，但會大幅增加列印時間與耗材使用）。
 
 ## [驗收-2] 自行設計並製作機械手臂
-使用之前所繪製的 AX-12 馬達 3D 模型，再自行繪製其支撐零件，設計一個帶夾爪的機械手臂。並利用雷射切割機或 3D 列印機將零件製作出來，並完成組裝。
+使用「驗收-1」所繪製的 AX-12 馬達 3D 模型，再自行繪製其支撐零件，設計一個帶夾爪的機械手臂。並利用雷射切割機或 3D 列印機將零件製作出來，並完成組裝。
 
-機械手臂的結構不限（關節式、SCARA），但應要有辦法完成「驗收-4」的要求。夾抓結構不限，但應要能將夾抓張開到至少 `8 cm`，以便完成「驗收-4」的要求。
+夾爪與機械手臂的結構不限（關節式、SCARA），但應要有辦法完成「驗收-4」的要求。
 
 > 組裝時會用到螺絲，請將所有用到的螺絲規格（如 `M2×10mm`）列表記錄，以方便之後拆解完可以將螺絲按照正確的規格分類。
 
 # 階段三
 ## Robotis 套件
 ## [驗收-3] 以 Robotis 套件控制機械手臂
+使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
 # 階段四
 ## C# 入門
 ## [驗收-4] 以 C# 控制機械手臂
+使用 C# 撰寫一個視窗程式，自行設計其圖形介面，並可以用來控制「驗收-2」所設計的機械手臂。
+
+要求動作為，以圖形介面操控機械手臂及其夾爪，從「位置-A」夾取目標物（如空寶特瓶），並將其放到「位置-B」。位置 A 與 B 視情況由學長指定。
 
 # 整理與收拾
