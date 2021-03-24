@@ -202,7 +202,7 @@
 # 階段二
 ## 雷射切割機
 
-⚠ **`雷射切割機若操作不當將導致火災，操作時請小心並多加確認`** ⚠
+:warning: **`雷射切割機若操作不當將導致火災，操作時請小心並多加確認`** :warning:
 
 [![](https://1.bp.blogspot.com/-inS00IaK8AM/YFoMVhr0hHI/AAAAAAAAAZw/I48W9jR7JPMMzH0a-a7l__aPabTkHscVQCPcBGAsYHg/w640-h480/01-%25E6%25A9%259F%25E8%2587%25BA1.jpg)](https://1.bp.blogspot.com/-inS00IaK8AM/YFoMVhr0hHI/AAAAAAAAAZw/I48W9jR7JPMMzH0a-a7l__aPabTkHscVQCPcBGAsYHg/w640-h480/01-%25E6%25A9%259F%25E8%2587%25BA1.jpg)
 > ▲ 實驗室的雷射切割機
