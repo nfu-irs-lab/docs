@@ -332,7 +332,7 @@
 - 這裡要轉靜/鬆的螺絲是比較上面的內六角黑色螺絲，不是連接著吹氣管的銀色手轉螺絲（吹氣氣閥調整螺絲）。若發現轉錯請**立即停止操作**，並告知學長。
 
 [![](https://1.bp.blogspot.com/-pMr6tegd9sg/YFsfv4MV9HI/AAAAAAAAAcE/gmQty2k4YWAshViaTQrBhRQ1RzHLvVprACPcBGAsYHg/s16000/10-%25E9%259B%25B7%25E5%2588%2587%25E6%25A9%259F%25E5%25B0%258D%25E7%2584%25A6%25E7%2589%25871.jpg)](https://1.bp.blogspot.com/-pMr6tegd9sg/YFsfv4MV9HI/AAAAAAAAAcE/gmQty2k4YWAshViaTQrBhRQ1RzHLvVprACPcBGAsYHg/s16000/10-%25E9%259B%25B7%25E5%2588%2587%25E6%25A9%259F%25E5%25B0%258D%25E7%2584%25A6%25E7%2589%25871.jpg)
-> ▲ 對焦雷射頭。
+> ▲ 雷射頭對焦。
 
 完成對焦後可以按下雷切機程式右側的「走邊框」，這時雷射頭會繞著要切割形狀的最大外接矩形，可以依據它移動的路徑與範圍來判斷壓克力板的空間是否足夠，若不足夠請調整雷射頭位置或移動/更換壓克力板。
 
