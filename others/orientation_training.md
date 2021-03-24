@@ -14,25 +14,10 @@
   - [NAS（雲端）](#nas雲端)
 - [階段一](#階段一)
   - [3D 工業建模](#3d-工業建模)
-    - [軟體介紹](#軟體介紹)
-    - [註冊 Onshape](#註冊-onshape)
-    - [建立檔案](#建立檔案)
-    - [繪製 2D 草圖](#繪製-2d-草圖)
-    - [生成 3D 特徵](#生成-3d-特徵)
-    - [複製-鏡射](#複製-鏡射)
-    - [複製-環狀複製排列](#複製-環狀複製排列)
-    - [圓角與倒角](#圓角與倒角)
-    - [組合](#組合)
   - [[驗收-1] 繪製馬達之 3D 模型](#驗收-1-繪製馬達之-3d-模型)
 - [階段二](#階段二)
   - [雷射切割機](#雷射切割機)
   - [3D 列印機](#3d-列印機)
-    - [取得 STL 檔](#取得-stl-檔)
-    - [設定切片軟體](#設定切片軟體)
-    - [切片](#切片)
-    - [進行列印](#進行列印)
-    - [列印完成](#列印完成)
-    - [其它注意事項](#其它注意事項)
   - [[驗收-2] 自行設計並製作機械手臂](#驗收-2-自行設計並製作機械手臂)
 - [階段三](#階段三)
   - [Robotis 套件](#robotis-套件)
@@ -231,7 +216,7 @@
 
 在 onshape 中打開目標模型，選擇目標平面並按下滑鼠右鍵，在右鍵選單中點選「匯出為 DXF/DWG」。
 
-[![](https://1.bp.blogspot.com/-7M2AEZ8qRP8/YFrfeQCG5xI/AAAAAAAAAbA/IUP9S-vfsVkyNDiMZztX6F7nUDo2WK2pACPcBGAsYHg/w640-h332/onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-7M2AEZ8qRP8/YFrfeQCG5xI/AAAAAAAAAbA/IUP9S-vfsVkyNDiMZztX6F7nUDo2WK2pACPcBGAsYHg/w640-h332/onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
+[![](https://1.bp.blogspot.com/-7M2AEZ8qRP8/YFrfeQCG5xI/AAAAAAAAAbA/IUP9S-vfsVkyNDiMZztX6F7nUDo2WK2pACPcBGAsYHg/s16000/onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-7M2AEZ8qRP8/YFrfeQCG5xI/AAAAAAAAAbA/IUP9S-vfsVkyNDiMZztX6F7nUDo2WK2pACPcBGAsYHg/s16000/onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
 > ▲ onshape 匯出
 
 調整匯出參數如下：
