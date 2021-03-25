@@ -234,16 +234,15 @@
 
 > 若使用 SolidWorks 的話，請調整視角以正對目標平面，再另存新檔（Save As）並在檔案格式選擇「DXF」後，確認就可以了。
 
-
 ### 雷切機開機
 
 開機前先確認鑰匙開關是否已開啟，且緊急停機按鈕「STOP」沒有被按下。
 
-雷切機相關的電源總共有 4 個，使用時請將它們依序打開，分別為：
-1. 水冷機
-2. 水冷液幫補
-3. 排風扇
-4. 雷射切割機
+雷切機相關的設備總共有 4 個，使用時請將它們依序打開電源，依序分別為：
+- 水冷機
+- 水冷液幫補
+- 排風扇
+- 雷射切割機
 
 :warning: **`打開電源後一定要注意各機器是否有在運作，若有問題將有可能導致火災`** :warning:
 
@@ -312,7 +311,7 @@
 
 對焦完成後就可以將對焦片拿起並收納好。
 
-:warning: `注意事項` :warning:
+:warning: **`注意事項`** :warning:
 - 請注意手一定要扶著雷射頭再轉鬆螺絲，不然雷射頭會突然掉落造成撞擊，導致失焦。
 - 這裡要轉靜/鬆的螺絲是比較上面的內六角黑色螺絲，不是連接著吹氣管的銀色手轉螺絲（吹氣氣閥調整螺絲）。若發現轉錯請**立即停止操作**，並告知學長。
 
@@ -327,13 +326,21 @@
 
 等雷切機完成後即可打開上蓋，小力觸碰切割零件，確認是否已經完全切斷，如果沒有切斷，可以再次進行切割。如果已經完全切斷，就可以將零件及壓克力板拿起，將切割之餘碎料丟到垃圾桶。
 
+### 復歸
+
+如果雷切工作都已經結束了，請進行復歸動作。
+- 將雷射頭對焦調整螺絲轉鬆，把雷射對焦頭完全升起後再鎖上。
+- 按下雷切機程式的「原點」（X-Y 平面），等待雷射頭自動回到原點。
+- 將壓克力板拿出並且清潔乾淨。
+- 蓋上雷切機的上蓋。
+
 ### 雷切機關機
 
-要關機的話，請將各機器依序開機時的相反順序關閉，分別為：
-1. 雷射切割機
-2. 排風扇
-3. 水冷液幫補
-4. 水冷機
+要關機的話，請將各設備依序開機時的相反順序關閉電源，依序分別為：
+- 雷射切割機
+- 排風扇
+- 水冷液幫補
+- 水冷機
 
 :warning: **`一定要確定機台都確實關機停止運作，否則有可能導致火災`** :warning:
 
@@ -359,7 +366,7 @@
 
 按下「確定」後就會下載該模型的 STL 檔。
 
-> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），並在檔案格式中選擇「STL」即可。
+> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
 
 [![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
 
@@ -475,14 +482,66 @@
 
 # 階段三
 ## Robotis 套件
+
+### RoboPlus Manager
+拿出一台「CM-530」控制器及至少一顆「AX-12」馬達，並使用傳輸線連接。「CM-530」使用 USB 線連接電腦，接上電源並開啟。
+
+[![](https://1.bp.blogspot.com/-KLyF24RRlCA/YFwZQQzBexI/AAAAAAAAAfI/zHGCvbyp8cUegHPTCGWP7GrsAmfNpAJJQCPcBGAsYHg/w400-h299/MX530.png)](https://1.bp.blogspot.com/-KLyF24RRlCA/YFwZQQzBexI/AAAAAAAAAfI/zHGCvbyp8cUegHPTCGWP7GrsAmfNpAJJQCPcBGAsYHg/w400-h299/MX530.png)
+> ▲ CM-530
+
+打開「RoboPlus」程式，在中間的標籤頁中選擇「BIOLOID」，再點選「RoboPlus Manager」即會開啟新的視窗。
+
+[![](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)
+> ▲ RoboPlus 程式
+
+「RoboPlus Manager」視窗中，點擊左上角的下拉式選單來選擇「CM-530」的COM Port，實際的 COM Port 請使用 Windows 的「裝置管理員」得知，或直接選擇「Auto Search」。完成後就可以按下旁邊的「Connect」按鈕進行連線。
+
+[![](https://1.bp.blogspot.com/--1lPrJ4TLlI/YFwZQQSyDrI/AAAAAAAAAfI/W4CTYcriRhcmcD4LtH15Ap_gpR-9jmwqQCPcBGAsYHg/s16000/RP-COM.png)](https://1.bp.blogspot.com/--1lPrJ4TLlI/YFwZQQSyDrI/AAAAAAAAAfI/W4CTYcriRhcmcD4LtH15Ap_gpR-9jmwqQCPcBGAsYHg/s16000/RP-COM.png)
+> ▲ RoboPlus Manager 頁面
+
+連線成功後就會在左側列出所有找到的裝置。
+
+[![](https://1.bp.blogspot.com/-m_1ViZJsmRs/YFwZQWqUQPI/AAAAAAAAAfI/O1eDZgPS6Sk8gjqylhBmEh0ZdvILIj2KACPcBGAsYHg/s16000/RP-Connected1.png)](https://1.bp.blogspot.com/-m_1ViZJsmRs/YFwZQWqUQPI/AAAAAAAAAfI/O1eDZgPS6Sk8gjqylhBmEh0ZdvILIj2KACPcBGAsYHg/s16000/RP-Connected1.png)
+> ▲ RoboPlus Manager 連線成功
+
+AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel（輪子）。正如其名，「關節模式」適合用於機器人關節，它使用角度位置來進行控制；「輪子模式」適合用在車輪等持續旋轉的地方，使用轉速及方向控制。
+
+「關節模式」的角度範圍為：`0° ~ 300°`，對應的數值為：`0 ~ 1023`。中心點在 `150° (512)`。預計要使用「關節模式」來進行組裝的話，請記得在組裝前先將其轉到中心點。
+
+在「RoboPlus Manager」視窗的右上角選擇「Joint」，在中間區域點選「Goal Position」就可以進行「關節模式」的控制。
+
+[![](https://1.bp.blogspot.com/-onR6Fm_Fn0k/YFwZQa-88pI/AAAAAAAAAfI/fBvNWGtg2IAVk6BHGyZXbDb9E01BjLC6wCPcBGAsYHg/s16000/RP-Connected3.png)](https://1.bp.blogspot.com/-onR6Fm_Fn0k/YFwZQa-88pI/AAAAAAAAAfI/fBvNWGtg2IAVk6BHGyZXbDb9E01BjLC6wCPcBGAsYHg/s16000/RP-Connected3.png)
+> ▲ 關節模式控制頁面
+
+「輪子模式」可以 `360°` 連續不斷地旋轉。並且可以控制方向為「CW（順時針）」或「CCW（逆時針）」。旋轉速度的數值範圍為：`0 ~ 1023`，數值為 `0` 代表停止轉動。
+
+在「RoboPlus Manager」視窗的右上角選擇「Wheel」，在中間區域點選「Moving Speed」就可以進行「輪子模式」的控制。
+
+[![](https://1.bp.blogspot.com/-1j9aCzzWjI0/YFwZQX8-fII/AAAAAAAAAfI/nDdeqI7pNdczM6KYbvhsH5AriKAC1go_QCPcBGAsYHg/s16000/RP-whell.png)](https://1.bp.blogspot.com/-1j9aCzzWjI0/YFwZQX8-fII/AAAAAAAAAfI/nDdeqI7pNdczM6KYbvhsH5AriKAC1go_QCPcBGAsYHg/s16000/RP-whell.png)
+> ▲ 輪子模式控制頁面
+
 ## [驗收-3] 以 Robotis 套件控制機械手臂
 使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
 # 階段四
 ## C# 入門
+
+到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
+
+在 GitHub 頁面上點擊「Code」，再點擊「Download ZIP」即可下載程式碼。
+
+> 如果你已經會使用 Git 的話，可以使用你自己習慣的方式來取得此程式碼。
+
+[![](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)
+> ▲ 在 GitHub 上下載 AX-12 控制程式
+
+使用 [Visual Studio](https://visualstudio.microsoft.com/) 來開啟「AX12_motor_controller.sln」檔案，就可以開始編寫程式。Visual Studio 可以安裝免費的 Community 版就好。
+
 ## [驗收-4] 以 C# 控制機械手臂
 使用 C# 撰寫一個視窗程式，自行設計其圖形介面，並可以用來控制「驗收-2」所設計的機械手臂。
 
 要求動作為，以圖形介面操控機械手臂及其夾爪，從「位置-A」夾取目標物（如空寶特瓶），並將其放到「位置-B」。位置 A 與 B 視情況由學長指定。
 
 # 整理與收拾
+
+當所有驗收都完成後，請將組裝的機械手臂拆解，將螺絲、馬達、電線等零件和工具物歸原處，打掃工作環境並整理乾淨。全部都完成後告知學長並確認後，才算是正式結束新進人員訓練。
