@@ -525,11 +525,16 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 
 使用完「RoboPlus Manager」記得點擊「Disconnect」進行斷線，否則「CM-530」會被它佔用，導致其它程式沒辦法使用「CM-530」。
 
+
+
 ## [驗收-3] 以 Robotis 套件控制機械手臂
 使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
 # 階段四
 ## C# 入門
+
+[![](C:\Users\lab\Desktop\新訓照片\Necessary_Device.png)]
+開啟Visual Stdiuo，Using Serial套件。
 
 到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
 
