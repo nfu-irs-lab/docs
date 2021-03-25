@@ -482,6 +482,44 @@
 
 # 階段三
 ## Robotis 套件
+
+### RoboPlus Manager
+拿出一台「CM-530」控制器及至少一顆「AX-12」馬達，並使用傳輸線連接。「CM-530」使用 USB 線連接電腦，接上電源並開啟。
+
+[![](https://1.bp.blogspot.com/-KLyF24RRlCA/YFwZQQzBexI/AAAAAAAAAfI/zHGCvbyp8cUegHPTCGWP7GrsAmfNpAJJQCPcBGAsYHg/w400-h299/MX530.png)](https://1.bp.blogspot.com/-KLyF24RRlCA/YFwZQQzBexI/AAAAAAAAAfI/zHGCvbyp8cUegHPTCGWP7GrsAmfNpAJJQCPcBGAsYHg/w400-h299/MX530.png)
+> ▲ CM-530
+
+打開「RoboPlus」程式，在中間的標籤頁中選擇「BIOLOID」，再點選「RoboPlus Manager」即會開啟新的視窗。
+
+[![](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)
+> ▲ RoboPlus 程式
+
+「RoboPlus Manager」視窗中，點擊左上角的下拉式選單來選擇「CM-530」的COM Port，實際的 COM Port 請使用 Windows 的「裝置管理員」得知，或直接選擇「Auto Search」。完成後就可以按下旁邊的「Connect」按鈕進行連線。
+
+[![](https://1.bp.blogspot.com/--1lPrJ4TLlI/YFwZQQSyDrI/AAAAAAAAAfI/W4CTYcriRhcmcD4LtH15Ap_gpR-9jmwqQCPcBGAsYHg/s16000/RP-COM.png)](https://1.bp.blogspot.com/--1lPrJ4TLlI/YFwZQQSyDrI/AAAAAAAAAfI/W4CTYcriRhcmcD4LtH15Ap_gpR-9jmwqQCPcBGAsYHg/s16000/RP-COM.png)
+> ▲ RoboPlus Manager 頁面
+
+連線成功後就會在左側列出所有找到的裝置。
+
+[![](https://1.bp.blogspot.com/-m_1ViZJsmRs/YFwZQWqUQPI/AAAAAAAAAfI/O1eDZgPS6Sk8gjqylhBmEh0ZdvILIj2KACPcBGAsYHg/s16000/RP-Connected1.png)](https://1.bp.blogspot.com/-m_1ViZJsmRs/YFwZQWqUQPI/AAAAAAAAAfI/O1eDZgPS6Sk8gjqylhBmEh0ZdvILIj2KACPcBGAsYHg/s16000/RP-Connected1.png)
+> ▲ RoboPlus Manager 連線成功
+
+AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel（輪子）。正如其名，「關節模式」適合用於機器人關節，它使用角度位置來進行控制；「輪子模式」適合用在車輪等持續旋轉的地方，使用轉速及方向控制。
+
+「關節模式」的角度範圍為：`0° ~ 300°`，對應的數值為：`0 ~ 1023`。中心點在 `150° (512)`。預計要使用「關節模式」來進行組裝的話，請記得在組裝前先將其轉到中心點。
+
+在「RoboPlus Manager」視窗的右上角選擇「Joint」，在中間區域點選「Goal Position」就可以進行「關節模式」的控制。
+
+[![](https://1.bp.blogspot.com/-onR6Fm_Fn0k/YFwZQa-88pI/AAAAAAAAAfI/fBvNWGtg2IAVk6BHGyZXbDb9E01BjLC6wCPcBGAsYHg/s16000/RP-Connected3.png)](https://1.bp.blogspot.com/-onR6Fm_Fn0k/YFwZQa-88pI/AAAAAAAAAfI/fBvNWGtg2IAVk6BHGyZXbDb9E01BjLC6wCPcBGAsYHg/s16000/RP-Connected3.png)
+> ▲ 關節模式控制頁面
+
+「輪子模式」可以 `360°` 連續不斷地旋轉。並且可以控制方向為「CW（順時針）」或「CCW（逆時針）」。旋轉速度的數值範圍為：`0 ~ 1023`，數值為 `0` 代表停止轉動。
+
+在「RoboPlus Manager」視窗的右上角選擇「Wheel」，在中間區域點選「Moving Speed」就可以進行「輪子模式」的控制。
+
+[![](https://1.bp.blogspot.com/-1j9aCzzWjI0/YFwZQX8-fII/AAAAAAAAAfI/nDdeqI7pNdczM6KYbvhsH5AriKAC1go_QCPcBGAsYHg/s16000/RP-whell.png)](https://1.bp.blogspot.com/-1j9aCzzWjI0/YFwZQX8-fII/AAAAAAAAAfI/nDdeqI7pNdczM6KYbvhsH5AriKAC1go_QCPcBGAsYHg/s16000/RP-whell.png)
+> ▲ 輪子模式控制頁面
+
 ## [驗收-3] 以 Robotis 套件控制機械手臂
 使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
