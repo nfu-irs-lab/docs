@@ -2,6 +2,11 @@
 
 推薦在 [HackMD](https://hackmd.io/@nfu-robot-lab/Bk7xFUX4u)上觀看。
 
+<details>
+  <summary>QR Code</summary>
+  <a href="https://1.bp.blogspot.com/-klH0LFPsAm8/YFxTUosf21I/AAAAAAAAAf8/CQngJznSyr4k6AguQsAU2LKhsdFvgtmMwCPcBGAsYHg/s16000/5XNCB8TEU0.png"><img src="https://1.bp.blogspot.com/-klH0LFPsAm8/YFxTUosf21I/AAAAAAAAAf8/CQngJznSyr4k6AguQsAU2LKhsdFvgtmMwCPcBGAsYHg/s16000/5XNCB8TEU0.png"></a>
+</details>
+
 ## 目錄
 - [上銀機械手臂使用指南](#上銀機械手臂使用指南)
   - [各裝置名稱](#各裝置名稱)
