@@ -37,7 +37,7 @@
 # 階段一
 ## 3D 工業建模
 
-在 YouTube 上觀看示範影片。連結：[\[新進人員訓練\] 3D 建模教學-基礎 (onshape)](https://youtu.be/4y7vu-GDY1o)
+:film_strip: 在 YouTube 上觀看示範影片。連結：[\[新進人員訓練\] 3D 建模教學-基礎 (onshape)](https://youtu.be/4y7vu-GDY1o)
 
 ###  軟體介紹
 目前實驗室主要使用 [Onshape](https://www.onshape.com) 和 SolidWorks 來進行 3D 建模。
