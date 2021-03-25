@@ -539,8 +539,18 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 >版本選擇
 
 選擇完版本後，於最上面一行點擊兩下開始進行程式撰寫。
-首先為`START PROGRAM`為程式伊始，必須要有。而END PROGRAM則未必要有，通常會接著`ENDLESS LOOP`做永不中斷的迴圈執行動作。
-IF判斷式則為判斷式，使用方法為
+`START PROGRAM`為程式伊始，必須要有。通常會接著`ENDLESS LOOP`做無限迴圈的動作執行。
+
+`? = ?` 與 `? = ? + ?`用來指定狀態，例如馬達的`扭力、速度、位置`等。
+點進去後選擇`DYNAMIXEL`內的`DX/RX/AX Series`，並選擇馬達ID後即可指定該顆馬達之參數。
+
+
+此程式的Delay為`Timeer`與`WAIT While`組合而成
+`Timer`在`CM-530裡Controller`選擇。
+
+點選上方`√`檢查程式碼是否有誤，`⇩`進行程式燒錄。
+
+修改`CM-530`控制板模式至下圖樣式。點擊紅色框內之按鈕，即可執行燒錄至CM-530之START PROGRAM內程式碼。
 
 # 階段四
 ## C# 入門
@@ -573,7 +583,7 @@ IF判斷式則為判斷式，使用方法為
 此封包必須包含以下幾項(`皆為Byte型態`)：
 1. 兩個標頭 (0xff)
 2. 馬達id
-3. 封包長度 (參數+3)
+3. 封包長度 (參數數量+3)
 4. 封包指令 ([指令表](C:\Users\lab\Desktop\Train\Action_List.png))
 5. 指令數據起始位置 ([AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area))
 6. 參數 
