@@ -520,6 +520,8 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 [![](https://1.bp.blogspot.com/-1j9aCzzWjI0/YFwZQX8-fII/AAAAAAAAAfI/nDdeqI7pNdczM6KYbvhsH5AriKAC1go_QCPcBGAsYHg/s16000/RP-whell.png)](https://1.bp.blogspot.com/-1j9aCzzWjI0/YFwZQX8-fII/AAAAAAAAAfI/nDdeqI7pNdczM6KYbvhsH5AriKAC1go_QCPcBGAsYHg/s16000/RP-whell.png)
 > ▲ 輪子模式控制頁面
 
+使用完「RoboPlus Manager」記得點擊「Disconnect」進行斷線，否則「CM-530」會被它佔用，導致其它程式沒辦法使用「CM-530」。
+
 ## [驗收-3] 以 Robotis 套件控制機械手臂
 使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
