@@ -533,7 +533,7 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 # 階段四
 ## C# 入門
 
-[!(C:\Users\lab\Desktop\Train\Necessary_Device.png)]
+[![](C:\Users\lab\Desktop\Train\Necessary_Device.png)]
 開啟Visual Stdiuo，Using Serial套件。
 
 到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
