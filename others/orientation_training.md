@@ -366,7 +366,7 @@
 
 按下「確定」後就會下載該模型的 STL 檔。
 
-> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），並在檔案格式中選擇「STL」即可。
+> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
 
 [![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
 
@@ -490,7 +490,14 @@
 
 到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
 
-使用 [Visual Studio](https://visualstudio.microsoft.com/) 來開啟並編寫程式。可以安裝免費的 Community 版就好。
+在 GitHub 頁面上點擊「Code」，再點擊「Download ZIP」即可下載程式碼。
+
+> 如果你已經會使用 Git 的話，可以使用你自己習慣的方式來取得此程式碼。
+
+[![](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)
+> ▲ 在 GitHub 上下載 AX-12 控制程式
+
+使用 [Visual Studio](https://visualstudio.microsoft.com/) 來開啟「AX12_motor_controller.sln」檔案，就可以開始編寫程式。Visual Studio 可以安裝免費的 Community 版就好。
 
 ## [驗收-4] 以 C# 控制機械手臂
 使用 C# 撰寫一個視窗程式，自行設計其圖形介面，並可以用來控制「驗收-2」所設計的機械手臂。
