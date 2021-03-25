@@ -65,8 +65,7 @@
 # 工作流程 Workflow
 工作流程大致上與 GitHub-Flow 一樣，請先去瞭解其運作，並善用 [nfu-irs-lab/test](https://github.com/nfu-irs-lab/test) 進行練習。
 
-在此每個 repo 會有兩個 Branch：`main` 和 `develop`。其中 `develop` Branch 的功能就是 GitHub-Flow 中的 `main` 或 `master` Branch，而我們真正的 `main` Branch 只作為發行用，只由管理員負責管理，一般人不需要也不允許操作組織上的 `main` Branch（除了 Pull）。
-
+在此每個 repo 會有兩個 Branch：`main` 和 `develop`。其中 `develop` Branch 的功能就是 GitHub-Flow 中的 `main` 或 `master` Branch，而我們真正的 `main` Branch 只作為發行用，只由管理員負責管理，一般人不需要也不允許操作組織上的 `main` Branch（除了 Pull 和 Fetch）。
 
 [![圖解實驗室Git工作流程](https://1.bp.blogspot.com/-5namgK3dhm0/YFn8e204e9I/AAAAAAAAAYc/tQRkA8anh5kCnaxk4apQ9BimMRipIbVhwCPcBGAsYHg/s16000/%25E5%25AF%25A6%25E9%25A9%2597%25E5%25AE%25A4Git%25E5%25B7%25A5%25E4%25BD%259C%25E6%25B5%2581%25E7%25A8%258B.png)](https://1.bp.blogspot.com/-5namgK3dhm0/YFn8e204e9I/AAAAAAAAAYc/tQRkA8anh5kCnaxk4apQ9BimMRipIbVhwCPcBGAsYHg/s16000/%25E5%25AF%25A6%25E9%25A9%2597%25E5%25AE%25A4Git%25E5%25B7%25A5%25E4%25BD%259C%25E6%25B5%2581%25E7%25A8%258B.png)
 > ▲ 實驗室 Git 工作流程
