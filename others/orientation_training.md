@@ -532,9 +532,67 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 
 # 階段四
 ## C# 入門
+### 使用程式控制馬達
 
+準備通訊轉換器、馬達、電源套件、12V變壓器、2條3Pin線。
 [![](C:\Users\lab\Desktop\Train\Necessary_Device.png)]
-開啟Visual Stdiuo，Using Serial套件。
+> 範例套件
+並如下圖連接。
+[![](C:\Users\lab\Desktop\Train\Connect.png)]
+> 連接方式
+
+確認通訊轉換器的模式，AX / MX 系列使用TTL模式，DX / RX / EX / MX系列使用RS485模式。
+本例使用AX-12A+馬達，因此為TTL模式，如果選擇錯誤則會導致後續失敗。
+[![](C:\Users\lab\Desktop\Train\CommunityTR.png)]
+>模式選擇的開關
+
+確認連接正確，接上電腦並確認COM Port後，開啟RoboPlus於上方選擇Expert模式並點選`Dynamixel Wizard`。
+[![](C:\Users\lab\Desktop\Train\Dynamixel Wizard UI.png)]
+>開啟Dynamixel Wizard的介面
+
+選擇COM Port並點選Start searching尋找馬達，成功連接後獲取ID與鮑率。
+
+[![](C:\Users\lab\Desktop\Train\NeedKnow.png)]
+>馬達的ID與鮑率
+
+### 撰寫程式封包
+實驗室透過撰寫[`ROBOTIS Protocol 1`](https://emanual.robotis.com/docs/en/dxl/protocol1/)協定封包，達成馬達控制。
+
+此封包必須包含以下幾項(`皆為Byte型態`)：
+1. 兩個標頭 (0xff)
+2. 馬達id
+3. 封包長度 (參數+3)
+4. 封包指令 ([指令表](C:\Users\lab\Desktop\Train\Action_List.png))
+5. 指令數據起始位置 ([AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area))
+6. 參數 
+7. 校驗碼 ([算法](C:\Users\lab\Desktop\Train\CheckCode.png))
+
+`透過(第5點)指令位址來判斷指令有幾位元。Goal Position 與 Moving Speed皆為2Byte`
+
+### 以C#為例
+
+開啟Visual Stduio，新增C#新專案，並於兩側ToolBox中新增Serial Port，並修改COM Port與鮑率。
+[![](C:\Users\lab\Desktop\Train\SerialPort.png)]
+>新增專案與Serial Port。
+
+`範例程式`
+[![](C:\Users\lab\Desktop\Train\NeedKnow.png)]
+>此程式碼能夠控制`Goal Position`與`Moving Speed`。
+
+此程式碼宣告了byte[] data陣列
+1. data[0]、data[1]為0xff標頭
+2. data[2]為馬達id
+3. data[3]是封包長度7，有4個參數(Postion 2個與Speed 2個)+3
+4. data[4]為0x03表示寫入的意思
+5. data[5] 0x1e代表從十進制30(即Goal Position)開始寫入。`注意為2Byte因此需要寫兩格`
+6. data[6]為寫入Goal Position之**低位元**。
+7. data[7]為寫入Goal Position之**高位元**。
+8. data[8]為寫入Moving Speed之**低位元**。
+9. data[9]為寫入Moving Speed之**高位元**。
+10. data[10]為計算校驗碼。
+
+撰寫完成封包後，透過SerialPort做傳輸。
+
 
 到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
 
