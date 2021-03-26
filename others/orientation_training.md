@@ -14,6 +14,7 @@
   - [NAS（雲端）](#nas雲端)
 - [階段一](#階段一)
   - [3D 工業建模](#3d-工業建模)
+  - [onshape 基礎教學](#onshape-基礎教學)
   - [[驗收-1] 繪製馬達之 3D 模型](#驗收-1-繪製馬達之-3d-模型)
 - [階段二](#階段二)
   - [雷射切割機](#雷射切割機)
@@ -27,7 +28,11 @@
   - [[驗收-4] 以 C# 控制機械手臂](#驗收-4-以-c-控制機械手臂)
 - [整理與收拾](#整理與收拾)
 
-> [回到主頁面](https://github.com/nfu-irs-lab/docs#實驗室文件)
+## 相關連結
+- 實驗室文件主頁面
+  - [HackMD](https://hackmd.io/@nfu-robot-lab/HJ6ZrU7Vd)
+  - [GitHub](https://github.com/nfu-irs-lab/docs)
+- [新進人員訓練-示範影片](https://youtube.com/playlist?list=PLvBFWuRDlvfmXXoI-Em1UWM7Ua5eL8AJh)
 
 ---
 # 實驗室環境介紹
@@ -36,18 +41,15 @@
 
 # 階段一
 ## 3D 工業建模
-
-:triangular_flag_on_post: 在 YouTube 上觀看示範影片。連結：[\[新進人員訓練\] 3D 建模教學-基礎 (onshape)](https://youtu.be/4y7vu-GDY1o)
-
 ###  軟體介紹
-目前實驗室主要使用 [Onshape](https://www.onshape.com) 和 SolidWorks 來進行 3D 建模。
+目前實驗室主要使用 [onshape](https://www.onshape.com) 和 SolidWorks 來進行 3D 建模。
 
-[Onshape](https://www.onshape.com) 可以免費使用，SolidWorks 需要付費使用，另外也可以選擇使用學校 E-mail（@gm.nfu.edu.tw）去申請 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview) 的免費學術授權。
+[onshape](https://www.onshape.com) 可以免費使用，SolidWorks 需要付費使用，另外也可以選擇使用學校 E-mail（@gm.nfu.edu.tw）去申請 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview) 的免費學術授權。
 
-以下僅介紹 [Onshape](https://www.onshape.com)。其它軟體使用起來操作與概念相同、大同小異。
+以下僅介紹 [onshape](https://www.onshape.com)。其它軟體使用起來操作與概念相同、大同小異。
 
-### 註冊 Onshape
-進入 [Onshape](https://www.onshape.com/signup) 的註冊頁面，於下方的方案選擇「Public Maker Plan」（也可以使用學校帳號申請註冊「Education Account」）。
+### 註冊 onshape
+進入 [onshape](https://www.onshape.com/signup) 的註冊頁面，於下方的方案選擇「Public Maker Plan」（也可以使用學校帳號申請註冊「Education Account」）。
 
 [![](https://1.bp.blogspot.com/-NgzDc19D5Yg/YFRj9TNCxQI/AAAAAAAAAHs/ifkN-_mGGBQq2S7q-LzQXi4-HLUE96V_wCPcBGAsYHg/s1821/onshape-%25E8%25A8%25BB%25E5%2586%258A1.png)](https://1.bp.blogspot.com/-NgzDc19D5Yg/YFRj9TNCxQI/AAAAAAAAAHs/ifkN-_mGGBQq2S7q-LzQXi4-HLUE96V_wCPcBGAsYHg/s1821/onshape-%25E8%25A8%25BB%25E5%2586%258A1.png)
 > ▲ 選擇「Public Maker Plan」方案。
@@ -62,10 +64,16 @@
 > - 若有詢問習慣的單位，請使用 MMGS 制：長度單位為 `Millimeter`、角度單位為 `Degree`、質量單位為 `Gram`。
 > - 若有詢問習慣的滑鼠操作方式，請選擇「SolidWorks」。
 
+## onshape 基礎教學
+
+> :triangular_flag_on_post: 示範影片。
+>
+> [![](https://img.youtube.com/vi/4y7vu-GDY1o/0.jpg)](https://youtu.be/4y7vu-GDY1o)
+
 ### 建立檔案
 > 以下內容之單位皆使用 MMGS 制。
 
-登入 Onshape 並進到主頁面。點擊左上角的「建立」按鈕並選擇「文件」，來創建新的檔案。
+登入 onshape 並進到主頁面。點擊左上角的「建立」按鈕並選擇「文件」，來創建新的檔案。
 
 [![](https://1.bp.blogspot.com/-hBJMA7n1wWI/YFRpP1ESuyI/AAAAAAAAAJg/glYwCEGk14kDBs3C-_qCSPfLUINg0JtagCPcBGAsYHg/s1920/onshape-%25E4%25BD%25BF%25E7%2594%25A81.png)](https://1.bp.blogspot.com/-hBJMA7n1wWI/YFRpP1ESuyI/AAAAAAAAAJg/glYwCEGk14kDBs3C-_qCSPfLUINg0JtagCPcBGAsYHg/s1920/onshape-%25E4%25BD%25BF%25E7%2594%25A81.png)
 > ▲ Onshape 主頁面
@@ -358,7 +366,12 @@
 ### 取得 STL 檔
 要列印 3D 模型，首先要取得該模型的 STL 檔。若想要列印在 onshape 上繪製的模型，只要將該模型匯出即可。
 
-在 onshape 中打開欲列印的檔案，在下方的元件列中以對目標元件點擊滑鼠右鍵，並選擇「匯出」。調整匯出的設定如下：
+在 onshape 中打開欲列印的檔案，在下方的元件列中以對目標元件點擊滑鼠右鍵，並選擇「匯出」。
+
+[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
+> ▲ 在 onshape 匯出
+
+調整匯出的設定如下：
 
 - 檔案名稱：*自行決定*
 - 格式：STL
@@ -369,13 +382,10 @@
 
 按下「確定」後就會下載該模型的 STL 檔。
 
-> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
-
-[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
-> ▲ 在 onshape 匯出
-
 [![](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)
 > ▲ onshape 匯出 STL 設定
+
+> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
 
 ### 設定切片軟體
 3D 列印機無法直接列印 STL 檔，必須要使用切片軟體設定好列印參數後，再將 STL 檔轉換成 G-Code 檔（.gcode）才可以進行列印。
@@ -441,6 +451,11 @@
 >   - 僅在外部列印邊緣：`[√]`
 
 ### 切片
+
+> :triangular_flag_on_post: 示範影片。
+>
+> [![](https://img.youtube.com/vi/dQmnk84itwM/0.jpg)](https://youtu.be/dQmnk84itwM)
+
 設定好列印參數後就可以進行切片。
 
 將目標 STL 檔加到 Cura 中（開啟檔案或直接拖拉）。當模型進入到 Cura 中時，可以選擇它，並利用左側的列表來旋轉、移動或複製該模型。
