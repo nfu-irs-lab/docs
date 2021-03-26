@@ -14,6 +14,7 @@
   - [NAS（雲端）](#nas雲端)
 - [階段一](#階段一)
   - [3D 工業建模](#3d-工業建模)
+  - [onshape 基礎教學](#onshape-基礎教學)
   - [[驗收-1] 繪製馬達之 3D 模型](#驗收-1-繪製馬達之-3d-模型)
 - [階段二](#階段二)
   - [雷射切割機](#雷射切割機)
@@ -27,7 +28,11 @@
   - [[驗收-4] 以 C# 控制機械手臂](#驗收-4-以-c-控制機械手臂)
 - [整理與收拾](#整理與收拾)
 
-> [回到主頁面](https://github.com/nfu-irs-lab/docs#實驗室文件)
+## 相關連結
+- 實驗室文件主頁面
+  - [HackMD](https://hackmd.io/@nfu-robot-lab/HJ6ZrU7Vd)
+  - [GitHub](https://github.com/nfu-irs-lab/docs)
+- [新進人員訓練-示範影片](https://youtube.com/playlist?list=PLvBFWuRDlvfmXXoI-Em1UWM7Ua5eL8AJh)
 
 ---
 # 實驗室環境介紹
@@ -36,18 +41,15 @@
 
 # 階段一
 ## 3D 工業建模
-
-:triangular_flag_on_post: 在 YouTube 上觀看示範影片。連結：[\[新進人員訓練\] 3D 建模教學-基礎 (onshape)](https://youtu.be/4y7vu-GDY1o)
-
 ###  軟體介紹
-目前實驗室主要使用 [Onshape](https://www.onshape.com) 和 SolidWorks 來進行 3D 建模。
+目前實驗室主要使用 [onshape](https://www.onshape.com) 和 SolidWorks 來進行 3D 建模。
 
-[Onshape](https://www.onshape.com) 可以免費使用，SolidWorks 需要付費使用，另外也可以選擇使用學校 E-mail（@gm.nfu.edu.tw）去申請 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview) 的免費學術授權。
+[onshape](https://www.onshape.com) 可以免費使用，SolidWorks 需要付費使用，另外也可以選擇使用學校 E-mail（@gm.nfu.edu.tw）去申請 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview) 的免費學術授權。
 
-以下僅介紹 [Onshape](https://www.onshape.com)。其它軟體使用起來操作與概念相同、大同小異。
+以下僅介紹 [onshape](https://www.onshape.com)。其它軟體使用起來操作與概念相同、大同小異。
 
-### 註冊 Onshape
-進入 [Onshape](https://www.onshape.com/signup) 的註冊頁面，於下方的方案選擇「Public Maker Plan」（也可以使用學校帳號申請註冊「Education Account」）。
+### 註冊 onshape
+進入 [onshape](https://www.onshape.com/signup) 的註冊頁面，於下方的方案選擇「Public Maker Plan」（也可以使用學校帳號申請註冊「Education Account」）。
 
 [![](https://1.bp.blogspot.com/-NgzDc19D5Yg/YFRj9TNCxQI/AAAAAAAAAHs/ifkN-_mGGBQq2S7q-LzQXi4-HLUE96V_wCPcBGAsYHg/s1821/onshape-%25E8%25A8%25BB%25E5%2586%258A1.png)](https://1.bp.blogspot.com/-NgzDc19D5Yg/YFRj9TNCxQI/AAAAAAAAAHs/ifkN-_mGGBQq2S7q-LzQXi4-HLUE96V_wCPcBGAsYHg/s1821/onshape-%25E8%25A8%25BB%25E5%2586%258A1.png)
 > ▲ 選擇「Public Maker Plan」方案。
@@ -62,10 +64,16 @@
 > - 若有詢問習慣的單位，請使用 MMGS 制：長度單位為 `Millimeter`、角度單位為 `Degree`、質量單位為 `Gram`。
 > - 若有詢問習慣的滑鼠操作方式，請選擇「SolidWorks」。
 
+## onshape 基礎教學
+
+> :triangular_flag_on_post: 示範影片。
+>
+> [![](https://img.youtube.com/vi/4y7vu-GDY1o/0.jpg)](https://youtu.be/4y7vu-GDY1o)
+
 ### 建立檔案
 > 以下內容之單位皆使用 MMGS 制。
 
-登入 Onshape 並進到主頁面。點擊左上角的「建立」按鈕並選擇「文件」，來創建新的檔案。
+登入 onshape 並進到主頁面。點擊左上角的「建立」按鈕並選擇「文件」，來創建新的檔案。
 
 [![](https://1.bp.blogspot.com/-hBJMA7n1wWI/YFRpP1ESuyI/AAAAAAAAAJg/glYwCEGk14kDBs3C-_qCSPfLUINg0JtagCPcBGAsYHg/s1920/onshape-%25E4%25BD%25BF%25E7%2594%25A81.png)](https://1.bp.blogspot.com/-hBJMA7n1wWI/YFRpP1ESuyI/AAAAAAAAAJg/glYwCEGk14kDBs3C-_qCSPfLUINg0JtagCPcBGAsYHg/s1920/onshape-%25E4%25BD%25BF%25E7%2594%25A81.png)
 > ▲ Onshape 主頁面
@@ -358,7 +366,12 @@
 ### 取得 STL 檔
 要列印 3D 模型，首先要取得該模型的 STL 檔。若想要列印在 onshape 上繪製的模型，只要將該模型匯出即可。
 
-在 onshape 中打開欲列印的檔案，在下方的元件列中以對目標元件點擊滑鼠右鍵，並選擇「匯出」。調整匯出的設定如下：
+在 onshape 中打開欲列印的檔案，在下方的元件列中以對目標元件點擊滑鼠右鍵，並選擇「匯出」。
+
+[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
+> ▲ 在 onshape 匯出
+
+調整匯出的設定如下：
 
 - 檔案名稱：*自行決定*
 - 格式：STL
@@ -369,14 +382,10 @@
 
 按下「確定」後就會下載該模型的 STL 檔。
 
-> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
-
-[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
-
-> ▲ 在 onshape 匯出
-
 [![](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)
 > ▲ onshape 匯出 STL 設定
+
+> 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
 
 ### 設定切片軟體
 3D 列印機無法直接列印 STL 檔，必須要使用切片軟體設定好列印參數後，再將 STL 檔轉換成 G-Code 檔（.gcode）才可以進行列印。
@@ -388,7 +397,7 @@
 
 首次安裝完 Cura 時，應會請你選擇 3D 列印機的型號（如：2.5 EX 或 2.5 FX），請依照自己實際要使用的機台作選擇（未來還可以改）。
 
-[![](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
+[![](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/s1842/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/s1842/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
 > ▲ Cura 介面
 
 開啟 Cura 後，在右側是列印的參數設定，請將「列印設定」由「推薦」改成「自訂選項」，並修改其中的設定值如下：
@@ -442,13 +451,18 @@
 >   - 僅在外部列印邊緣：`[√]`
 
 ### 切片
+
+> :triangular_flag_on_post: 示範影片。
+>
+> [![](https://img.youtube.com/vi/dQmnk84itwM/0.jpg)](https://youtu.be/dQmnk84itwM)
+
 設定好列印參數後就可以進行切片。
 
 將目標 STL 檔加到 Cura 中（開啟檔案或直接拖拉）。當模型進入到 Cura 中時，可以選擇它，並利用左側的列表來旋轉、移動或複製該模型。
 
 點擊右下角的「準備」就會開始進行切片。切片完成後可以在上方的下拉時選單中將「實體檢視」改成「分層檢視」，來觀察切片完成後的模型。
 
-[![](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
+[![](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/s16000/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/s16000/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
 > ▲ Cura 的分層檢視
 
 確定沒問題後就可以點擊右下角的「儲存檔案」，來輸出成 G-Code 檔（.gcode）。
@@ -525,95 +539,154 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 
 使用完「RoboPlus Manager」記得點擊「Disconnect」進行斷線，否則「CM-530」會被它佔用，導致其它程式沒辦法使用「CM-530」。
 
+### RoboPlus Task
 
+打開「RoboPlus」程式，在中間的標籤頁中選擇「BIOLOID」，再點選「RoboPlus Task」即會開啟新的視窗。
+
+[![](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)
+> ▲ RoboPlus 程式
+
+於任意一行點擊兩下進行控制器選擇。上方的「Firmware Version」選擇 `1.0`，再於下方選擇「CM-530」。
+
+[![](https://1.bp.blogspot.com/-su1GYBQGivQ/YF1piGrZh_I/AAAAAAAAAhY/IMOPP18ZvMY8tGLXTxZlEa_2Os0gx-iMwCPcBGAsYHg/s16000/Version.png)](https://1.bp.blogspot.com/-su1GYBQGivQ/YF1piGrZh_I/AAAAAAAAAhY/IMOPP18ZvMY8tGLXTxZlEa_2Os0gx-iMwCPcBGAsYHg/s16000/Version.png)
+> ▲ 選擇控制器為 CM-530
+
+選擇完控制器後就可以開始進行程式撰寫。在空白行點擊兩下即會跳出程式碼選單，需從中選擇需要的程式碼以進行插入。
+
+[![](https://1.bp.blogspot.com/-XglEUmE-giU/YF1rnMYkdBI/AAAAAAAAAiI/j302mWALcugjGppKnY1myv58q--ltvoDQCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)](https://1.bp.blogspot.com/-XglEUmE-giU/YF1rnMYkdBI/AAAAAAAAAiI/j302mWALcugjGppKnY1myv58q--ltvoDQCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)
+> ▲ 程式碼指令清單
+
+其中幾個比較重要的程式碼指令功能如下：
+- `START PROGRAM`：程式的起始點，必須要有。
+- `ENDLESS LOOP`：無限迴圈，基本上也都要有。
+- `? = ?`：指定狀態。
+  - 例如點擊左邊的 `?` 並選擇「DYNAMIXEL」內的「DX/RX/AX Series」，在上方選擇目標的馬達 ID 及想要控制的馬達參數，再點擊右邊的 `?` 後即可設定數值。
+- `IF`、`ELSE IF`、`ELSE`：程式中常見的基本「if-else」判斷式。
+- `WAIT WHILE`：通常用來搭配「Timer」來當 Delay 使用。
+
+以下示範一個簡單的程式。其功能為：
+- 如果按下「CM-530」上的「U」按鈕，ID 為 `1` 的馬達就會以 `512` 的速度進行 CW（順時針）轉動。
+- 如果沒有按下「CM-530」上的「U」按鈕，但是有按下「D」按鈕，ID 為 `1` 的馬達就會以 `512` 的速度進行 CCW（逆時針）轉動。
+- 如果沒按下任何按鈕，ID 為 `1` 的馬達就會停止轉動（速度為 `0`）。
+
+[![](https://1.bp.blogspot.com/-PqLOREtsteA/YF11KeTJklI/AAAAAAAAAjM/jm4EjYU0oiUArE4GGUVeX4QGnL7TFfCwACPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596-example.PNG)](https://1.bp.blogspot.com/-PqLOREtsteA/YF11KeTJklI/AAAAAAAAAjM/jm4EjYU0oiUArE4GGUVeX4QGnL7TFfCwACPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596-example.PNG)
+> ▲ 範例程式碼
+
+[![](https://1.bp.blogspot.com/-cxyDcKVqrlM/YF11KRAybII/AAAAAAAAAjM/lvRjWxbMvrk3xqPMiYBfFr9p34soQtVqgCPcBGAsYHg/w640-h102/%25E6%2593%25B7%25E5%258F%2596-delay.PNG)](https://1.bp.blogspot.com/-cxyDcKVqrlM/YF11KRAybII/AAAAAAAAAjM/lvRjWxbMvrk3xqPMiYBfFr9p34soQtVqgCPcBGAsYHg/w640-h102/%25E6%2593%25B7%25E5%258F%2596-delay.PNG)
+> ▲ Delay 的寫法
+
+點選上方的紅色勾勾（:heavy_check_mark:）檢查程式碼是否有語法錯誤；點擊上方的綠色向下箭頭（:arrow_down:）進行程式燒錄。燒錄時請確認「CM-530」沒被其它程式（如「RoboPlus Manager」）佔用。
+
+燒錄完成後，連續按下「CM-530」上紅色的「MODE」按鈕，直到其左上方的「PC LINK」最下面的「PLAY」指示燈亮起紅色，再按下右方的「START」按鈕，等待數秒即會執行程式碼。
 
 ## [驗收-3] 以 Robotis 套件控制機械手臂
 使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
-開啟RoboPlsu，選擇上方的BIOLOID，並選擇RoboPlus Task。
-[![](C:\Users\lab\Desktop\Train\RoboPlusTask.png)
->RoboPlus Task介面
-
-於任意一行點擊兩下進行版本選擇，選擇Firmware Version 1.0的CM-530。
-[![](C:\Users\lab\Desktop\Train\Version.png)
->版本選擇
-
-選擇完版本後，於最上面一行點擊兩下開始進行程式撰寫。
-`START PROGRAM`為程式伊始，必須要有。通常會接著`ENDLESS LOOP`做無限迴圈的動作執行。
-
-`? = ?` 與 `? = ? + ?`用來指定狀態，例如馬達的`扭力、速度、位置`等。
-點進去後選擇`DYNAMIXEL`內的`DX/RX/AX Series`，並選擇馬達ID後即可指定該顆馬達之參數。
-
-
-此程式的Delay為`Timeer`與`WAIT While`組合而成
-`Timer`在`CM-530裡Controller`選擇。
-
-點選上方`√`檢查程式碼是否有誤，`⇩`進行程式燒錄。
-
-修改`CM-530`控制板模式至下圖樣式。點擊紅色框內之按鈕，即可執行燒錄至CM-530之START PROGRAM內程式碼。
-
 # 階段四
-## C# 入門
-### 使用程式控制馬達
+## C#
+使用 [Visual Studio](https://visualstudio.microsoft.com/) 來編寫 C# 程式。Visual Studio 可以安裝免費的 Community 版就好。
 
-準備通訊轉換器、馬達、電源套件、12V變壓器、2條3Pin線。
-[![](C:\Users\lab\Desktop\Train\Necessary_Device.png)]
-> 範例套件
-並如下圖連接。
-[![](C:\Users\lab\Desktop\Train\Connect.png)]
-> 連接方式
+### 硬體及準備工作
 
-確認通訊轉換器的模式，AX / MX 系列使用TTL模式，DX / RX / EX / MX系列使用RS485模式。
-本例使用AX-12A+馬達，因此為TTL模式，如果選擇錯誤則會導致後續失敗。
-[![](C:\Users\lab\Desktop\Train\CommunityTR.png)]
->模式選擇的開關
+準備以下硬體：
+1. 通訊轉換器
+2. 馬達
+3. 電源轉接板
+4. 12V 電源供應器
+5. 2 條 3Pin 線。
 
-確認連接正確，接上電腦並確認COM Port後，開啟RoboPlus於上方選擇Expert模式並點選`Dynamixel Wizard`。
-[![](C:\Users\lab\Desktop\Train\Dynamixel Wizard UI.png)]
->開啟Dynamixel Wizard的介面
+[![](https://1.bp.blogspot.com/-MHwlCwtcL1o/YF13G6eexzI/AAAAAAAAAjw/Vfc9w23X_8Qo3jwq2PV55i6u-KLfBnh8gCPcBGAsYHg/s16000/Necessary_Device.png)](https://1.bp.blogspot.com/-MHwlCwtcL1o/YF13G6eexzI/AAAAAAAAAjw/Vfc9w23X_8Qo3jwq2PV55i6u-KLfBnh8gCPcBGAsYHg/s16000/Necessary_Device.png)
+> ▲ 由左至右分別為：12V 電源供應器、AX-12+ 馬達、通訊轉換器、電源轉接板及 2 條 3Pin 線
 
-選擇COM Port並點選Start searching尋找馬達，成功連接後獲取ID與鮑率。
+將它們如下圖連接。
 
-[![](C:\Users\lab\Desktop\Train\NeedKnow.png)]
->馬達的ID與鮑率
+[![](https://1.bp.blogspot.com/-CFlt05sNWe0/YF13VRWRhEI/AAAAAAAAAj0/Lszh1iwbzLEIL2IXsr32xSbpLgKBrRxTQCPcBGAsYHg/s16000/Conncet.png)](https://1.bp.blogspot.com/-CFlt05sNWe0/YF13VRWRhEI/AAAAAAAAAj0/Lszh1iwbzLEIL2IXsr32xSbpLgKBrRxTQCPcBGAsYHg/s16000/Conncet.png)
+> ▲ 連接方式
 
-### 撰寫程式封包
-實驗室透過撰寫[`ROBOTIS Protocol 1`](https://emanual.robotis.com/docs/en/dxl/protocol1/)協定封包，達成馬達控制。
+確認通訊轉換器的模式，「AX / MX」系列使用「TTL」模式；「DX / RX / EX / MX」系列使用「RS-485」模式。
 
-此封包必須包含以下幾項(`皆為Byte型態`)：
-1. 兩個標頭 (0xff)
-2. 馬達id
-3. 封包長度 (參數數量+3)
-4. 封包指令 ([指令表](C:\Users\lab\Desktop\Train\Action_List.png))
-5. 指令數據起始位置 ([AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area))
+本例使用「AX-12+」馬達，因此為「TTL」模式，如果選擇錯誤則會導致後續失敗。
+
+確認連接正確，接上電腦並確認 COM Port 後，開啟「RoboPlus」並於上方選擇「Expert」模式並點選「Dynamixel Wizard」。
+
+[![](https://1.bp.blogspot.com/-nPVu2vGBUIQ/YF13lSFBzcI/AAAAAAAAAkM/W_xj7O1FlC4fFTMySRmheJsoqu5xVMPFQCPcBGAsYHg/s16000/Dynamixel%2BWizard%2BUI.png)](https://1.bp.blogspot.com/-nPVu2vGBUIQ/YF13lSFBzcI/AAAAAAAAAkM/W_xj7O1FlC4fFTMySRmheJsoqu5xVMPFQCPcBGAsYHg/s16000/Dynamixel%2BWizard%2BUI.png)
+> ▲ Dynamixel Wizard 的介面
+
+選擇 COM Port 並點選「Start searching」尋找馬達，若成功連接即可獲取其 ID 與鮑率。
+[![](https://1.bp.blogspot.com/-fXX6jnB1GGE/YF13rQEHrYI/AAAAAAAAAkQ/Z4XqpkWIafkwJRNBwk7gbVwccMecR0ZQgCPcBGAsYHg/s639/NeedKnow.png)](https://1.bp.blogspot.com/-fXX6jnB1GGE/YF13rQEHrYI/AAAAAAAAAkQ/Z4XqpkWIafkwJRNBwk7gbVwccMecR0ZQgCPcBGAsYHg/s639/NeedKnow.png)
+> ▲ 馬達的 ID 與鮑率
+
+### 指令封包
+透過 [ROBOTIS Protocol 1](https://emanual.robotis.com/docs/en/dxl/protocol1/) 封包協定達成馬達控制。
+
+此封包必須包含以下幾項（皆為 `Byte` 型態）：
+1. 兩個標頭（`0xff`）
+2. 馬達 ID
+3. 封包長度（參數數量 +3）
+4. 封包指令（[指令表](https://emanual.robotis.com/docs/en/dxl/protocol1/#instruction)）
+5. 指令數據起始位置（[AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area)）
 6. 參數 
-7. 校驗碼 ([算法](C:\Users\lab\Desktop\Train\CheckCode.png))
+7. 校驗碼（[算法](https://emanual.robotis.com/docs/en/dxl/protocol1/#checksum-status-packet)）
 
->透過(第5點)指令位址來判斷指令有幾位元。Goal Position 與 Moving Speed皆為2Byte
+> 透過第5點指令位址來判斷指令有幾位元。Goal Position 與 Moving Speed 皆為 2 Byte。
 
-### 以C#為例
+### C# 指令封包範例
 
-開啟Visual Stduio，新增C#新專案，並於兩側ToolBox中新增Serial Port，並修改COM Port與鮑率。
-[![](C:\Users\lab\Desktop\Train\SerialPort.png)]
->新增專案與Serial Port。
+開啟 Visual Stduio，新增「Windows Forms App (.NET Framework)」 C# 專案。在「Form1.cs [Design]」視窗中於側邊的「ToolBox」中將「Serial Port」拖拉到畫面中，並在「Peoperties」中修改「PortName」為正確的 COM Port。
 
-[![](C:\Users\lab\Desktop\Train\NeedKnow.png)]
->控制`Goal Position`與`Moving Speed`的程式碼。
+[![](https://1.bp.blogspot.com/-0gnKNTJOrhA/YF2Cb4XX5pI/AAAAAAAAAks/FLEU_yVq1l0OjtCJlWP33p8E7wa7MkptQCPcBGAsYHg/s1860/SerialPort.png)](https://1.bp.blogspot.com/-0gnKNTJOrhA/YF2Cb4XX5pI/AAAAAAAAAks/FLEU_yVq1l0OjtCJlWP33p8E7wa7MkptQCPcBGAsYHg/s1860/SerialPort.png)
+> ▲ 新增 Serial Port
 
-此程式碼宣告了byte[] data陣列
-1. data[0]、data[1]為0xff標頭
-2. data[2]為馬達id
-3. data[3]是封包長度7，有4個參數(Postion 2個與Speed 2個)+3
-4. data[4]為0x03表示寫入的意思
-5. data[5] 0x1e代表從十進制30(即Goal Position)開始寫入。`注意為2Byte因此需要寫兩格`
-6. data[6]為寫入Goal Position之**低位元**。
-7. data[7]為寫入Goal Position之**高位元**。
-8. data[8]為寫入Moving Speed之**低位元**。
-9. data[9]為寫入Moving Speed之**高位元**。
-10. data[10]為計算校驗碼。
+```cs
+// C# 指令封包範例。
 
-撰寫完成封包後，透過SerialPort做傳輸。
+// 建立指令封包。
+byte[] data = new byte[11];
+data[0] = 0xff;
+data[1] = 0xff;
+data[2] = (byte)id;
+data[3] = 0x07;
+data[4] = 0x03;
+data[5] = 0x1e;
+data[6] = (byte)(position % 256);
+data[7] = (byte)(position / 256);
+data[8] = (byte)(0xff & speed);
+data[9] = (byte)(speed / 256);
+byte a = 0;
+for (int i = 2; i < 10; i++)
+{
+    a += data[i];
+}
+data[10] = (byte)(0xff - a);
 
+// 傳送指令封包。
+try
+{
+    serialPort1.Write(data, 0, 11);
+    Thread.Sleep(1);
+}
+catch (Exception ex)
+{
+    MessageBox.Show($"Error!\r\n{ex.Message}");
+}
+```
+
+此程式碼宣告了 `byte` 陣列：
+- `data[0]`：`0xff` 標頭。
+- `data[1]`：`0xff` 標頭。
+- `data[2]`：馬達 ID。
+- `data[3]`：封包長度。範例中為 `4(參數) + 3 = 7`。
+- `data[4]`：`0x03` 表示寫入。
+- `data[5]`：`0x1e` 代表從十進制位置 30（Goal Position）開始寫入。
+- `data[6]`：Goal Position 之「低位元」。
+- `data[7]`：Goal Position 之「高位元」。
+- `data[8]`：Moving Speed 之「低位元」。
+- `data[9]`：Moving Speed 之「高位元」。
+- `data[10]`：校驗碼。
+
+完成封包後，透過 Serial Port 做傳輸。
+
+### AX-12 馬達控制範例程式
 
 到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
 
@@ -624,7 +697,7 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 [![](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)
 > ▲ 在 GitHub 上下載 AX-12 控制程式
 
-使用 [Visual Studio](https://visualstudio.microsoft.com/) 來開啟「AX12_motor_controller.sln」檔案，就可以開始編寫程式。Visual Studio 可以安裝免費的 Community 版就好。
+使用 Visual Studio 來開啟「AX12_motor_controller.sln」檔案，就可以開啟範例程式專案。
 
 ## [驗收-4] 以 C# 控制機械手臂
 使用 C# 撰寫一個視窗程式，自行設計其圖形介面，並可以用來控制「驗收-2」所設計的機械手臂。
