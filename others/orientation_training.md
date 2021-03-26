@@ -371,8 +371,7 @@
 
 > 若使用 SolidWorks 的話，請直接開啟目標模型的檔案，並另存新檔（Save As），在檔案格式中選擇「STL」即可。
 
-[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/w640-h334/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
-
+[![](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)](https://1.bp.blogspot.com/-X1lSfXJWSEo/YFn1FmfBAJI/AAAAAAAAAW4/pKJuCXIQoRQCqu_p5Zq6qMWdW8OgYZjVwCPcBGAsYHg/s16000/01-onshape%25E5%258C%25AF%25E5%2587%25BA1.png)
 > ▲ 在 onshape 匯出
 
 [![](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-PmdzrisaDxI/YFn1FmTfmVI/AAAAAAAAAW4/PROqaxx-WY0rF-MFRvbk0NUgzIbguN2hwCPcBGAsYHg/w400-h383/02-onshape%25E5%258C%25AF%25E5%2587%25BASTL%25E8%25A8%25AD%25E5%25AE%259A1.png)
@@ -388,7 +387,7 @@
 
 首次安裝完 Cura 時，應會請你選擇 3D 列印機的型號（如：2.5 EX 或 2.5 FX），請依照自己實際要使用的機台作選擇（未來還可以改）。
 
-[![](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/w640-h376/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
+[![](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/s1842/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)](https://1.bp.blogspot.com/-TTJjUNSidy0/YFn1Fr-FooI/AAAAAAAAAW4/fzBvqrs0kZs7WhGooczqQFXVI7hcVqhnACPcBGAsYHg/s1842/03-Cura%25E8%25A8%25AD%25E5%25AE%259A1.png)
 > ▲ Cura 介面
 
 開啟 Cura 後，在右側是列印的參數設定，請將「列印設定」由「推薦」改成「自訂選項」，並修改其中的設定值如下：
@@ -448,7 +447,7 @@
 
 點擊右下角的「準備」就會開始進行切片。切片完成後可以在上方的下拉時選單中將「實體檢視」改成「分層檢視」，來觀察切片完成後的模型。
 
-[![](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/w640-h376/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
+[![](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/s16000/04-Cura%25E5%2588%2587%25E7%2589%25871.png)](https://1.bp.blogspot.com/-AwqCQbbow1I/YFn1Flf4EII/AAAAAAAAAW4/A_X4116ATW4KTTmszFDk8qDlqfgI6UalQCPcBGAsYHg/s16000/04-Cura%25E5%2588%2587%25E7%2589%25871.png)
 > ▲ Cura 的分層檢視
 
 確定沒問題後就可以點擊右下角的「儲存檔案」，來輸出成 G-Code 檔（.gcode）。
@@ -609,10 +608,10 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 1. 兩個標頭（`0xff`）
 2. 馬達 ID
 3. 封包長度（參數數量 +3）
-4. 封包指令 ([指令表](C:\Users\lab\Desktop\Train\Action_List.png))
+4. 封包指令（[指令表](https://emanual.robotis.com/docs/en/dxl/protocol1/#instruction)）
 5. 指令數據起始位置（[AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area)）
 6. 參數 
-7. 校驗碼（[算法](C:\Users\lab\Desktop\Train\CheckCode.png)）
+7. 校驗碼（[算法](https://emanual.robotis.com/docs/en/dxl/protocol1/#checksum-status-packet)）
 
 > 透過第5點指令位址來判斷指令有幾位元。Goal Position 與 Moving Speed 皆為 2 Byte。
 
@@ -620,7 +619,8 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 
 開啟 Visual Stduio，新增「Windows Forms App (.NET Framework)」 C# 專案。在「Form1.cs [Design]」視窗中於側邊的「ToolBox」中將「Serial Port」拖拉到畫面中，並在「Peoperties」中修改「PortName」為正確的 COM Port。
 
-> ▲ 新增專案與Serial Port
+[![](https://1.bp.blogspot.com/-0gnKNTJOrhA/YF2Cb4XX5pI/AAAAAAAAAks/FLEU_yVq1l0OjtCJlWP33p8E7wa7MkptQCPcBGAsYHg/s1860/SerialPort.png)](https://1.bp.blogspot.com/-0gnKNTJOrhA/YF2Cb4XX5pI/AAAAAAAAAks/FLEU_yVq1l0OjtCJlWP33p8E7wa7MkptQCPcBGAsYHg/s1860/SerialPort.png)
+> ▲ 新增 Serial Port
 
 ```cs
 // C# 指令封包範例。
