@@ -525,32 +525,44 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 
 使用完「RoboPlus Manager」記得點擊「Disconnect」進行斷線，否則「CM-530」會被它佔用，導致其它程式沒辦法使用「CM-530」。
 
+### RoboPlus Task
 
+打開「RoboPlus」程式，在中間的標籤頁中選擇「BIOLOID」，再點選「RoboPlus Task」即會開啟新的視窗。
 
-## [驗收-3] 以 Robotis 套件控制機械手臂
-使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
+[![](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)](https://1.bp.blogspot.com/-NrjL7EmsBL8/YFwZQRNncuI/AAAAAAAAAfI/zlktxG81QqcmCJUA5UF1wDcGbjiUEg6GwCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)
+> ▲ RoboPlus 程式
 
-開啟RoboPlsu，選擇上方的BIOLOID，並選擇RoboPlus Task。
-[![](C:\Users\lab\Desktop\Train\RoboPlusTask.png)
->RoboPlus Task介面
+於任意一行點擊兩下進行控制器選擇。上方的「Firmware Version」選擇 `1.0`，再於下方選擇「CM-530」。
 
-於任意一行點擊兩下進行版本選擇，選擇Firmware Version 1.0的CM-530。
-[![](C:\Users\lab\Desktop\Train\Version.png)
->版本選擇
+[![](https://1.bp.blogspot.com/-su1GYBQGivQ/YF1piGrZh_I/AAAAAAAAAhY/IMOPP18ZvMY8tGLXTxZlEa_2Os0gx-iMwCPcBGAsYHg/s16000/Version.png)](https://1.bp.blogspot.com/-su1GYBQGivQ/YF1piGrZh_I/AAAAAAAAAhY/IMOPP18ZvMY8tGLXTxZlEa_2Os0gx-iMwCPcBGAsYHg/s16000/Version.png)
+> ▲ 選擇控制器為 CM-530
 
-選擇完版本後，於最上面一行點擊兩下開始進行程式撰寫。
-`START PROGRAM`為程式伊始，必須要有。通常會接著`ENDLESS LOOP`做無限迴圈的動作執行。
+選擇完控制器後就可以開始進行程式撰寫。在空白行點擊兩下即會跳出程式碼選單，需從中選擇需要的程式碼以進行插入。
 
-`? = ?` 與 `? = ? + ?`用來指定狀態，例如馬達的`扭力、速度、位置`等。
-點進去後選擇`DYNAMIXEL`內的`DX/RX/AX Series`，並選擇馬達ID後即可指定該顆馬達之參數。
+[![](https://1.bp.blogspot.com/-XglEUmE-giU/YF1rnMYkdBI/AAAAAAAAAiI/j302mWALcugjGppKnY1myv58q--ltvoDQCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)](https://1.bp.blogspot.com/-XglEUmE-giU/YF1rnMYkdBI/AAAAAAAAAiI/j302mWALcugjGppKnY1myv58q--ltvoDQCPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596.PNG)
+> ▲ 程式碼指令清單
 
+其中幾個比較重要的程式碼指令功能如下：
+- `START PROGRAM`：程式的起始點，必須要有。
+- `ENDLESS LOOP`：無限迴圈，基本上也都要有。
+- `? = ?`：指定狀態。
+  - 例如點擊左邊的 `?` 並選擇「DYNAMIXEL」內的「DX/RX/AX Series」，在上方選擇目標的馬達 ID 及想要控制的馬達參數，再點擊右邊的 `?` 後即可設定數值。
+- `IF`、`ELSE IF`、`ELSE`：程式中常見的基本「if-else」判斷式。
+- `WAIT WHILE`：通常用來搭配「Timer」來當 Delay 使用。
+
+```
+
+```
 
 此程式的Delay為`Timeer`與`WAIT While`組合而成
 `Timer`在`CM-530裡Controller`選擇。
 
-點選上方`√`檢查程式碼是否有誤，`⇩`進行程式燒錄。
+點選上方的紅色勾勾（:heavy_check_mark:）檢查程式碼是否有語法錯誤；點擊上方的綠色向下箭頭（:arrow_down:）進行程式燒錄。燒錄時請確認「CM-530」沒被其它程式（如「RoboPlus Manager」）佔用。
 
-修改`CM-530`控制板模式至下圖樣式。點擊紅色框內之按鈕，即可執行燒錄至CM-530之START PROGRAM內程式碼。
+燒錄完成後，連續按下「CM-530」上紅色的「MODE」按鈕，直到其左上方的「PC LINK」最下面的「PLAY」指示燈亮起紅色，再按下右方的「START」按鈕，等待數秒即會執行程式碼。
+
+## [驗收-3] 以 Robotis 套件控制機械手臂
+使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
 # 階段四
 ## C# 入門
