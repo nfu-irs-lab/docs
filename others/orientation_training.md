@@ -573,25 +573,26 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 ### 使用程式控制馬達
 
 準備通訊轉換器、馬達、電源套件、12V變壓器、2條3Pin線。
-[![](C:\Users\lab\Desktop\Train\Necessary_Device.png)]
-> 範例套件
+[![](https://1.bp.blogspot.com/-MHwlCwtcL1o/YF13G6eexzI/AAAAAAAAAjw/Vfc9w23X_8Qo3jwq2PV55i6u-KLfBnh8gCPcBGAsYHg/s16000/Necessary_Device.png)](https://1.bp.blogspot.com/-MHwlCwtcL1o/YF13G6eexzI/AAAAAAAAAjw/Vfc9w23X_8Qo3jwq2PV55i6u-KLfBnh8gCPcBGAsYHg/s16000/Necessary_Device.png)
+> ▲ 範例套件
+
 並如下圖連接。
-[![](C:\Users\lab\Desktop\Train\Connect.png)]
-> 連接方式
+
+[![](https://1.bp.blogspot.com/-CFlt05sNWe0/YF13VRWRhEI/AAAAAAAAAj0/Lszh1iwbzLEIL2IXsr32xSbpLgKBrRxTQCPcBGAsYHg/s16000/Conncet.png)](https://1.bp.blogspot.com/-CFlt05sNWe0/YF13VRWRhEI/AAAAAAAAAj0/Lszh1iwbzLEIL2IXsr32xSbpLgKBrRxTQCPcBGAsYHg/s16000/Conncet.png)
+
+> ▲ 連接方式
 
 確認通訊轉換器的模式，AX / MX 系列使用TTL模式，DX / RX / EX / MX系列使用RS485模式。
 本例使用AX-12A+馬達，因此為TTL模式，如果選擇錯誤則會導致後續失敗。
-[![](C:\Users\lab\Desktop\Train\CommunityTR.png)]
->模式選擇的開關
 
 確認連接正確，接上電腦並確認COM Port後，開啟RoboPlus於上方選擇Expert模式並點選`Dynamixel Wizard`。
-[![](C:\Users\lab\Desktop\Train\Dynamixel Wizard UI.png)]
->開啟Dynamixel Wizard的介面
+
+[![](https://1.bp.blogspot.com/-nPVu2vGBUIQ/YF13lSFBzcI/AAAAAAAAAkM/W_xj7O1FlC4fFTMySRmheJsoqu5xVMPFQCPcBGAsYHg/s16000/Dynamixel%2BWizard%2BUI.png)](https://1.bp.blogspot.com/-nPVu2vGBUIQ/YF13lSFBzcI/AAAAAAAAAkM/W_xj7O1FlC4fFTMySRmheJsoqu5xVMPFQCPcBGAsYHg/s16000/Dynamixel%2BWizard%2BUI.png)
+> ▲ 開啟Dynamixel Wizard的介面
 
 選擇COM Port並點選Start searching尋找馬達，成功連接後獲取ID與鮑率。
-
-[![](C:\Users\lab\Desktop\Train\NeedKnow.png)]
->馬達的ID與鮑率
+[![](https://1.bp.blogspot.com/-fXX6jnB1GGE/YF13rQEHrYI/AAAAAAAAAkQ/Z4XqpkWIafkwJRNBwk7gbVwccMecR0ZQgCPcBGAsYHg/s639/NeedKnow.png)](https://1.bp.blogspot.com/-fXX6jnB1GGE/YF13rQEHrYI/AAAAAAAAAkQ/Z4XqpkWIafkwJRNBwk7gbVwccMecR0ZQgCPcBGAsYHg/s639/NeedKnow.png)
+> ▲ 馬達的ID與鮑率
 
 ### 撰寫程式封包
 實驗室透過撰寫[`ROBOTIS Protocol 1`](https://emanual.robotis.com/docs/en/dxl/protocol1/)協定封包，達成馬達控制。
