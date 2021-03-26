@@ -550,12 +550,16 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 - `IF`、`ELSE IF`、`ELSE`：程式中常見的基本「if-else」判斷式。
 - `WAIT WHILE`：通常用來搭配「Timer」來當 Delay 使用。
 
-```
+以下示範一個簡單的程式。其功能為：
+- 如果按下「CM-530」上的「U」按鈕，ID 為 `1` 的馬達就會以 `512` 的速度進行 CW（順時針）轉動。
+- 如果沒有按下「CM-530」上的「U」按鈕，但是有按下「D」按鈕，ID 為 `1` 的馬達就會以 `512` 的速度進行 CCW（逆時針）轉動。
+- 如果沒按下任何按鈕，ID 為 `1` 的馬達就會停止轉動（速度為 `0`）。
 
-```
+[![](https://1.bp.blogspot.com/-PqLOREtsteA/YF11KeTJklI/AAAAAAAAAjM/jm4EjYU0oiUArE4GGUVeX4QGnL7TFfCwACPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596-example.PNG)](https://1.bp.blogspot.com/-PqLOREtsteA/YF11KeTJklI/AAAAAAAAAjM/jm4EjYU0oiUArE4GGUVeX4QGnL7TFfCwACPcBGAsYHg/s16000/%25E6%2593%25B7%25E5%258F%2596-example.PNG)
+> ▲ 範例程式碼
 
-此程式的Delay為`Timeer`與`WAIT While`組合而成
-`Timer`在`CM-530裡Controller`選擇。
+[![](https://1.bp.blogspot.com/-cxyDcKVqrlM/YF11KRAybII/AAAAAAAAAjM/lvRjWxbMvrk3xqPMiYBfFr9p34soQtVqgCPcBGAsYHg/w640-h102/%25E6%2593%25B7%25E5%258F%2596-delay.PNG)](https://1.bp.blogspot.com/-cxyDcKVqrlM/YF11KRAybII/AAAAAAAAAjM/lvRjWxbMvrk3xqPMiYBfFr9p34soQtVqgCPcBGAsYHg/w640-h102/%25E6%2593%25B7%25E5%258F%2596-delay.PNG)
+> ▲ Delay 的寫法
 
 點選上方的紅色勾勾（:heavy_check_mark:）檢查程式碼是否有語法錯誤；點擊上方的綠色向下箭頭（:arrow_down:）進行程式燒錄。燒錄時請確認「CM-530」沒被其它程式（如「RoboPlus Manager」）佔用。
 
