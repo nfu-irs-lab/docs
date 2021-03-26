@@ -569,68 +569,109 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 使用 Robotis 套件來控制「驗收-2」所設計的機械手臂。要求僅需要進行簡單的動作控制，只要能看出可以控制馬達即可。
 
 # 階段四
-## C# 入門
-### 使用程式控制馬達
+## C#
+使用 [Visual Studio](https://visualstudio.microsoft.com/) 來編寫 C# 程式。Visual Studio 可以安裝免費的 Community 版就好。
 
-準備通訊轉換器、馬達、電源套件、12V變壓器、2條3Pin線。
+### 硬體及準備工作
+
+準備以下硬體：
+1. 通訊轉換器
+2. 馬達
+3. 電源轉接板
+4. 12V 電源供應器
+5. 2 條 3Pin 線。
+
 [![](https://1.bp.blogspot.com/-MHwlCwtcL1o/YF13G6eexzI/AAAAAAAAAjw/Vfc9w23X_8Qo3jwq2PV55i6u-KLfBnh8gCPcBGAsYHg/s16000/Necessary_Device.png)](https://1.bp.blogspot.com/-MHwlCwtcL1o/YF13G6eexzI/AAAAAAAAAjw/Vfc9w23X_8Qo3jwq2PV55i6u-KLfBnh8gCPcBGAsYHg/s16000/Necessary_Device.png)
-> ▲ 範例套件
+> ▲ 由左至右分別為：12V 電源供應器、AX-12+ 馬達、通訊轉換器、電源轉接板及 2 條 3Pin 線
 
-並如下圖連接。
+將它們如下圖連接。
 
 [![](https://1.bp.blogspot.com/-CFlt05sNWe0/YF13VRWRhEI/AAAAAAAAAj0/Lszh1iwbzLEIL2IXsr32xSbpLgKBrRxTQCPcBGAsYHg/s16000/Conncet.png)](https://1.bp.blogspot.com/-CFlt05sNWe0/YF13VRWRhEI/AAAAAAAAAj0/Lszh1iwbzLEIL2IXsr32xSbpLgKBrRxTQCPcBGAsYHg/s16000/Conncet.png)
-
 > ▲ 連接方式
 
-確認通訊轉換器的模式，AX / MX 系列使用TTL模式，DX / RX / EX / MX系列使用RS485模式。
-本例使用AX-12A+馬達，因此為TTL模式，如果選擇錯誤則會導致後續失敗。
+確認通訊轉換器的模式，「AX / MX」系列使用「TTL」模式；「DX / RX / EX / MX」系列使用「RS-485」模式。
 
-確認連接正確，接上電腦並確認COM Port後，開啟RoboPlus於上方選擇Expert模式並點選`Dynamixel Wizard`。
+本例使用「AX-12+」馬達，因此為「TTL」模式，如果選擇錯誤則會導致後續失敗。
+
+確認連接正確，接上電腦並確認 COM Port 後，開啟「RoboPlus」並於上方選擇「Expert」模式並點選「Dynamixel Wizard」。
 
 [![](https://1.bp.blogspot.com/-nPVu2vGBUIQ/YF13lSFBzcI/AAAAAAAAAkM/W_xj7O1FlC4fFTMySRmheJsoqu5xVMPFQCPcBGAsYHg/s16000/Dynamixel%2BWizard%2BUI.png)](https://1.bp.blogspot.com/-nPVu2vGBUIQ/YF13lSFBzcI/AAAAAAAAAkM/W_xj7O1FlC4fFTMySRmheJsoqu5xVMPFQCPcBGAsYHg/s16000/Dynamixel%2BWizard%2BUI.png)
-> ▲ 開啟Dynamixel Wizard的介面
+> ▲ Dynamixel Wizard 的介面
 
-選擇COM Port並點選Start searching尋找馬達，成功連接後獲取ID與鮑率。
+選擇 COM Port 並點選「Start searching」尋找馬達，若成功連接即可獲取其 ID 與鮑率。
 [![](https://1.bp.blogspot.com/-fXX6jnB1GGE/YF13rQEHrYI/AAAAAAAAAkQ/Z4XqpkWIafkwJRNBwk7gbVwccMecR0ZQgCPcBGAsYHg/s639/NeedKnow.png)](https://1.bp.blogspot.com/-fXX6jnB1GGE/YF13rQEHrYI/AAAAAAAAAkQ/Z4XqpkWIafkwJRNBwk7gbVwccMecR0ZQgCPcBGAsYHg/s639/NeedKnow.png)
-> ▲ 馬達的ID與鮑率
+> ▲ 馬達的 ID 與鮑率
 
-### 撰寫程式封包
-實驗室透過撰寫[`ROBOTIS Protocol 1`](https://emanual.robotis.com/docs/en/dxl/protocol1/)協定封包，達成馬達控制。
+### 指令封包
+透過 [ROBOTIS Protocol 1](https://emanual.robotis.com/docs/en/dxl/protocol1/) 封包協定達成馬達控制。
 
-此封包必須包含以下幾項(`皆為Byte型態`)：
-1. 兩個標頭 (0xff)
-2. 馬達id
-3. 封包長度 (參數數量+3)
+此封包必須包含以下幾項（皆為 `Byte` 型態）：
+1. 兩個標頭（`0xff`）
+2. 馬達 ID
+3. 封包長度（參數數量 +3）
 4. 封包指令 ([指令表](C:\Users\lab\Desktop\Train\Action_List.png))
-5. 指令數據起始位置 ([AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area))
+5. 指令數據起始位置（[AX-12A](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area)）
 6. 參數 
-7. 校驗碼 ([算法](C:\Users\lab\Desktop\Train\CheckCode.png))
+7. 校驗碼（[算法](C:\Users\lab\Desktop\Train\CheckCode.png)）
 
->透過(第5點)指令位址來判斷指令有幾位元。Goal Position 與 Moving Speed皆為2Byte
+> 透過第5點指令位址來判斷指令有幾位元。Goal Position 與 Moving Speed 皆為 2 Byte。
 
-### 以C#為例
+### C# 指令封包範例
 
-開啟Visual Stduio，新增C#新專案，並於兩側ToolBox中新增Serial Port，並修改COM Port與鮑率。
-[![](C:\Users\lab\Desktop\Train\SerialPort.png)]
->新增專案與Serial Port。
+開啟 Visual Stduio，新增「Windows Forms App (.NET Framework)」 C# 專案。在「Form1.cs [Design]」視窗中於側邊的「ToolBox」中將「Serial Port」拖拉到畫面中，並在「Peoperties」中修改「PortName」為正確的 COM Port。
 
-[![](C:\Users\lab\Desktop\Train\NeedKnow.png)]
->控制`Goal Position`與`Moving Speed`的程式碼。
+> ▲ 新增專案與Serial Port
 
-此程式碼宣告了byte[] data陣列
-1. data[0]、data[1]為0xff標頭
-2. data[2]為馬達id
-3. data[3]是封包長度7，有4個參數(Postion 2個與Speed 2個)+3
-4. data[4]為0x03表示寫入的意思
-5. data[5] 0x1e代表從十進制30(即Goal Position)開始寫入。`注意為2Byte因此需要寫兩格`
-6. data[6]為寫入Goal Position之**低位元**。
-7. data[7]為寫入Goal Position之**高位元**。
-8. data[8]為寫入Moving Speed之**低位元**。
-9. data[9]為寫入Moving Speed之**高位元**。
-10. data[10]為計算校驗碼。
+```cs
+// C# 指令封包範例。
 
-撰寫完成封包後，透過SerialPort做傳輸。
+// 建立指令封包。
+byte[] data = new byte[11];
+data[0] = 0xff;
+data[1] = 0xff;
+data[2] = (byte)id;
+data[3] = 0x07;
+data[4] = 0x03;
+data[5] = 0x1e;
+data[6] = (byte)(position % 256);
+data[7] = (byte)(position / 256);
+data[8] = (byte)(0xff & speed);
+data[9] = (byte)(speed / 256);
+byte a = 0;
+for (int i = 2; i < 10; i++)
+{
+    a += data[i];
+}
+data[10] = (byte)(0xff - a);
 
+// 傳送指令封包。
+try
+{
+    serialPort1.Write(data, 0, 11);
+    Thread.Sleep(1);
+}
+catch (Exception ex)
+{
+    MessageBox.Show($"Error!\r\n{ex.Message}");
+}
+```
+
+此程式碼宣告了 `byte` 陣列：
+- `data[0]`：`0xff` 標頭。
+- `data[1]`：`0xff` 標頭。
+- `data[2]`：馬達 ID。
+- `data[3]`：封包長度。範例中為 `4(參數) + 3 = 7`。
+- `data[4]`：`0x03` 表示寫入。
+- `data[5]`：`0x1e` 代表從十進制位置 30（Goal Position）開始寫入。
+- `data[6]`：Goal Position 之「低位元」。
+- `data[7]`：Goal Position 之「高位元」。
+- `data[8]`：Moving Speed 之「低位元」。
+- `data[9]`：Moving Speed 之「高位元」。
+- `data[10]`：校驗碼。
+
+完成封包後，透過 Serial Port 做傳輸。
+
+### AX-12 馬達控制範例程式
 
 到實驗室的 GitHub 下載 AX-12 馬達控制程式。連結：[nfu-irs-lab/AX12_motor_controller](https://github.com/nfu-irs-lab/AX12_motor_controller)
 
@@ -641,7 +682,7 @@ AX-12（或其它 AI 馬達）有兩種操作模式：Joint（關節）與Wheel�
 [![](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)](https://1.bp.blogspot.com/-A41nPy0eULA/YFwSl_OYOrI/AAAAAAAAAdI/5inEvp7YqrIMq3HSwm8XX1PHz89H_LQDQCPcBGAsYHg/w1684-h1069-p-k-no-nu/github-%25E4%25B8%258B%25E8%25BC%2589.png)
 > ▲ 在 GitHub 上下載 AX-12 控制程式
 
-使用 [Visual Studio](https://visualstudio.microsoft.com/) 來開啟「AX12_motor_controller.sln」檔案，就可以開始編寫程式。Visual Studio 可以安裝免費的 Community 版就好。
+使用 Visual Studio 來開啟「AX12_motor_controller.sln」檔案，就可以開啟範例程式專案。
 
 ## [驗收-4] 以 C# 控制機械手臂
 使用 C# 撰寫一個視窗程式，自行設計其圖形介面，並可以用來控制「驗收-2」所設計的機械手臂。
