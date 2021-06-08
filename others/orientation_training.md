@@ -37,7 +37,7 @@
 ###  軟體介紹
 目前實驗室主要使用 [onshape](https://www.onshape.com) 和 SolidWorks 來進行 3D 建模。
 
-[onshape](https://www.onshape.com) 可以免費使用，SolidWorks 需要付費使用，另外也可以選擇使用學校 E-mail（@gm.nfu.edu.tw）去申請 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview) 的免費學術授權。
+[onshape](https://www.onshape.com) 可以免費使用，SolidWorks 需要付費使用，也可以選擇使用學校授權的 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview)（包含在 [Autodesk PDSU](https://www.autodesk.com.tw/collections/product-design-manufacturing/overview) 中），或使用學校 E-mail（@gm.nfu.edu.tw）去申請 [Autodesk Inventor](https://www.autodesk.com.tw/products/inventor/overview) 的免費學術授權。
 
 以下僅介紹 [onshape](https://www.onshape.com)。其它軟體使用起來操作與概念相同、大同小異。
 
