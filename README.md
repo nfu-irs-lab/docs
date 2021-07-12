@@ -27,6 +27,7 @@
 - [C#](#C)
   - [類別 Class](#類別-Class) 
   - [Lambda 運算子](#Lambda-運算子)
+- [3D 列印機](https://github.com/nfu-irs-lab/docs/blob/main/others/3d-printer.md)
 - [其它資源](#其它資源)
 
 > 各章節後的參考資料基本上都是以筆者認為有幫助的程度、從高至低排序。
